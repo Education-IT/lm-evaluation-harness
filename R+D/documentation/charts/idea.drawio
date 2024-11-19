@@ -1,0 +1,211 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.17">
+  <diagram name="Strona-1" id="YSIBqQ7GThQPEjHOALDc">
+    <mxGraphModel dx="1426" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-1" target="FueCT0Ppddvxsz1VXUoF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="280" />
+              <mxPoint x="160" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-15" value="User input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-12">
+          <mxGeometry x="-0.5882" y="3" relative="1" as="geometry">
+            <mxPoint x="35" y="-47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-2" target="FueCT0Ppddvxsz1VXUoF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-18" value="RAG" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-17">
+          <mxGeometry x="-0.15" relative="1" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-2" value="Wyszukiwarka danych" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-3" target="FueCT0Ppddvxsz1VXUoF-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="350" />
+              <mxPoint x="160" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-16" value="System Output" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-13">
+          <mxGeometry x="0.5529" y="-3" relative="1" as="geometry">
+            <mxPoint x="32" y="53" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-3" value="LLM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-19" value="Tryb 1." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-20" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Zamysł wysokiego poziomu (sama aplikacja RAG)&lt;/h1&gt;&lt;p&gt;Moduł wyszukujący treść na podstawie inputu od uzytkownika powinien być w stanie pracować jako stanadrdowa aplikacja oraz jako pośreni punkt interakcji w &quot;dowolnym&quot; systemie. Powinien mieć dobry interfejs o odpowiedniej abstrakcji i możliwości wpływania na jego działanie/flow/zmienne (+ może możliwośc wyboru pomiędzy bazą wiedzą a internetem, wyszukiwanie najpier z zaufanych źródeł)&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="660" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-24" target="FueCT0Ppddvxsz1VXUoF-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="690" />
+              <mxPoint x="120" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-66" value="User input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-38">
+          <mxGeometry x="0.4545" y="5" relative="1" as="geometry">
+            <mxPoint x="-3" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-24" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="670" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-27" target="FueCT0Ppddvxsz1VXUoF-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-35" value="RAG" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-34">
+          <mxGeometry x="-0.12" y="3" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-27" value="Wyszukiwarka danych" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-30" target="FueCT0Ppddvxsz1VXUoF-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="770" />
+              <mxPoint x="120" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-30" value="LLM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-31" value="Tryb 2&lt;span style=&quot;background-color: initial;&quot;&gt;.&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-33" target="FueCT0Ppddvxsz1VXUoF-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="680" />
+              <mxPoint x="330" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-43" value="TAK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-36">
+          <mxGeometry x="0.0564" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-33" target="FueCT0Ppddvxsz1VXUoF-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-54" value="NIE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-52">
+          <mxGeometry x="0.36" y="-2" relative="1" as="geometry">
+            <mxPoint x="18" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-33" value="LLM: Czy z tym RAG&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;jestem w stanie udzielić poprawnej odpowiedzi?&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Czy mam wszystkie potrzebne&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;indormacje?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="560" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-42" value="System Output" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-44" target="FueCT0Ppddvxsz1VXUoF-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-44" value="LLM (jakich informacji jeszcze potrzebuję)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-69" target="FueCT0Ppddvxsz1VXUoF-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="151.26" y="1000" />
+              <mxPoint x="151.26" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-68" value="User input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-67">
+          <mxGeometry x="-0.5882" y="3" relative="1" as="geometry">
+            <mxPoint x="53" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-69" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="38.75999999999999" y="960" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-72" target="FueCT0Ppddvxsz1VXUoF-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-95" value="LLM Output" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-94">
+          <mxGeometry x="-0.0059" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-72" value="Wyszukiwarka danych + LLM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="228.76" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-82" target="FueCT0Ppddvxsz1VXUoF-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="159.26" y="1150" />
+              <mxPoint x="159.26" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-74" value="System Output" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-73">
+          <mxGeometry x="0.5529" y="-3" relative="1" as="geometry">
+            <mxPoint x="8" y="73" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-76" value="Answer Validation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201.26" y="900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FueCT0Ppddvxsz1VXUoF-82" target="FueCT0Ppddvxsz1VXUoF-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="381.26" y="1150" />
+              <mxPoint x="381.26" y="950" />
+              <mxPoint x="289.26" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-87" value="NIE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FueCT0Ppddvxsz1VXUoF-86">
+          <mxGeometry x="-0.8545" y="-4" relative="1" as="geometry">
+            <mxPoint x="6" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-82" value="&lt;div&gt;Pytanie do LLM&lt;/div&gt;Czy została udzielona poprawna odpowiedzieć?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="208.76" y="1090" width="155" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-84" value="TAK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="163.76" y="1128" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-85" value="+ Dodatkowe prompty&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ CoT&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ External API np.: WolframAlpha&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ tworzenie odsumowań/streszczeń&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="80" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-101" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="880" as="sourcePoint" />
+            <mxPoint x="800" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-103" value="Warto dodać tryb działania modułu - gdy ma działać sam + gdy ma działać z llm-evaluation-harness lub być częścia innego programu.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Myślę że warto od początku z integracją aby potem nie było problemów.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Plan: stworzyć odpowiedni interfejs umozliwiający przekazywanie odpoowiednihc informacji!&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="220" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FueCT0Ppddvxsz1VXUoF-104" value="A może coś pokroroju n-wuszikań na rożnych stronach i n-odpowiedzi przez model i wybór najpepszego?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1300" width="580" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
