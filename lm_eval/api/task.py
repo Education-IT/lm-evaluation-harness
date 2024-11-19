@@ -1,3 +1,12 @@
+#--------------
+import os
+import json
+import lm_eval.api.webcontext as www
+import aiohttp
+from collections import Counter
+from urllib.parse import urlparse
+import asyncio
+#--------------
 import abc
 import ast
 import logging
@@ -700,10 +709,17 @@ class ConfigurableTask(Task):
         cache_dir=None,
         download_mode=None,
         config: Optional[dict] = None,
+        web_access: bool = False,
+        web_data_action:str = None,
+        file_sufix: str = None,
+        question_key: str = None,
     ) -> None:  # TODO no super() call here
         # Get pre-configured attributes
         self._config = self.CONFIG
-
+        self.web_access = web_access
+        self.web_data_action = web_data_action
+        self.file_sufix = file_sufix
+        self.question_key = question_key
         # Use new configurations if there was no preconfiguration
         if self.config is None:
             self._config = TaskConfig(**config)
@@ -922,12 +938,83 @@ class ConfigurableTask(Task):
                         f'Both target_delimiter "{self.config.target_delimiter}" and target choice: "{choice}" do not have whitespace, ignore if the language you are evaluating on does not require/use whitespace'
                     )
 
-    def download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
+    def standard_download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
+        eval_logger.info("Starting std. dataset download.")
         self.dataset = datasets.load_dataset(
-            path=self.DATASET_PATH,
-            name=self.DATASET_NAME,
-            **dataset_kwargs if dataset_kwargs is not None else {},
-        )
+                path=self.DATASET_PATH,
+                name=self.DATASET_NAME,
+                download_mode=datasets.DownloadMode.REUSE_CACHE_IF_EXISTS, 
+                **dataset_kwargs if dataset_kwargs is not None else {},
+            )
+        eval_logger.info("Std. dataset download completed.")
+
+
+    def download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
+        if self.web_access:
+            mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.DATASET_PATH.replace("/","___") +"/")
+            extDatasetName =  f"web_access_{self.DATASET_NAME}_{self.file_sufix}"
+            dataset_path = os.path.join(mainPath,extDatasetName)
+            
+            if self.web_data_action == "load":
+                
+                if os.path.exists(dataset_path):
+                    eval_logger.info(f"Test with data loaded from a specific dataset: {extDatasetName}")
+                    self.dataset = datasets.DatasetDict.load_from_disk(dataset_path)
+                else:
+                    eval_logger.info(f"Unable to load: {extDatasetName}! Executing standard process!")
+                    self.standard_download(dataset_kwargs)
+
+            else:
+                self.standard_download(dataset_kwargs)
+                eval_logger.info("Starting web context download.")
+                web = www.webcontext()
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                self.dataset["test"] = loop.run_until_complete(web.process_all(self))
+                loop.close()
+                eval_logger.info("Web context download completed.")
+
+                if self.web_data_action == "save":
+                    self.saveJsonXAI(web,mainPath,dataset_path)
+                
+                web = None
+        else:
+            eval_logger.info("Data read from the regular dataset")
+            self.standard_download(dataset_kwargs)
+
+
+    def saveJsonXAI(self,web,mainPath,dataset_path):
+        urls = []
+        for item in web.contaminatedUrls:
+            url = item["url"]
+            domain = urlparse(url).netloc
+            urls.append(domain)
+
+        doc_to_text_counter = Counter(urls)
+        filtered_doc_to_text_counter = {k: v for k, v in doc_to_text_counter.items() if v >= 3}
+        sorted_doc_to_text_counter = dict(Counter(filtered_doc_to_text_counter).most_common())    
+
+        data_to_save = {
+            "dataset_name": f"web_access_{self.DATASET_NAME}_{self.file_sufix}",
+            "question_count_in_dataset": len(self.dataset["test"]),
+            "queries_without_web_context_count": web.noContext,
+            "contaminated_queries_count": web.contaminatedQueries,
+            "processed_contaminated_urls_count": web.contaminatedWebContext,
+            "valid_urls_count": len(web.GoodUrls),
+            "most_contaminated_domains": sorted_doc_to_text_counter,
+            "questions_without_webContext": web.questionWithoutContext,
+            "contaminated_urls": web.contaminatedUrls,
+            "valid_urls": web.GoodUrls
+        }      
+
+        with open(mainPath + f"{self.DATASET_NAME}_web_" + self.file_sufix + ".json", "w", encoding="utf-8") as f:
+            json.dump(data_to_save, f, ensure_ascii=False, indent=4)
+
+        eval_logger.info("Starting dataset save with web context.")
+        self.dataset.save_to_disk(dataset_path)
+        eval_logger.info("Dataset save completed.")     
+
+
 
     def has_training_docs(self) -> bool:
         if self.config.training_split is not None:
@@ -1167,6 +1254,9 @@ class ConfigurableTask(Task):
             The processed version of the specified `doc`.
         """
         return doc
+    
+    def doc_to_web(self,doc):
+        return utils.apply_template("Context: {{WebContext}}",doc)
 
     def doc_to_text(self, doc, doc_to_text=None):
         if self.prompt is not None:
@@ -1306,6 +1396,10 @@ class ConfigurableTask(Task):
 
         aux_arguments = None
 
+        if self.web_access:
+            web_output = self.doc_to_web(doc)
+            if web_output != "Context: None":
+                ctx = web_output + " " + ctx
         if self.OUTPUT_TYPE == "loglikelihood":
             arguments = (ctx, self.doc_to_target(doc))
         elif self.OUTPUT_TYPE == "loglikelihood_rolling":

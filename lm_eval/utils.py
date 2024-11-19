@@ -327,6 +327,7 @@ def make_table(result_dict, column: str = "results", sort_results: bool = False)
         "Value",
         "",
         "Stderr",
+        "web_access"
     ]
 
     md_writer = MarkdownTableWriter()
@@ -346,6 +347,7 @@ def make_table(result_dict, column: str = "results", sort_results: bool = False)
         dic = result_dict[column][k]
         version = result_dict["versions"].get(k, "    N/A")
         n = str(result_dict.get("n-shot", " ").get(k, " "))
+        web_access = result_dict["web_access"]
         higher_is_better = result_dict.get("higher_is_better", {}).get(k, {})
 
         if "alias" in dic:
@@ -366,9 +368,9 @@ def make_table(result_dict, column: str = "results", sort_results: bool = False)
             if m + "_stderr" + "," + f in dic:
                 se = dic[m + "_stderr" + "," + f]
                 se = "   N/A" if se == "N/A" else "%.4f" % se
-                values.append([k, version, f, n, m, hib, v, "±", se])
+                values.append([k, version, f, n, m, hib, v, "±", se,web_access])
             else:
-                values.append([k, version, f, n, m, hib, v, "", ""])
+                values.append([k, version, f, n, m, hib, v, "", "",""])
             k = ""
             version = ""
     md_writer.value_matrix = values

@@ -25,7 +25,15 @@ class TaskManager:
         verbosity="INFO",
         include_path: Optional[Union[str, List]] = None,
         include_defaults: bool = True,
+        web_access: bool = False,
+        web_data_action: str = None,
+        file_sufix: str = None,
+        question_key:str = None,
     ) -> None:
+        self.file_sufix  = file_sufix
+        self.web_data_action = web_data_action
+        self.web_access = web_access
+        self.question_key = question_key
         self.verbosity = verbosity
         self.include_path = include_path
         self.logger = utils.eval_logger
@@ -277,7 +285,7 @@ class TaskManager:
                     # very scuffed: set task name here. TODO: fixme?
                     task_object.config.task = task
             else:
-                task_object = ConfigurableTask(config=config)
+                task_object = ConfigurableTask(config=config, web_access=self.web_access, web_data_action=self.web_data_action,file_sufix = self.file_sufix, question_key=self.question_key)
 
             return {task: task_object}
 

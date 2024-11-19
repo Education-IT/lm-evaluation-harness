@@ -67,6 +67,38 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--model", "-m", type=str, default="hf", help="Name of model e.g. `hf`"
     )
+
+    parser.add_argument(
+        "--web_access",
+        "-web",action="store_true",
+        default=False,
+        help="Access of the model to external knowledge (internet)"
+    )
+
+    parser.add_argument(
+        "--web_data_action",
+        "-wda",
+        type=str,
+        choices=["load", "save"],
+        help="Specifies whether to load or save task with the web context",
+    )
+
+    parser.add_argument(
+        "--file_sufix",
+        "-fs",
+        type=str,
+        default="eval",
+        help="Defines whether a saved corpus with internet access will be saved as standard or with a different suffix."
+    )
+
+    parser.add_argument(
+        "--question_key",
+        "-qk",
+        type=str,
+        default=None,
+        help="Defines which key from a document in corspus will be passed as a question to the browser.",
+    )
+    
     parser.add_argument(
         "--tasks",
         "-t",
@@ -301,7 +333,8 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
 
     if args.include_path is not None:
         eval_logger.info(f"Including path: {args.include_path}")
-    task_manager = TaskManager(args.verbosity, include_path=args.include_path)
+        
+    task_manager = TaskManager(args.verbosity, include_path=args.include_path,web_access=args.web_access,web_data_action=args.web_data_action,file_sufix=args.file_sufix,question_key=args.question_key)
 
     if "push_samples_to_hub" in evaluation_tracker_args and not args.log_samples:
         eval_logger.warning(
@@ -375,6 +408,9 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
 
     eval_logger.info(f"Selected Tasks: {task_names}")
 
+    if args.web_access:
+        eval_logger.info("The model will gain access to external knowledge (internet)")
+
     request_caching_args = request_caching_arg_to_dict(
         cache_requests=args.cache_requests
     )
@@ -443,6 +479,11 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
             or evaluation_tracker.push_samples_to_hub
         ):
             evaluation_tracker.recreate_metadata_card()
+
+        if args.web_access:
+            results["web_access"] = True
+        else:
+            results["web_access"] = False
 
         print(
             f"{args.model} ({args.model_args}), gen_kwargs: ({args.gen_kwargs}), limit: {args.limit}, num_fewshot: {args.num_fewshot}, "
