@@ -1,0 +1,26 @@
+[{
+    "{{query}}": 279,
+    "Q: {{input}}\nA:": 54,
+    "{% if answer is not none %}{{question+\"\\nAnswer:\"}}{% else %}{{\"Question: \"+question+\"\\nAnswer:\"}}{% endif %}": 37,
+    "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}{% if choices is defined and choices|length > 4 %}\nE. {{choices[4]}}{% endif %}{% if choices is defined and choices|length > 5 %}\nF. {{choices[5]}}{% endif %}\nAnswer:": 31,
+    "Q: {{input}}\nA: Let's think step by step.\n": 27,
+    "Q: {{input}}\nA: Let's think step by step.": 27,
+    "{% if answer is not none %}{{question+\"\\nStep-by-Step Answer:\"}}{% else %}{{\"Question: \"+question+\"\\nStep-by-Step Answer:\"}}{% endif %}": 20,
+    "Question: {{question}}\nA: {{candidates[0]}}\nB: {{candidates[1]}}\nC: {{candidates[2]}}\nAnswer:": 15,
+    "Question: {{question}}\nAnswer:": 9,
+    "{{context}}": 6,
+    "{{[input_sentence_1, input_sentence_2, input_sentence_3, input_sentence_4]|join(' ')}}": 4,
+    "{{text.split(' ')[:-1]|join(' ')}}": 4,
+    "prompt": 4,
+    "\nContexte: {{context}}\n\nQuestion: {{question}}\n\nRéponse:": 3,
+    "Text: {{content}}\nResum:": 3,
+    "question_stem": 3,
+    "{{question.strip()}}\nA. {{A}}\nB. {{B}}\nC. {{C}}\nD. {{D}}\nE. {{E}}\n정답：": 3
+    
+},
+{
+    "query": 279,
+    "question": 118,
+    "input": 108
+}
+]
