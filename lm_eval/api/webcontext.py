@@ -6,6 +6,10 @@ import asyncio
 import datasets
 from tqdm import tqdm
 from lm_eval.api.excluded_domains import excluded_domains
+import re
+import string
+import math
+
 class webcontext():
 
     def __init__(self) -> None:
@@ -21,41 +25,77 @@ class webcontext():
 
 
     def clearText(self,text):
-        text = text.lower().strip().translate(str.maketrans('', '', string.punctuation + "–"))
-        return re.sub(r' +', ' ', text)
+        text = text.lower()
+        patterns = [
+            r'^[A-Za-z]{3} \d{1,2}, \d{4} —\s*', # np. "Oct 7, 2024 — "
+            r'^\d{1,2} [a-z]{3} \d{4} —\s*',      # np. "1 sie 2024 —"
+            r'^by [A-Za-z ]+ · \d{4} · cited by \d+ —\s*', # np. "by John Doe · 2024 · Cited by 10 —"
+            r'^[A-Za-z ]+ · \d{4} · cytowane przez \d+ —\s*',  # np. "Broda· 1967 · Cytowane przez 832 —"
+            r'^[A-Za-z ]+ cytowane przez \d+\s*',  # np. "e blacksher cytowane przez 6"
+            r'^[A-Za-z ]+ cited by \d+\s*',  # np. "e blacksher cytowane przez 6"
+            r'^[A-Za-z ]+ · \d{4} —\s*', # np. "John Doe · 2024 —"
+            r'^by [A-Za-z ]+ —\s*', # np. "by John Doe —"
+            r'^\d{1,2} [a-zA-Z]+ ago —\s*', # np. "1 day ago —"
+        ]
 
+        for pattern in patterns:
+            text = re.sub(pattern, '', text)
 
-    def getFourgrams(self, text):
-        words = self.clearText(text).split()
-        if len(words) < 4:
+        text = text.translate(str.maketrans('', '', string.punctuation + "–_·"))
+        text = re.sub(r'\s+', ' ', text)
+        return text.strip()
+
+    def getNgrams(self, text, n=2):
+        words = text.split()
+        if len(words) < n:
             return []
         
-        return [[words[i], words[i+1], words[i+2],words[i+3]] for i in range(len(words) - 3)]
+        return [words[i:i+n] for i in range(len(words) - n + 1)]
 
-
-    def getSimilarFourgramsNum(self,question,webText):
+    def getSimilarNgramsNum(self, question, webText):
         i = 0
         for ngram in webText:
             if ngram in question:
                 i += 1
         return i
 
+    def isNotContaminated(self, question, webContext):
+        question = self.clearText(question)
+        webContext = self.clearText(webContext)
 
-    def isNotContaminated(self,question,webContext):
-        q_fourgrams = self.getFourgrams(question)
-        if q_fourgrams == []:
-            return True
-        else:
-            web_fourgrams = self.getFourgrams(webContext)
-            if self.getSimilarFourgramsNum(q_fourgrams,web_fourgrams) < len(q_fourgrams)//2:
-                return True
+        q_ngrams= self.getNgrams(question)
+        web_ngrams = self.getNgrams(webContext)
+
+        if not q_ngrams or not web_ngrams:
+            return True, question, webContext
+
+        similar_ngrams = self.getSimilarNgramsNum(q_ngrams, web_ngrams)
+
+        if len(q_ngrams) > len(web_ngrams):
+            if webContext in question:
+                return False, question, webContext
+            
+            if similar_ngrams < math.ceil(len(web_ngrams) / 2):
+                return True, question, webContext
             else:
-                return False
+                return False, question, webContext
+
+        elif len(q_ngrams) < 5:
+            if similar_ngrams <= len(q_ngrams) + 1:
+                return True, question, webContext
+            else:
+                return False, question, webContext
+
+        else:
+            if similar_ngrams < math.ceil(len(q_ngrams) / 2): 
+                return True, question, webContext
+            else:
+                return False, question, webContext
 
 
     async def fetch(self, session, query):
         try:
-            async with self.semaphore:  # Użyj semafora do ograniczenia liczby zapytań
+            async with self.semaphore: 
                 async with session.get(f"http://localhost:8080/search?q={query}&format=json") as response:
                     return await response.json()
         except Exception as e:
@@ -92,15 +132,15 @@ class webcontext():
                 firstIteration = True
                 
                 for result in filtered_results:
-                    
-                    if result["parsed_url"][1].endswith("wikipedia.org") or self.isNotContaminated(query, result["content"]):
-                        doc['WebContext'] = result["content"].replace("...", "")
-                        self.GoodUrls.append({"query": query, "content": result["content"], "url": result["url"]})
+                    notconaminated, question, webContext = self.isNotContaminated(query, result["content"])
+                    if result["parsed_url"][1].endswith("wikipedia.org") or notconaminated:
+                        doc['WebContext'] = webContext
+                        self.GoodUrls.append({"query": question, "content": webContext, "url": result["url"]})
                         return doc
                     
                     else:
                     
-                        self.contaminatedUrls.append({"query": query, "content": result["content"], "url": result["url"]})
+                        self.contaminatedUrls.append({"query": question, "content": webContext, "url": result["url"]})
                         self.contaminatedWebContext += 1
                         if firstIteration:
                             self.contaminatedQueries += 1

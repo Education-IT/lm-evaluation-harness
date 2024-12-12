@@ -1256,7 +1256,7 @@ class ConfigurableTask(Task):
         return doc
     
     def doc_to_web(self,doc):
-        return utils.apply_template("Context: {{WebContext}}",doc)
+        return utils.apply_template("Info: {{WebContext}}",doc)
 
     def doc_to_text(self, doc, doc_to_text=None):
         if self.prompt is not None:
