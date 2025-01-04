@@ -20,7 +20,7 @@ class webcontext():
         self.questionWithoutContext = []
         self.noContext = 0
         self.contaminatedQueries = 0
-        self.semaphore = asyncio.Semaphore(2)
+        self.semaphore = asyncio.Semaphore(1)
         self.key = ""
 
 
