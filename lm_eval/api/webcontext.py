@@ -20,7 +20,7 @@ class webcontext():
         self.questionWithoutContext = []
         self.noContext = 0
         self.contaminatedQueries = 0
-        self.semaphore = asyncio.Semaphore(3)
+        self.semaphore = asyncio.Semaphore(2)
         self.key = ""
 
 
@@ -155,7 +155,7 @@ class webcontext():
                 return doc
             
             except Exception as e:
-                print(f"\nQ: {query} Err: {str(e)}")
+                print(f"\nQ: {query} get_web_context_async Err: {str(e)}")
                 doc['WebContext'] = "None"
                 self.questionWithoutContext.append(query)
                 return doc
