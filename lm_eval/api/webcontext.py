@@ -116,42 +116,52 @@ class webcontext():
         
         
         async with aiohttp.ClientSession() as session:
-            results = await self.fetch(session, query)
-            if not results or "results" not in results:
+            try:
+
+                results = await self.fetch(session, query)
+
+                if not results or result is None or "results" not in results:
+                    self.noContext += 1
+                    doc['WebContext'] = "None"
+                    self.questionWithoutContext.append(query)
+                    return doc
+
+                filtered_results = [
+                    res for res in results["results"] if res["parsed_url"][1] not in excluded_domains
+                ]
+
+                if filtered_results:
+                    
+                    firstIteration = True
+                    
+                    for result in filtered_results:
+                        notconaminated, question, webContext = self.isNotContaminated(query, result["content"])
+                        if result["parsed_url"][1].endswith("wikipedia.org") or notconaminated:
+                            doc['WebContext'] = webContext
+                            self.GoodUrls.append({"query": question, "content": webContext, "url": result["url"]})
+                            return doc
+                        
+                        else:
+                        
+                            self.contaminatedUrls.append({"query": question, "content": webContext, "url": result["url"]})
+                            self.contaminatedWebContext += 1
+                            if firstIteration:
+                                self.contaminatedQueries += 1
+                                firstIteration = False
+                            
                 self.noContext += 1
                 doc['WebContext'] = "None"
                 self.questionWithoutContext.append(query)
                 return doc
-
-            filtered_results = [
-                res for res in results["results"] if res["parsed_url"][1] not in excluded_domains
-            ]
-
-            if filtered_results:
-                
-                firstIteration = True
-                
-                for result in filtered_results:
-                    notconaminated, question, webContext = self.isNotContaminated(query, result["content"])
-                    if result["parsed_url"][1].endswith("wikipedia.org") or notconaminated:
-                        doc['WebContext'] = webContext
-                        self.GoodUrls.append({"query": question, "content": webContext, "url": result["url"]})
-                        return doc
-                    
-                    else:
-                    
-                        self.contaminatedUrls.append({"query": question, "content": webContext, "url": result["url"]})
-                        self.contaminatedWebContext += 1
-                        if firstIteration:
-                            self.contaminatedQueries += 1
-                            firstIteration = False
-                        
-            self.noContext += 1
-            doc['WebContext'] = "None"
-            self.questionWithoutContext.append(query)
-            return doc
+            
+            except Exception as e:
+                print(f"\nQ: {query} Err: {str(e)}")
+                doc['WebContext'] = "None"
+                self.questionWithoutContext.append(query)
+                return doc
 
     async def process_all(self,task):
+
         tasks = [self.get_web_context_async(doc, task) for doc in task.dataset["test"]]
         
         results = []
@@ -162,27 +172,31 @@ class webcontext():
         return datasets.Dataset.from_dict({key: [d[key] for d in results] for key in results[0]})
     
     def GetMatchingQuestionKey(self,doc,task):
+        try:
+            keys_to_check = [
+                "query",
+                "question",
+                "input",
+                None
+            ]
 
-        keys_to_check = [
-            "query",
-            "question",
-            "input",
-            None
-        ]
-
-        if task.question_key is not None:
-            keys_to_check.insert(task.question_key)
-        
-        for key in keys_to_check:
-            if key is None:
-                query = re.search(r'{{\s*(\w+)\s*[^}]*}}', task.config.doc_to_text)
-                query = query.group(1) if query else None
-                if query:
-                    self.key = query
+            if task.question_key is not None:
+                keys_to_check.insert(task.question_key)
+            
+            for key in keys_to_check:
+                if key is None:
+                    query = re.search(r'{{\s*(\w+)\s*[^}]*}}', task.config.doc_to_text)
+                    query = query.group(1) if query else None
+                    if query:
+                        self.key = query
+                        return
+                    else:
+                        self.key = None
+                        return
+                elif key in doc:
+                    self.key = key
                     return
-                else:
-                    self.key = None
-                    return
-            elif key in doc:
-                self.key = key
-                return
+        except Exception as e:
+            print(f"Error: {str(e)}")
+            self.key = None
+            return
