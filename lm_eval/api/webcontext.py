@@ -120,7 +120,7 @@ class webcontext():
 
                 results = await self.fetch(session, query)
 
-                if not results or result is None or "results" not in results:
+                if not results or results is None or "results" not in results:
                     self.noContext += 1
                     doc['WebContext'] = "None"
                     self.questionWithoutContext.append(query)
@@ -197,6 +197,6 @@ class webcontext():
                     self.key = key
                     return
         except Exception as e:
-            print(f"Error: {str(e)}")
+            print(f"GetMatchingQuestionKey Error: {str(e)}")
             self.key = None
             return
