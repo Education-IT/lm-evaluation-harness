@@ -948,10 +948,15 @@ class ConfigurableTask(Task):
             )
         eval_logger.info("Std. dataset download completed.")
 
+    def process_text_path(self, text):
+        if "___" in text:
+            left, right = text.split("___", 1)
+            return f"{left}___{right.lower()}"
+        return text
 
     def download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
         if self.web_access:
-            mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.DATASET_PATH.replace("/","___") +"/")
+            mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.process_text_path(self.DATASET_PATH.replace("/","___") +"/"))
             extDatasetName =  f"web_access_{self.DATASET_NAME}_{self.file_sufix}"
             dataset_path = os.path.join(mainPath,extDatasetName)
             
@@ -974,6 +979,10 @@ class ConfigurableTask(Task):
                 loop.close()
                 eval_logger.info("Web context download completed.")
 
+                eval_logger.info("Starting dataset save with web context.")
+                self.dataset.save_to_disk(dataset_path)
+                eval_logger.info("Dataset save completed.")  
+
                 if self.web_data_action == "save":
                     self.saveJsonXAI(web,mainPath,dataset_path)
                 
@@ -983,7 +992,7 @@ class ConfigurableTask(Task):
             self.standard_download(dataset_kwargs)
 
 
-    def saveJsonXAI(self,web,mainPath,dataset_path):
+    def saveJsonXAI(self,web,mainPath):
         urls = []
         for item in web.contaminatedUrls:
             url = item["url"]
@@ -1010,9 +1019,7 @@ class ConfigurableTask(Task):
         with open(mainPath + f"{self.DATASET_NAME}_web_" + self.file_sufix + ".json", "w", encoding="utf-8") as f:
             json.dump(data_to_save, f, ensure_ascii=False, indent=4)
 
-        eval_logger.info("Starting dataset save with web context.")
-        self.dataset.save_to_disk(dataset_path)
-        eval_logger.info("Dataset save completed.")     
+           
 
 
 
