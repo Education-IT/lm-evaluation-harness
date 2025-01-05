@@ -197,6 +197,6 @@ class webcontext():
                     self.key = key
                     return
         except Exception as e:
-            print(f"GetMatchingQuestionKey Error: {str(e)}")
+            print(f"GetMatchingQuestionKey Error: {str(e)} {task.question_key}")
             self.key = None
             return

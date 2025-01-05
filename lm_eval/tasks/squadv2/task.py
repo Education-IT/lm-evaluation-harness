@@ -91,6 +91,12 @@ class SQuAD2(ConfigurableTask):
             + "Answer:"
         )
 
+    def doc_to_web(self,doc):
+        try:
+            return "Info: " + doc["WebContext"]
+        except Exception as e:
+            return ""
+
     def should_decontaminate(self):
         return True
 
