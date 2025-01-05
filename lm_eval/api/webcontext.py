@@ -181,7 +181,7 @@ class webcontext():
             ]
 
             if task.question_key is not None:
-                keys_to_check.insert(task.question_key)
+                keys_to_check.insert(0,task.question_key)
             
             for key in keys_to_check:
                 if key is None:
@@ -197,6 +197,6 @@ class webcontext():
                     self.key = key
                     return
         except Exception as e:
-            print(f"GetMatchingQuestionKey Error: {str(e)} {task.question_key}")
+            print(f"GetMatchingQuestionKey Error: {str(e)}")
             self.key = None
             return
