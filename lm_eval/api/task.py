@@ -984,7 +984,7 @@ class ConfigurableTask(Task):
                 eval_logger.info("Dataset save completed.")  
 
                 if self.web_data_action == "save":
-                    self.saveJsonXAI(web,mainPath,dataset_path)
+                    self.saveJsonXAI(web,mainPath)
                 
                 web = None
         else:
