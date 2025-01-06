@@ -122,7 +122,7 @@ class SQuAD2(ConfigurableTask):
             language description, as well as the few shot examples, and the question
             part of the document for `doc`.
         """
-
+        
         return [
             Instance(
                 request_type="generate_until",

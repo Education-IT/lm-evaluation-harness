@@ -23,6 +23,7 @@ class Instance:
     task_name: Optional[str] = None
     doc_id: Optional[int] = None
     repeats: Optional[int] = None
+    apply_chat_template: Optional[bool] = False
 
     def __post_init__(self) -> None:
         # unpack metadata field
