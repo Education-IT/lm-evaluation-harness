@@ -20,7 +20,7 @@ class webcontext():
         self.questionWithoutContext = []
         self.noContext = 0
         self.contaminatedQueries = 0
-        self.semaphore = asyncio.Semaphore(1)
+        self.semaphore = asyncio.Semaphore(2)
         self.key = ""
 
 
@@ -162,10 +162,16 @@ class webcontext():
 
     async def process_all(self,task):
 
-        tasks = [self.get_web_context_async(doc, task) for doc in task.dataset["test"]]
+        # tasks = [self.get_web_context_async(doc, task) for doc in task.dataset["test"]]
+        
+        # results = []
+        # for t in tqdm(asyncio.as_completed(tasks), total=len(task.dataset["test"]), desc="Questions", unit="Q"):
+        #     results.append(await t)
+
+        tasks = [self.get_web_context_async(doc, task) for doc in task.dataset["validation"]]
         
         results = []
-        for t in tqdm(asyncio.as_completed(tasks), total=len(task.dataset["test"]), desc="Questions", unit="Q"):
+        for t in tqdm(asyncio.as_completed(tasks), total=len(task.dataset["validation"]), desc="Questions", unit="Q"):
             results.append(await t)
 
         tasks = None

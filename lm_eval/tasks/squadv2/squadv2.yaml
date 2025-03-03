@@ -1,2 +1,4 @@
 task: squadv2
 class: !function task.SQuAD2
+
+#lm_eval --model hf --model_args pretrained=meta-llama/Llama-3.2-1B-Instruct --tasks squadv2 --device cuda:0 --batch_size auto --web_access --web_data_action save

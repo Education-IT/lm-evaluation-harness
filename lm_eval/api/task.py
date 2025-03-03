@@ -959,6 +959,7 @@ class ConfigurableTask(Task):
         return text
 
     def download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
+        print(f"self.web_access = {self.web_access}")
         if self.web_access:
             mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.process_text_path(self.DATASET_PATH.replace("/","___") +"/"))
             extDatasetName =  f"web_access_{self.DATASET_NAME}_{self.file_sufix}"
@@ -979,7 +980,8 @@ class ConfigurableTask(Task):
                 web = www.webcontext()
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                self.dataset["test"] = loop.run_until_complete(web.process_all(self))
+                #self.dataset["test"] = loop.run_until_complete(web.process_all(self))
+                self.dataset["validation"] = loop.run_until_complete(web.process_all(self))
                 loop.close()
                 eval_logger.info("Web context download completed.")
 
