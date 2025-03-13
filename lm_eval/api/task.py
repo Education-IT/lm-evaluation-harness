@@ -6,6 +6,7 @@ import aiohttp
 from collections import Counter
 from urllib.parse import urlparse
 import asyncio
+from datasets import Dataset, DatasetDict
 #--------------
 import abc
 import ast
@@ -755,6 +756,9 @@ class ConfigurableTask(Task):
         if self.config.dataset_path is not None:
             self.DATASET_PATH = self.config.dataset_path
 
+        if self.config.task is not None:
+            self.TASK_NAME = self.config.task
+
         if self.config.dataset_name is not None:
             self.DATASET_NAME = self.config.dataset_name
 
@@ -962,7 +966,7 @@ class ConfigurableTask(Task):
         print(f"self.web_access = {self.web_access}")
         if self.web_access:
             mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.process_text_path(self.DATASET_PATH.replace("/","___") +"/"))
-            extDatasetName =  f"web_access_{self.DATASET_NAME}_{self.file_sufix}"
+            extDatasetName =  f"web_access_{self.TASK_NAME}_{self.file_sufix}"
             dataset_path = os.path.join(mainPath,extDatasetName)
             
             if self.web_data_action == "load":
@@ -980,17 +984,27 @@ class ConfigurableTask(Task):
                 web = www.webcontext()
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                #self.dataset["test"] = loop.run_until_complete(web.process_all(self))
-                self.dataset["validation"] = loop.run_until_complete(web.process_all(self))
+                
+                self.ds = "test"#"test"train
+                if not self.has_test_docs():
+                    self.ds = 'validation' 
+                self.dataset[self.ds] = loop.run_until_complete(web.process_all(self, self.ds))
                 loop.close()
-                eval_logger.info("Web context download completed.")
+                
 
-                eval_logger.info("Starting dataset save with web context.")
+                # # ONLY FOR GRUNDCOCOA
+                # self.dataset = DatasetDict({
+                #     k: Dataset.from_list([x for x in v])
+                #     for k, v in self.dataset.items()
+                # })
+
+                # Teraz możesz zapisać na dysk
+                eval_logger.info("Web context download completed. Starting dataset save with web context.")
                 self.dataset.save_to_disk(dataset_path)
                 eval_logger.info("Dataset save completed.")  
 
                 if self.web_data_action == "save":
-                    self.saveJsonXAI(web,mainPath)
+                    self.saveXAI_Metrics(web, mainPath)
                 
                 web = None
         else:
@@ -998,34 +1012,79 @@ class ConfigurableTask(Task):
             self.standard_download(dataset_kwargs)
 
 
-    def saveJsonXAI(self,web,mainPath):
+    def saveXAI_Metrics(self,web,mainPath):
         urls = []
         for item in web.contaminatedUrls:
             url = item["url"]
             domain = urlparse(url).netloc
             urls.append(domain)
 
-        doc_to_text_counter = Counter(urls)
-        filtered_doc_to_text_counter = {k: v for k, v in doc_to_text_counter.items() if v >= 3}
-        sorted_doc_to_text_counter = dict(Counter(filtered_doc_to_text_counter).most_common())    
+        filteredUrlCounter = {k: v for k, v in Counter(urls).items() if v >= 5}
+        sortedUrlCounter = dict(Counter(filteredUrlCounter).most_common())    
+        exDomainsFilePath = "./lm_eval/api/excluded_domains.json"
+        
+        try:
+            with open(exDomainsFilePath, "r", encoding="utf-8") as file:
+                exDomains = json.load(file)
+        except (FileNotFoundError, json.JSONDecodeError):
+            exDomains = {} 
 
-        data_to_save = {
-            "dataset_name": f"web_access_{self.DATASET_NAME}_{self.file_sufix}",
-            "question_count_in_dataset": len(self.dataset["test"]),
-            "queries_without_web_context_count": web.noContext,
-            "contaminated_queries_count": web.contaminatedQueries,
-            "processed_contaminated_urls_count": web.contaminatedWebContext,
-            "valid_urls_count": len(web.GoodUrls),
-            "most_contaminated_domains": sorted_doc_to_text_counter,
-            "questions_without_webContext": web.questionWithoutContext,
-            "contaminated_urls": web.contaminatedUrls,
-            "valid_urls": web.GoodUrls
+        for domain, count in sortedUrlCounter.items():
+            if count >= 10:
+                self.update_exDomains(domain, count, exDomains)
+
+        for domain, count in web.suspectedDomains.items():
+            if domain in exDomains:
+                self.update_exDomains(domain, count, exDomains)
+
+        sorted_data = dict(sorted(exDomains.items(), key=lambda x: x[1]['count'], reverse=True))
+
+        with open(exDomainsFilePath, "w", encoding="utf-8") as file:
+            json.dump(sorted_data, file, indent=4, ensure_ascii=False)
+
+
+        # DO REFACTORINGU #===============================================
+        lenGoodUrls = len(web.GoodUrls)
+        validSnippetIndexSum = web.validSnippetIndexSum
+        if lenGoodUrls == 0:
+            lenGoodUrls = 1
+        if validSnippetIndexSum == 0:
+            validSnippetIndexSum = 1
+        # DO REFACTORINGU #===============================================
+
+        metrics = {
+            "task": self.TASK_NAME,
+            "dataset": f"web_access_{self.DATASET_NAME}_{self.file_sufix}",
+            "questions": len(self.dataset[self.ds]),
+            "noWebContextCount": web.noContext,
+            "contaminated_queries": web.contaminatedQueries,
+            "contaminated_urls": web.contaminatedWebContext,
+            "valid_urls": len(web.GoodUrls),
+            "avg_contaminated_before_valid": web.validSnippetIndexSum / lenGoodUrls,
+            "contaminated_data_ratio": web.contaminatedWebContext / validSnippetIndexSum,
+            "most_contaminated_urls": sortedUrlCounter,
+            "noWebContext": web.questionWithoutContext,
+            "contaminated_WebContext": web.contaminatedUrls,
+            "valid_WebContext": web.GoodUrls
         }      
 
-        with open(mainPath + f"{self.DATASET_NAME}_web_" + self.file_sufix + ".json", "w", encoding="utf-8") as f:
-            json.dump(data_to_save, f, ensure_ascii=False, indent=4)
+        with open(mainPath + f"XAI_WEB_{self.DATASET_NAME}_" + self.file_sufix + ".json", "w", encoding="utf-8") as f:
+            json.dump(metrics, f, ensure_ascii=False, indent=4)
+    
 
-           
+
+    def update_exDomains(self, domain, count, exDomains):
+        task = self.TASK_NAME
+
+        if domain not in exDomains:
+            exDomains[domain] = {"count": 0}
+        
+        exDomains[domain]["count"] += count
+
+        if task in exDomains[domain]:
+            exDomains[domain][task] += count
+        else:
+            exDomains[domain][task] = count
 
 
 
