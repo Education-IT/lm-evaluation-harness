@@ -126,20 +126,20 @@ class SQuAD2(ConfigurableTask):
         """
         
         return [
-            Instance(
-                request_type="generate_until",
-                doc=doc,
-                arguments=(ctx, {"until": ["\n"]}),
-                idx=0,
-                **kwargs,
-            ),
+            # Instance(
+            #     request_type="generate_until",
+            #     doc=doc,
+            #     arguments=(ctx, {"until": ["\n"]}),
+            #     idx=0,
+            #     **kwargs,
+            # ),
             Instance(
                 request_type="loglikelihood",
                 doc=doc,
                 arguments=(ctx, " " + "unanswerable"),
                 idx=0,
                 **kwargs,
-            ),
+            )#,
         ]
 
     def process_results(self, doc, results):

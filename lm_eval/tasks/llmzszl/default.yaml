@@ -1,0 +1,17 @@
+task: llmzszl
+dataset_path: amu-cai/llmzszl-dataset
+dataset_name: null
+test_split: test
+# dataset_kwargs:
+#   data_files:
+#     test: "../llmzszl-test.jsonl"
+output_type: multiple_choice
+doc_to_text: "Przykładowe pytanie egzaminacyjne, test jednokrotnego wyboru\n\n{{question.strip()}}\nA. {{answers[0]}}\nB. {{answers[1]}}\nC. {{answers[2]}}\nD. {{answers[3]}}\nPrawidłowa odpowiedź:"
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: correct_answer_index
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.0

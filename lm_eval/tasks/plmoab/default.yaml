@@ -1,0 +1,14 @@
+task: plmoab
+dataset_path: Education-IT/PLMoAB
+dataset_name: null
+test_split: train
+output_type: multiple_choice
+doc_to_text: "{{question.strip()}}\nA. {{answers[0]}}\nB. {{answers[1]}}\nC. {{answers[2]}}\nD. {{answers[3]}}\n {{'Poprawna odpowiedź: ' if lang == 'PL' else 'Correct answer: '}}"
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: correct
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.0

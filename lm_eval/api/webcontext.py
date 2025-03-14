@@ -8,6 +8,9 @@ from lm_eval.api.excluded_domains import excludedDomains
 import re
 import string
 import math
+from dotenv import load_dotenv
+import os
+
 
 class webcontext():
 
@@ -23,7 +26,8 @@ class webcontext():
         self.contaminatedQueries = 0
         self.semaphore = asyncio.Semaphore(1)
         self.key = ""
-
+        load_dotenv()
+        self.api_key = os.getenv("API_KEY")
 
 
 
@@ -156,7 +160,7 @@ class webcontext():
             headers = {
                 "Accept": "application/json",
                 "Accept-Encoding": "gzip",
-                "X-Subscription-Token": "BSAAHRh29elW9yBOykk9Y2xFu2DCXT1"
+                "X-Subscription-Token": self.api_key
             }
             params = {
                 "q": query,
@@ -192,7 +196,7 @@ class webcontext():
                 
                 firstIteration = True
                 processedSnippets = 0
-                for engine in ["google", "brave", "ddg", "bing","braveAPI", None]:
+                for engine in ["google", "brave", "ddg", "braveAPI", None]:
                     if engine is None:
                         self.noContext += 1
                         self.contaminatedWebContext -= processedSnippets
@@ -285,11 +289,16 @@ class webcontext():
     def GetMatchingQuestionKey(self,doc,task):
         try:
             keys_to_check = [
+                'question',
+                "premise",
+                'hypothesis',
+                "sentence1",
                 "sentence",
+                "question",
+                "question1",
                 "criteria",
                 "context",
                 "text",
-                "question",
                 "query",
                 "input",
                 "qtext",

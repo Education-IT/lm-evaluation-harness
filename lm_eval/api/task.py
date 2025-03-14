@@ -981,24 +981,32 @@ class ConfigurableTask(Task):
             else:
                 self.standard_download(dataset_kwargs)
                 eval_logger.info("Starting web context download.")
+                eval_logger.info(self.DATASET_NAME)
+                eval_logger.info(self.TASK_NAME)
                 web = www.webcontext()
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
                 
-                self.ds = "test"#"test"train
+                self.ds = "test"#
                 if not self.has_test_docs():
                     self.ds = 'validation' 
+                
+                # only for mnli (subtask for GLUE)
+                if self.TASK_NAME == 'mnli':
+                    self.ds = 'validation_matched' 
+                # only for PLMoAB
+                if self.TASK_NAME == 'plmoab':
+                    self.ds = 'train'     
+
                 self.dataset[self.ds] = loop.run_until_complete(web.process_all(self, self.ds))
                 loop.close()
                 
-
                 # # ONLY FOR GRUNDCOCOA
                 # self.dataset = DatasetDict({
                 #     k: Dataset.from_list([x for x in v])
                 #     for k, v in self.dataset.items()
                 # })
 
-                # Teraz możesz zapisać na dysk
                 eval_logger.info("Web context download completed. Starting dataset save with web context.")
                 self.dataset.save_to_disk(dataset_path)
                 eval_logger.info("Dataset save completed.")  

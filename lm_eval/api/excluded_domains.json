@@ -1,6 +1,144 @@
 {
+    "huggingface.co": {
+        "count": 31331,
+        "arc_challenge": 154,
+        "arc_easy": 26,
+        "headqa_en": 8,
+        "gsm8k": 1503,
+        "arc_challenge_mt_pl": 15,
+        "mmlu_jurisprudence": 20,
+        "mmlu_moral_disputes": 16,
+        "mmlu_moral_scenarios": 664,
+        "mmlu_prehistory": 19,
+        "mmlu_high_school_world_history": 306,
+        "mmlu_professional_law": 183,
+        "mmlu_philosophy": 15,
+        "mmlu_high_school_us_history": 440,
+        "mmlu_logical_fallacies": 75,
+        "mmlu_formal_logic": 154,
+        "mmlu_high_school_european_history": 310,
+        "mmlu_international_law": 2,
+        "mmlu_world_religions": 13,
+        "mmlu_high_school_geography": 20,
+        "mmlu_public_relations": 42,
+        "mmlu_high_school_psychology": 100,
+        "mmlu_professional_psychology": 81,
+        "mmlu_high_school_microeconomics": 8,
+        "mmlu_high_school_government_and_politics": 4,
+        "mmlu_high_school_macroeconomics": 10,
+        "mmlu_security_studies": 14,
+        "mmlu_human_sexuality": 27,
+        "mmlu_sociology": 8,
+        "mmlu_econometrics": 81,
+        "mmlu_human_aging": 22,
+        "mmlu_miscellaneous": 28,
+        "mmlu_marketing": 67,
+        "mmlu_business_ethics": 98,
+        "mmlu_professional_accounting": 71,
+        "mmlu_medical_genetics": 16,
+        "mmlu_global_facts": 4,
+        "mmlu_college_medicine": 45,
+        "mmlu_management": 10,
+        "mmlu_nutrition": 2,
+        "mmlu_clinical_knowledge": 5,
+        "mmlu_professional_medicine": 55,
+        "mmlu_high_school_statistics": 13,
+        "mmlu_abstract_algebra": 23,
+        "mmlu_college_biology": 12,
+        "mmlu_high_school_mathematics": 134,
+        "mmlu_computer_security": 29,
+        "mmlu_high_school_biology": 2,
+        "mmlu_anatomy": 2,
+        "mmlu_high_school_chemistry": 41,
+        "mmlu_machine_learning": 70,
+        "mmlu_electrical_engineering": 1,
+        "mmlu_elementary_mathematics": 90,
+        "mmlu_college_mathematics": 21,
+        "mmlu_college_physics": 36,
+        "mmlu_college_computer_science": 56,
+        "mmlu_conceptual_physics": 17,
+        "mmlu_high_school_physics": 32,
+        "mmlu_college_chemistry": 75,
+        "mmlu_high_school_computer_science": 49,
+        "mmlu_astronomy": 12,
+        "gpqa_diamond_cot_n_shot": 152,
+        "gpqa_main_cot_n_shot": 212,
+        "gpqa_extended_cot_n_shot": 219,
+        "gpqa_extended_n_shot": 220,
+        "gpqa_main_n_shot": 214,
+        "gpqa_diamond_n_shot": 154,
+        "gpqa_extended_generative_n_shot": 219,
+        "gpqa_diamond_generative_n_shot": 154,
+        "gpqa_main_generative_n_shot": 210,
+        "gpqa_extended_zeroshot": 215,
+        "gpqa_main_zeroshot": 171,
+        "gpqa_diamond_zeroshot": 147,
+        "gpqa_diamond_cot_zeroshot": 149,
+        "gpqa_extended_cot_zeroshot": 213,
+        "gpqa_main_cot_zeroshot": 208,
+        "agieval_sat_math": 86,
+        "agieval_sat_en_without_passage": 55,
+        "agieval_math": 859,
+        "agieval_lsat_rc": 19,
+        "agieval_lsat_lr": 24,
+        "agieval_lsat_ar": 110,
+        "agieval_logiqa_en": 119,
+        "agieval_gaokao_english": 121,
+        "agieval_aqua_rat": 271,
+        "commonsense_qa": 1,
+        "toxigen": 41,
+        "arithmetic_4da": 1,
+        "arithmetic_5ds": 13,
+        "arithmetic_5da": 9,
+        "triviaqa": 1292,
+        "bbh_cot_fewshot_word_sorting": 424,
+        "bbh_cot_fewshot_web_of_lies": 999,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 1541,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 1052,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 1270,
+        "bbh_cot_fewshot_temporal_sequences": 42,
+        "bbh_cot_fewshot_sports_understanding": 1408,
+        "bbh_cot_fewshot_snarks": 29,
+        "bbh_cot_fewshot_salient_translation_error_detection": 500,
+        "groundcocoa": 110,
+        "polemo2_out": 43,
+        "polemo2_in": 121,
+        "bbh_zeroshot_word_sorting": 210,
+        "bbh_zeroshot_web_of_lies": 501,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 778,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 526,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 634,
+        "bbh_zeroshot_temporal_sequences": 21,
+        "bbh_zeroshot_sports_understanding": 705,
+        "bbh_zeroshot_snarks": 39,
+        "bbh_zeroshot_salient_translation_error_detection": 500,
+        "bbh_zeroshot_reasoning_about_colored_objects": 200,
+        "bbh_zeroshot_penguins_in_a_table": 496,
+        "bbh_zeroshot_object_counting": 1,
+        "bbh_zeroshot_navigate": 23,
+        "bbh_zeroshot_movie_recommendation": 111,
+        "bbh_zeroshot_logical_deduction_three_objects": 596,
+        "bbh_zeroshot_logical_deduction_seven_objects": 550,
+        "bbh_zeroshot_logical_deduction_five_objects": 558,
+        "bbh_zeroshot_hyperbaton": 29,
+        "bbh_zeroshot_geometric_shapes": 15,
+        "bbh_zeroshot_formal_fallacies": 556,
+        "bbh_zeroshot_disambiguation_qa": 30,
+        "bbh_zeroshot_date_understanding": 20,
+        "bbh_zeroshot_causal_judgement": 207,
+        "wnli": 78,
+        "sst2": 991,
+        "polish_dyk_multiple_choice": 4,
+        "cola": 204,
+        "qnli": 22,
+        "rte": 141,
+        "mrpc": 259,
+        "polish_polqa_closed_book": 120,
+        "mnli": 3289,
+        "plmoab": 44
+    },
     "www.quora.com": {
-        "count": 16820,
+        "count": 21499,
         "arc_challenge": 423,
         "arc_easy": 711,
         "headqa_en": 50,
@@ -94,120 +232,122 @@
         "arithmetic_2da": 109,
         "nq_open": 156,
         "triviaqa": 1277,
-        "bbh_cot_fewshot_word_sorting": 3,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 6,
-        "bbh_cot_fewshot_temporal_sequences": 34,
-        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_cot_fewshot_word_sorting": 6,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 9,
+        "bbh_cot_fewshot_temporal_sequences": 83,
+        "bbh_cot_fewshot_sports_understanding": 4,
         "bbh_cot_fewshot_snarks": 108,
-        "groundcocoa": 6353
+        "groundcocoa": 6353,
+        "bbh_zeroshot_word_sorting": 3,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_temporal_sequences": 49,
+        "bbh_zeroshot_sports_understanding": 2,
+        "bbh_zeroshot_snarks": 55,
+        "bbh_zeroshot_ruin_names": 4,
+        "bbh_zeroshot_reasoning_about_colored_objects": 4,
+        "bbh_zeroshot_object_counting": 219,
+        "bbh_zeroshot_navigate": 58,
+        "bbh_zeroshot_movie_recommendation": 325,
+        "bbh_zeroshot_hyperbaton": 5,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "bbh_zeroshot_disambiguation_qa": 16,
+        "bbh_zeroshot_date_understanding": 1,
+        "bbh_zeroshot_causal_judgement": 22,
+        "bbh_zeroshot_boolean_expressions": 32,
+        "wnli": 29,
+        "sst2": 193,
+        "cola": 453,
+        "qnli": 415,
+        "rte": 18,
+        "mrpc": 20,
+        "mnli": 2696
     },
-    "huggingface.co": {
-        "count": 15497,
-        "arc_challenge": 154,
-        "arc_easy": 26,
-        "headqa_en": 8,
-        "gsm8k": 1503,
-        "arc_challenge_mt_pl": 15,
-        "mmlu_jurisprudence": 20,
-        "mmlu_moral_disputes": 16,
-        "mmlu_moral_scenarios": 664,
-        "mmlu_prehistory": 19,
-        "mmlu_high_school_world_history": 306,
-        "mmlu_professional_law": 183,
-        "mmlu_philosophy": 15,
-        "mmlu_high_school_us_history": 440,
-        "mmlu_logical_fallacies": 75,
-        "mmlu_formal_logic": 154,
-        "mmlu_high_school_european_history": 310,
-        "mmlu_international_law": 2,
-        "mmlu_world_religions": 13,
-        "mmlu_high_school_geography": 20,
-        "mmlu_public_relations": 42,
-        "mmlu_high_school_psychology": 100,
-        "mmlu_professional_psychology": 81,
-        "mmlu_high_school_microeconomics": 8,
-        "mmlu_high_school_government_and_politics": 4,
-        "mmlu_high_school_macroeconomics": 10,
-        "mmlu_security_studies": 14,
-        "mmlu_human_sexuality": 27,
-        "mmlu_sociology": 8,
-        "mmlu_econometrics": 81,
-        "mmlu_human_aging": 22,
-        "mmlu_miscellaneous": 28,
-        "mmlu_marketing": 67,
-        "mmlu_business_ethics": 98,
-        "mmlu_professional_accounting": 71,
-        "mmlu_medical_genetics": 16,
-        "mmlu_global_facts": 4,
-        "mmlu_college_medicine": 45,
-        "mmlu_management": 10,
-        "mmlu_nutrition": 2,
-        "mmlu_clinical_knowledge": 5,
-        "mmlu_professional_medicine": 55,
-        "mmlu_high_school_statistics": 13,
-        "mmlu_abstract_algebra": 23,
-        "mmlu_college_biology": 12,
-        "mmlu_high_school_mathematics": 134,
-        "mmlu_computer_security": 29,
-        "mmlu_high_school_biology": 2,
-        "mmlu_anatomy": 2,
-        "mmlu_high_school_chemistry": 41,
-        "mmlu_machine_learning": 70,
-        "mmlu_electrical_engineering": 1,
-        "mmlu_elementary_mathematics": 90,
-        "mmlu_college_mathematics": 21,
-        "mmlu_college_physics": 36,
-        "mmlu_college_computer_science": 56,
-        "mmlu_conceptual_physics": 17,
-        "mmlu_high_school_physics": 32,
-        "mmlu_college_chemistry": 75,
-        "mmlu_high_school_computer_science": 49,
-        "mmlu_astronomy": 12,
-        "gpqa_diamond_cot_n_shot": 152,
-        "gpqa_main_cot_n_shot": 212,
-        "gpqa_extended_cot_n_shot": 219,
-        "gpqa_extended_n_shot": 220,
-        "gpqa_main_n_shot": 214,
-        "gpqa_diamond_n_shot": 154,
-        "gpqa_extended_generative_n_shot": 219,
-        "gpqa_diamond_generative_n_shot": 154,
-        "gpqa_main_generative_n_shot": 210,
-        "gpqa_extended_zeroshot": 215,
-        "gpqa_main_zeroshot": 171,
-        "gpqa_diamond_zeroshot": 147,
-        "gpqa_diamond_cot_zeroshot": 149,
-        "gpqa_extended_cot_zeroshot": 213,
-        "gpqa_main_cot_zeroshot": 208,
-        "agieval_sat_math": 86,
-        "agieval_sat_en_without_passage": 55,
-        "agieval_math": 859,
-        "agieval_lsat_rc": 19,
-        "agieval_lsat_lr": 24,
-        "agieval_lsat_ar": 110,
-        "agieval_logiqa_en": 119,
-        "agieval_gaokao_english": 121,
-        "agieval_aqua_rat": 271,
-        "commonsense_qa": 1,
-        "toxigen": 41,
-        "arithmetic_4da": 1,
-        "arithmetic_5ds": 13,
-        "arithmetic_5da": 9,
-        "triviaqa": 1292,
-        "bbh_cot_fewshot_word_sorting": 211,
-        "bbh_cot_fewshot_web_of_lies": 501,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 767,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 524,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 634,
-        "bbh_cot_fewshot_temporal_sequences": 20,
-        "bbh_cot_fewshot_sports_understanding": 703,
-        "bbh_cot_fewshot_snarks": 29,
-        "bbh_cot_fewshot_salient_translation_error_detection": 500,
-        "groundcocoa": 110,
-        "polemo2_out": 43,
-        "polemo2_in": 121
+    "www.reddit.com": {
+        "count": 12077,
+        "mmlu_professional_law": 28,
+        "mmlu_professional_accounting": 22,
+        "mmlu_nutrition": 12,
+        "gpqa_diamond_cot_n_shot": 1,
+        "gpqa_main_cot_n_shot": 3,
+        "gpqa_extended_cot_n_shot": 6,
+        "gpqa_extended_n_shot": 6,
+        "gpqa_main_n_shot": 3,
+        "gpqa_diamond_n_shot": 1,
+        "gpqa_extended_generative_n_shot": 6,
+        "gpqa_diamond_generative_n_shot": 1,
+        "gpqa_main_generative_n_shot": 3,
+        "gpqa_extended_zeroshot": 7,
+        "gpqa_main_zeroshot": 2,
+        "gpqa_diamond_zeroshot": 1,
+        "gpqa_diamond_cot_zeroshot": 1,
+        "gpqa_extended_cot_zeroshot": 6,
+        "gpqa_main_cot_zeroshot": 4,
+        "sciq": 12,
+        "agieval_sat_math": 3,
+        "agieval_sat_en_without_passage": 6,
+        "agieval_math": 15,
+        "agieval_lsat_lr": 2,
+        "agieval_lsat_ar": 17,
+        "agieval_logiqa_en": 21,
+        "agieval_gaokao_english": 37,
+        "agieval_aqua_rat": 4,
+        "commonsense_qa": 518,
+        "toxigen": 532,
+        "arithmetic_3da": 92,
+        "arithmetic_3ds": 42,
+        "arithmetic_4da": 3,
+        "arithmetic_2ds": 8,
+        "arithmetic_5ds": 4,
+        "arithmetic_5da": 8,
+        "arithmetic_1dc": 76,
+        "arithmetic_4ds": 15,
+        "arithmetic_2dm": 36,
+        "arithmetic_2da": 15,
+        "nq_open": 160,
+        "triviaqa": 463,
+        "bbh_cot_fewshot_word_sorting": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 4,
+        "bbh_cot_fewshot_temporal_sequences": 5,
+        "bbh_cot_fewshot_snarks": 150,
+        "groundcocoa": 4280,
+        "polemo2_out": 2,
+        "polemo2_in": 3,
+        "bbh_cot_fewshot_sports_understanding": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_temporal_sequences": 2,
+        "bbh_zeroshot_sports_understanding": 1,
+        "bbh_zeroshot_snarks": 63,
+        "bbh_zeroshot_ruin_names": 24,
+        "bbh_zeroshot_reasoning_about_colored_objects": 9,
+        "bbh_zeroshot_object_counting": 100,
+        "bbh_zeroshot_navigate": 13,
+        "bbh_zeroshot_movie_recommendation": 511,
+        "bbh_zeroshot_hyperbaton": 22,
+        "bbh_zeroshot_date_understanding": 1,
+        "bbh_zeroshot_causal_judgement": 4,
+        "bbh_zeroshot_boolean_expressions": 18,
+        "wnli": 32,
+        "sst2": 390,
+        "polish_dyk_multiple_choice": 15,
+        "cola": 542,
+        "qnli": 199,
+        "rte": 7,
+        "mrpc": 13,
+        "llmzszl": 75,
+        "polish_polqa_closed_book": 86,
+        "mnli": 3291,
+        "plmoab": 8
+    },
+    "arkusze.pl": {
+        "count": 11168,
+        "llmzszl": 11168
+    },
+    "www.testy.egzaminzawodowy.info": {
+        "count": 10973,
+        "llmzszl": 10973
     },
     "quizlet.com": {
-        "count": 10069,
+        "count": 10656,
         "arc_challenge": 776,
         "arc_easy": 1178,
         "headqa_en": 120,
@@ -298,11 +438,130 @@
         "arithmetic_5da": 1,
         "nq_open": 101,
         "triviaqa": 72,
-        "bbh_cot_fewshot_word_sorting": 1,
-        "bbh_cot_fewshot_sports_understanding": 1
+        "bbh_cot_fewshot_word_sorting": 2,
+        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_zeroshot_word_sorting": 1,
+        "bbh_zeroshot_sports_understanding": 1,
+        "bbh_zeroshot_snarks": 1,
+        "bbh_zeroshot_ruin_names": 6,
+        "bbh_zeroshot_reasoning_about_colored_objects": 3,
+        "bbh_zeroshot_object_counting": 1,
+        "bbh_zeroshot_logical_deduction_five_objects": 3,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_disambiguation_qa": 24,
+        "wnli": 2,
+        "sst2": 5,
+        "cola": 7,
+        "qnli": 12,
+        "llmzszl": 462,
+        "polish_polqa_closed_book": 26,
+        "mnli": 30
+    },
+    "kwalifikacjewzawodzie.pl": {
+        "count": 9768,
+        "llmzszl": 9768
+    },
+    "github.com": {
+        "count": 8296,
+        "arc_challenge": 30,
+        "arc_easy": 13,
+        "webqs": 2,
+        "gsm8k": 1056,
+        "mmlu_moral_scenarios": 163,
+        "mmlu_high_school_world_history": 67,
+        "mmlu_professional_law": 14,
+        "mmlu_philosophy": 22,
+        "mmlu_high_school_us_history": 48,
+        "mmlu_formal_logic": 14,
+        "mmlu_high_school_european_history": 46,
+        "mmlu_world_religions": 6,
+        "mmlu_professional_psychology": 1,
+        "mmlu_human_sexuality": 1,
+        "mmlu_business_ethics": 2,
+        "mmlu_college_medicine": 1,
+        "mmlu_professional_medicine": 13,
+        "mmlu_high_school_statistics": 4,
+        "mmlu_abstract_algebra": 4,
+        "mmlu_high_school_mathematics": 27,
+        "mmlu_computer_security": 9,
+        "mmlu_anatomy": 4,
+        "mmlu_machine_learning": 2,
+        "mmlu_elementary_mathematics": 5,
+        "mmlu_college_computer_science": 2,
+        "mmlu_high_school_computer_science": 3,
+        "gpqa_diamond_cot_n_shot": 11,
+        "gpqa_main_cot_n_shot": 13,
+        "gpqa_extended_cot_n_shot": 13,
+        "gpqa_extended_n_shot": 13,
+        "gpqa_main_n_shot": 13,
+        "gpqa_diamond_n_shot": 11,
+        "gpqa_extended_generative_n_shot": 13,
+        "gpqa_diamond_generative_n_shot": 11,
+        "gpqa_main_generative_n_shot": 12,
+        "gpqa_extended_zeroshot": 12,
+        "gpqa_main_zeroshot": 12,
+        "gpqa_diamond_zeroshot": 9,
+        "gpqa_diamond_cot_zeroshot": 9,
+        "gpqa_extended_cot_zeroshot": 11,
+        "gpqa_main_cot_zeroshot": 11,
+        "sciq": 2,
+        "agieval_sat_math": 16,
+        "agieval_sat_en_without_passage": 1,
+        "agieval_math": 111,
+        "agieval_lsat_lr": 2,
+        "agieval_logiqa_en": 248,
+        "agieval_aqua_rat": 263,
+        "qasper_bool": 20,
+        "commonsense_qa": 1,
+        "toxigen": 4,
+        "arithmetic_3da": 3,
+        "arithmetic_3ds": 1,
+        "arithmetic_4da": 1,
+        "arithmetic_5ds": 718,
+        "arithmetic_5da": 26,
+        "arithmetic_4ds": 5,
+        "triviaqa": 64,
+        "bbh_cot_fewshot_word_sorting": 149,
+        "bbh_cot_fewshot_web_of_lies": 72,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 962,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 540,
+        "bbh_cot_fewshot_temporal_sequences": 21,
+        "bbh_cot_fewshot_sports_understanding": 20,
+        "groundcocoa": 54,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 1,
+        "bbh_zeroshot_word_sorting": 73,
+        "bbh_zeroshot_web_of_lies": 35,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 483,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 269,
+        "bbh_zeroshot_temporal_sequences": 11,
+        "bbh_zeroshot_sports_understanding": 10,
+        "bbh_zeroshot_snarks": 1,
+        "bbh_zeroshot_reasoning_about_colored_objects": 8,
+        "bbh_zeroshot_penguins_in_a_table": 292,
+        "bbh_zeroshot_object_counting": 14,
+        "bbh_zeroshot_navigate": 2,
+        "bbh_zeroshot_movie_recommendation": 9,
+        "bbh_zeroshot_logical_deduction_three_objects": 42,
+        "bbh_zeroshot_logical_deduction_seven_objects": 5,
+        "bbh_zeroshot_logical_deduction_five_objects": 4,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_geometric_shapes": 1,
+        "bbh_zeroshot_formal_fallacies": 5,
+        "bbh_zeroshot_date_understanding": 13,
+        "bbh_zeroshot_causal_judgement": 183,
+        "wnli": 67,
+        "sst2": 1018,
+        "cola": 46,
+        "qnli": 21,
+        "rte": 142,
+        "mrpc": 233,
+        "llmzszl": 2,
+        "mnli": 263,
+        "plmoab": 4
     },
     "brainly.com": {
-        "count": 7297,
+        "count": 7435,
         "arc_challenge": 561,
         "arc_easy": 1027,
         "headqa_en": 104,
@@ -399,130 +658,228 @@
         "arithmetic_2da": 56,
         "nq_open": 103,
         "triviaqa": 116,
-        "bbh_cot_fewshot_word_sorting": 1,
-        "bbh_cot_fewshot_snarks": 10
+        "bbh_cot_fewshot_word_sorting": 3,
+        "bbh_cot_fewshot_snarks": 10,
+        "bbh_cot_fewshot_sports_understanding": 1,
+        "bbh_zeroshot_word_sorting": 2,
+        "bbh_zeroshot_sports_understanding": 1,
+        "bbh_zeroshot_snarks": 9,
+        "bbh_zeroshot_ruin_names": 6,
+        "bbh_zeroshot_reasoning_about_colored_objects": 3,
+        "bbh_zeroshot_object_counting": 7,
+        "bbh_zeroshot_navigate": 1,
+        "bbh_zeroshot_multistep_arithmetic_two": 2,
+        "bbh_zeroshot_hyperbaton": 14,
+        "bbh_zeroshot_disambiguation_qa": 30,
+        "bbh_zeroshot_date_understanding": 1,
+        "wnli": 2,
+        "cola": 21,
+        "qnli": 14,
+        "mnli": 22
     },
-    "www.reddit.com": {
-        "count": 6644,
-        "mmlu_professional_law": 28,
-        "mmlu_professional_accounting": 22,
-        "mmlu_nutrition": 12,
-        "gpqa_diamond_cot_n_shot": 1,
-        "gpqa_main_cot_n_shot": 3,
-        "gpqa_extended_cot_n_shot": 6,
-        "gpqa_extended_n_shot": 6,
-        "gpqa_main_n_shot": 3,
-        "gpqa_diamond_n_shot": 1,
-        "gpqa_extended_generative_n_shot": 6,
-        "gpqa_diamond_generative_n_shot": 1,
-        "gpqa_main_generative_n_shot": 3,
-        "gpqa_extended_zeroshot": 7,
-        "gpqa_main_zeroshot": 2,
-        "gpqa_diamond_zeroshot": 1,
-        "gpqa_diamond_cot_zeroshot": 1,
-        "gpqa_extended_cot_zeroshot": 6,
-        "gpqa_main_cot_zeroshot": 4,
-        "sciq": 12,
-        "agieval_sat_math": 3,
-        "agieval_sat_en_without_passage": 6,
-        "agieval_math": 15,
+    "arxiv.org": {
+        "count": 6356,
+        "arc_challenge": 8,
+        "arc_easy": 7,
+        "gsm8k": 498,
+        "mmlu_moral_scenarios": 32,
+        "mmlu_prehistory": 1,
+        "mmlu_professional_law": 6,
+        "mmlu_high_school_us_history": 4,
+        "mmlu_formal_logic": 3,
+        "mmlu_professional_psychology": 2,
+        "mmlu_human_aging": 1,
+        "mmlu_professional_accounting": 3,
+        "mmlu_professional_medicine": 1,
+        "mmlu_high_school_mathematics": 9,
+        "mmlu_high_school_chemistry": 2,
+        "mmlu_machine_learning": 1,
+        "mmlu_elementary_mathematics": 1,
+        "mmlu_high_school_physics": 2,
+        "mmlu_college_chemistry": 1,
+        "gpqa_diamond_cot_n_shot": 7,
+        "gpqa_main_cot_n_shot": 23,
+        "gpqa_extended_cot_n_shot": 25,
+        "gpqa_extended_n_shot": 25,
+        "gpqa_main_n_shot": 18,
+        "gpqa_diamond_n_shot": 7,
+        "gpqa_extended_generative_n_shot": 25,
+        "gpqa_diamond_generative_n_shot": 7,
+        "gpqa_main_generative_n_shot": 18,
+        "gpqa_extended_zeroshot": 25,
+        "gpqa_main_zeroshot": 15,
+        "gpqa_diamond_zeroshot": 5,
+        "gpqa_diamond_cot_zeroshot": 5,
+        "gpqa_extended_cot_zeroshot": 25,
+        "gpqa_main_cot_zeroshot": 18,
+        "agieval_math": 29,
         "agieval_lsat_lr": 2,
-        "agieval_lsat_ar": 17,
-        "agieval_logiqa_en": 21,
-        "agieval_gaokao_english": 37,
-        "agieval_aqua_rat": 4,
-        "commonsense_qa": 518,
-        "toxigen": 532,
-        "arithmetic_3da": 92,
-        "arithmetic_3ds": 42,
-        "arithmetic_4da": 3,
-        "arithmetic_2ds": 8,
+        "agieval_logiqa_en": 15,
+        "agieval_aqua_rat": 48,
+        "qasper_bool": 388,
+        "toxigen": 2,
+        "arithmetic_3da": 8,
+        "arithmetic_3ds": 3,
+        "arithmetic_4da": 2,
         "arithmetic_5ds": 4,
-        "arithmetic_5da": 8,
-        "arithmetic_1dc": 76,
-        "arithmetic_4ds": 15,
-        "arithmetic_2dm": 36,
-        "arithmetic_2da": 15,
-        "nq_open": 160,
-        "triviaqa": 463,
-        "bbh_cot_fewshot_word_sorting": 2,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2,
-        "bbh_cot_fewshot_temporal_sequences": 3,
-        "bbh_cot_fewshot_snarks": 150,
-        "groundcocoa": 4280,
-        "polemo2_out": 2,
-        "polemo2_in": 3
+        "arithmetic_5da": 3,
+        "arithmetic_4ds": 96,
+        "triviaqa": 71,
+        "bbh_cot_fewshot_word_sorting": 32,
+        "bbh_cot_fewshot_web_of_lies": 169,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 943,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 369,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 547,
+        "bbh_cot_fewshot_temporal_sequences": 8,
+        "bbh_cot_fewshot_sports_understanding": 186,
+        "bbh_cot_fewshot_snarks": 5,
+        "bbh_zeroshot_word_sorting": 16,
+        "bbh_zeroshot_web_of_lies": 82,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 475,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 186,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 273,
+        "bbh_zeroshot_temporal_sequences": 6,
+        "bbh_zeroshot_sports_understanding": 93,
+        "bbh_zeroshot_snarks": 3,
+        "bbh_zeroshot_ruin_names": 4,
+        "bbh_zeroshot_reasoning_about_colored_objects": 4,
+        "bbh_zeroshot_penguins_in_a_table": 584,
+        "bbh_zeroshot_object_counting": 7,
+        "bbh_zeroshot_movie_recommendation": 3,
+        "bbh_zeroshot_logical_deduction_three_objects": 229,
+        "bbh_zeroshot_logical_deduction_seven_objects": 115,
+        "bbh_zeroshot_logical_deduction_five_objects": 186,
+        "bbh_zeroshot_hyperbaton": 2,
+        "bbh_zeroshot_formal_fallacies": 4,
+        "bbh_zeroshot_disambiguation_qa": 1,
+        "bbh_zeroshot_date_understanding": 13,
+        "bbh_zeroshot_causal_judgement": 28,
+        "wnli": 6,
+        "sst2": 114,
+        "cola": 3,
+        "qnli": 2,
+        "rte": 16,
+        "mrpc": 13,
+        "mnli": 107,
+        "plmoab": 21
     },
-    "github.com": {
-        "count": 4154,
-        "arc_challenge": 30,
-        "arc_easy": 13,
-        "webqs": 2,
-        "gsm8k": 1056,
-        "mmlu_moral_scenarios": 163,
-        "mmlu_high_school_world_history": 67,
-        "mmlu_professional_law": 14,
-        "mmlu_philosophy": 22,
-        "mmlu_high_school_us_history": 48,
-        "mmlu_formal_logic": 14,
-        "mmlu_high_school_european_history": 46,
-        "mmlu_world_religions": 6,
-        "mmlu_professional_psychology": 1,
-        "mmlu_human_sexuality": 1,
-        "mmlu_business_ethics": 2,
+    "www.researchgate.net": {
+        "count": 5161,
+        "gsm8k": 77,
+        "arc_challenge_mt_pl": 9,
+        "mmlu_jurisprudence": 2,
+        "mmlu_moral_disputes": 6,
+        "mmlu_moral_scenarios": 22,
+        "mmlu_prehistory": 17,
+        "mmlu_professional_law": 3,
+        "mmlu_philosophy": 1,
+        "mmlu_formal_logic": 2,
+        "mmlu_high_school_european_history": 1,
+        "mmlu_high_school_geography": 3,
+        "mmlu_public_relations": 4,
+        "mmlu_high_school_psychology": 11,
+        "mmlu_professional_psychology": 35,
+        "mmlu_high_school_microeconomics": 2,
+        "mmlu_security_studies": 10,
+        "mmlu_human_sexuality": 2,
+        "mmlu_sociology": 7,
+        "mmlu_us_foreign_policy": 1,
+        "mmlu_econometrics": 8,
+        "mmlu_human_aging": 3,
+        "mmlu_miscellaneous": 2,
+        "mmlu_marketing": 24,
+        "mmlu_business_ethics": 7,
+        "mmlu_virology": 1,
+        "mmlu_professional_accounting": 1,
+        "mmlu_global_facts": 1,
         "mmlu_college_medicine": 1,
-        "mmlu_professional_medicine": 13,
-        "mmlu_high_school_statistics": 4,
-        "mmlu_abstract_algebra": 4,
-        "mmlu_high_school_mathematics": 27,
-        "mmlu_computer_security": 9,
-        "mmlu_anatomy": 4,
-        "mmlu_machine_learning": 2,
-        "mmlu_elementary_mathematics": 5,
-        "mmlu_college_computer_science": 2,
-        "mmlu_high_school_computer_science": 3,
-        "gpqa_diamond_cot_n_shot": 11,
-        "gpqa_main_cot_n_shot": 13,
-        "gpqa_extended_cot_n_shot": 13,
-        "gpqa_extended_n_shot": 13,
-        "gpqa_main_n_shot": 13,
-        "gpqa_diamond_n_shot": 11,
-        "gpqa_extended_generative_n_shot": 13,
-        "gpqa_diamond_generative_n_shot": 11,
-        "gpqa_main_generative_n_shot": 12,
-        "gpqa_extended_zeroshot": 12,
-        "gpqa_main_zeroshot": 12,
-        "gpqa_diamond_zeroshot": 9,
-        "gpqa_diamond_cot_zeroshot": 9,
-        "gpqa_extended_cot_zeroshot": 11,
-        "gpqa_main_cot_zeroshot": 11,
-        "sciq": 2,
-        "agieval_sat_math": 16,
-        "agieval_sat_en_without_passage": 1,
-        "agieval_math": 111,
-        "agieval_lsat_lr": 2,
-        "agieval_logiqa_en": 248,
-        "agieval_aqua_rat": 263,
-        "qasper_bool": 20,
+        "mmlu_management": 3,
+        "mmlu_nutrition": 2,
+        "mmlu_clinical_knowledge": 2,
+        "mmlu_professional_medicine": 8,
+        "mmlu_high_school_statistics": 8,
+        "mmlu_college_biology": 6,
+        "mmlu_high_school_mathematics": 5,
+        "mmlu_computer_security": 1,
+        "mmlu_high_school_biology": 3,
+        "mmlu_high_school_chemistry": 2,
+        "mmlu_machine_learning": 4,
+        "mmlu_elementary_mathematics": 1,
+        "mmlu_college_computer_science": 1,
+        "mmlu_conceptual_physics": 1,
+        "mmlu_college_chemistry": 3,
+        "mmlu_high_school_computer_science": 2,
+        "gpqa_diamond_cot_n_shot": 15,
+        "gpqa_main_cot_n_shot": 31,
+        "gpqa_extended_cot_n_shot": 40,
+        "gpqa_extended_n_shot": 40,
+        "gpqa_main_n_shot": 29,
+        "gpqa_diamond_n_shot": 15,
+        "gpqa_extended_generative_n_shot": 40,
+        "gpqa_diamond_generative_n_shot": 15,
+        "gpqa_main_generative_n_shot": 30,
+        "gpqa_extended_zeroshot": 41,
+        "gpqa_main_zeroshot": 27,
+        "gpqa_diamond_zeroshot": 15,
+        "gpqa_diamond_cot_zeroshot": 15,
+        "gpqa_extended_cot_zeroshot": 41,
+        "gpqa_main_cot_zeroshot": 31,
+        "sciq": 5,
+        "agieval_sat_math": 2,
+        "agieval_sat_en_without_passage": 4,
+        "agieval_math": 5,
+        "agieval_lsat_lr": 10,
+        "agieval_lsat_ar": 27,
+        "agieval_logiqa_en": 79,
+        "agieval_gaokao_english": 8,
+        "agieval_aqua_rat": 13,
+        "qasper_bool": 98,
         "commonsense_qa": 1,
-        "toxigen": 4,
-        "arithmetic_3da": 3,
-        "arithmetic_3ds": 1,
-        "arithmetic_4da": 1,
-        "arithmetic_5ds": 718,
-        "arithmetic_5da": 26,
-        "arithmetic_4ds": 5,
-        "triviaqa": 64,
-        "bbh_cot_fewshot_word_sorting": 76,
-        "bbh_cot_fewshot_web_of_lies": 37,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 478,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 269,
-        "bbh_cot_fewshot_temporal_sequences": 11,
-        "bbh_cot_fewshot_sports_understanding": 10,
-        "groundcocoa": 54
+        "toxigen": 6,
+        "arithmetic_5ds": 3,
+        "arithmetic_5da": 7,
+        "arithmetic_4ds": 1,
+        "nq_open": 2,
+        "triviaqa": 30,
+        "bbh_cot_fewshot_word_sorting": 12,
+        "bbh_cot_fewshot_web_of_lies": 67,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 650,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 640,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 574,
+        "bbh_cot_fewshot_temporal_sequences": 30,
+        "bbh_cot_fewshot_sports_understanding": 54,
+        "groundcocoa": 1,
+        "polemo2_in": 4,
+        "bbh_zeroshot_word_sorting": 6,
+        "bbh_zeroshot_web_of_lies": 34,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 326,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 321,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 282,
+        "bbh_zeroshot_temporal_sequences": 20,
+        "bbh_zeroshot_sports_understanding": 27,
+        "bbh_zeroshot_reasoning_about_colored_objects": 2,
+        "bbh_zeroshot_penguins_in_a_table": 292,
+        "bbh_zeroshot_object_counting": 3,
+        "bbh_zeroshot_logical_deduction_three_objects": 132,
+        "bbh_zeroshot_logical_deduction_seven_objects": 80,
+        "bbh_zeroshot_logical_deduction_five_objects": 154,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_formal_fallacies": 8,
+        "bbh_zeroshot_disambiguation_qa": 5,
+        "bbh_zeroshot_causal_judgement": 42,
+        "wnli": 1,
+        "sst2": 30,
+        "polish_dyk_multiple_choice": 4,
+        "cola": 13,
+        "qnli": 17,
+        "rte": 8,
+        "mrpc": 17,
+        "llmzszl": 55,
+        "mnli": 201,
+        "plmoab": 7
     },
     "www.chegg.com": {
-        "count": 3998,
+        "count": 4036,
         "arc_challenge": 51,
         "arc_easy": 58,
         "headqa_en": 64,
@@ -611,10 +968,89 @@
         "arithmetic_2dm": 172,
         "arithmetic_2da": 1,
         "nq_open": 16,
-        "triviaqa": 5
+        "triviaqa": 5,
+        "bbh_zeroshot_causal_judgement": 1,
+        "wnli": 5,
+        "sst2": 3,
+        "cola": 16,
+        "qnli": 8,
+        "mnli": 5
+    },
+    "openreview.net": {
+        "count": 3820,
+        "arc_challenge": 16,
+        "arc_easy": 2,
+        "gsm8k": 399,
+        "mmlu_moral_disputes": 1,
+        "mmlu_high_school_mathematics": 6,
+        "mmlu_machine_learning": 1,
+        "mmlu_elementary_mathematics": 2,
+        "mmlu_high_school_physics": 2,
+        "gpqa_diamond_cot_n_shot": 6,
+        "gpqa_main_cot_n_shot": 8,
+        "gpqa_extended_cot_n_shot": 11,
+        "gpqa_extended_n_shot": 11,
+        "gpqa_main_n_shot": 8,
+        "gpqa_diamond_n_shot": 6,
+        "gpqa_extended_generative_n_shot": 11,
+        "gpqa_diamond_generative_n_shot": 6,
+        "gpqa_main_generative_n_shot": 7,
+        "gpqa_extended_zeroshot": 10,
+        "gpqa_main_zeroshot": 7,
+        "gpqa_diamond_zeroshot": 5,
+        "gpqa_diamond_cot_zeroshot": 5,
+        "gpqa_extended_cot_zeroshot": 10,
+        "gpqa_main_cot_zeroshot": 7,
+        "agieval_math": 6,
+        "agieval_lsat_lr": 4,
+        "agieval_lsat_ar": 14,
+        "agieval_logiqa_en": 12,
+        "agieval_aqua_rat": 25,
+        "qasper_bool": 14,
+        "triviaqa": 27,
+        "bbh_cot_fewshot_word_sorting": 12,
+        "bbh_cot_fewshot_web_of_lies": 141,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 692,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 196,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 333,
+        "bbh_cot_fewshot_temporal_sequences": 24,
+        "bbh_cot_fewshot_sports_understanding": 57,
+        "bbh_cot_fewshot_snarks": 4,
+        "bbh_zeroshot_word_sorting": 6,
+        "bbh_zeroshot_web_of_lies": 70,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 345,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 100,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 166,
+        "bbh_zeroshot_temporal_sequences": 16,
+        "bbh_zeroshot_sports_understanding": 28,
+        "bbh_zeroshot_snarks": 2,
+        "bbh_zeroshot_ruin_names": 2,
+        "bbh_zeroshot_reasoning_about_colored_objects": 13,
+        "bbh_zeroshot_penguins_in_a_table": 380,
+        "bbh_zeroshot_object_counting": 3,
+        "bbh_zeroshot_navigate": 2,
+        "bbh_zeroshot_movie_recommendation": 5,
+        "bbh_zeroshot_logical_deduction_three_objects": 149,
+        "bbh_zeroshot_logical_deduction_seven_objects": 108,
+        "bbh_zeroshot_logical_deduction_five_objects": 114,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_formal_fallacies": 60,
+        "bbh_zeroshot_disambiguation_qa": 3,
+        "bbh_zeroshot_date_understanding": 15,
+        "bbh_zeroshot_causal_judgement": 24,
+        "wnli": 4,
+        "sst2": 46,
+        "rte": 4,
+        "mrpc": 4,
+        "mnli": 41,
+        "plmoab": 1
+    },
+    "dane.oke.waw.pl": {
+        "count": 3644,
+        "llmzszl": 3644
     },
     "www.coursehero.com": {
-        "count": 3092,
+        "count": 3539,
         "arc_challenge": 72,
         "arc_easy": 80,
         "headqa_en": 3,
@@ -704,13 +1140,28 @@
         "arithmetic_5ds": 1,
         "arithmetic_5da": 4,
         "nq_open": 4,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 4,
-        "bbh_cot_fewshot_temporal_sequences": 1,
-        "bbh_cot_fewshot_sports_understanding": 2,
-        "bbh_cot_fewshot_snarks": 1
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 6,
+        "bbh_cot_fewshot_temporal_sequences": 2,
+        "bbh_cot_fewshot_sports_understanding": 4,
+        "bbh_cot_fewshot_snarks": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 1,
+        "bbh_zeroshot_temporal_sequences": 1,
+        "bbh_zeroshot_sports_understanding": 2,
+        "bbh_zeroshot_snarks": 2,
+        "bbh_zeroshot_reasoning_about_colored_objects": 4,
+        "bbh_zeroshot_logical_deduction_three_objects": 14,
+        "bbh_zeroshot_logical_deduction_seven_objects": 48,
+        "bbh_zeroshot_logical_deduction_five_objects": 33,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "bbh_zeroshot_disambiguation_qa": 20,
+        "bbh_zeroshot_causal_judgement": 7,
+        "sst2": 2,
+        "cola": 30,
+        "mnli": 276
     },
     "brainly.in": {
-        "count": 3074,
+        "count": 3223,
         "arc_challenge": 58,
         "arc_easy": 125,
         "headqa_en": 18,
@@ -787,10 +1238,19 @@
         "arithmetic_2dm": 267,
         "arithmetic_2da": 330,
         "nq_open": 28,
-        "triviaqa": 53
+        "triviaqa": 53,
+        "bbh_cot_fewshot_word_sorting": 1,
+        "bbh_zeroshot_word_sorting": 1,
+        "bbh_zeroshot_object_counting": 5,
+        "bbh_zeroshot_navigate": 22,
+        "bbh_zeroshot_hyperbaton": 15,
+        "cola": 58,
+        "qnli": 3,
+        "rte": 1,
+        "mnli": 43
     },
     "www.gauthmath.com": {
-        "count": 2965,
+        "count": 3016,
         "arc_challenge": 426,
         "arc_easy": 539,
         "gsm8k": 50,
@@ -863,7 +1323,71 @@
         "arithmetic_2dm": 69,
         "arithmetic_2da": 1,
         "nq_open": 13,
-        "triviaqa": 4
+        "triviaqa": 4,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "bbh_zeroshot_object_counting": 11,
+        "bbh_zeroshot_navigate": 4,
+        "bbh_zeroshot_hyperbaton": 3,
+        "bbh_zeroshot_date_understanding": 1,
+        "wnli": 2,
+        "cola": 5,
+        "qnli": 8,
+        "llmzszl": 3,
+        "mnli": 13
+    },
+    "aclanthology.org": {
+        "count": 3012,
+        "gsm8k": 171,
+        "mmlu_moral_scenarios": 8,
+        "mmlu_formal_logic": 2,
+        "mmlu_professional_accounting": 1,
+        "mmlu_college_medicine": 1,
+        "mmlu_clinical_knowledge": 1,
+        "mmlu_professional_medicine": 2,
+        "mmlu_abstract_algebra": 1,
+        "mmlu_high_school_mathematics": 2,
+        "agieval_math": 2,
+        "agieval_logiqa_en": 2,
+        "agieval_aqua_rat": 14,
+        "qasper_bool": 272,
+        "toxigen": 1,
+        "triviaqa": 24,
+        "bbh_cot_fewshot_word_sorting": 8,
+        "bbh_cot_fewshot_web_of_lies": 129,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 781,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 155,
+        "bbh_cot_fewshot_temporal_sequences": 64,
+        "bbh_cot_fewshot_sports_understanding": 32,
+        "bbh_cot_fewshot_snarks": 2,
+        "bbh_zeroshot_word_sorting": 4,
+        "bbh_zeroshot_web_of_lies": 64,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 395,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 78,
+        "bbh_zeroshot_temporal_sequences": 41,
+        "bbh_zeroshot_sports_understanding": 16,
+        "bbh_zeroshot_snarks": 3,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "bbh_zeroshot_penguins_in_a_table": 204,
+        "bbh_zeroshot_object_counting": 2,
+        "bbh_zeroshot_movie_recommendation": 2,
+        "bbh_zeroshot_logical_deduction_three_objects": 104,
+        "bbh_zeroshot_logical_deduction_seven_objects": 58,
+        "bbh_zeroshot_logical_deduction_five_objects": 65,
+        "bbh_zeroshot_hyperbaton": 3,
+        "bbh_zeroshot_disambiguation_qa": 5,
+        "bbh_zeroshot_date_understanding": 10,
+        "wnli": 9,
+        "sst2": 114,
+        "cola": 1,
+        "qnli": 1,
+        "rte": 13,
+        "mrpc": 16,
+        "mnli": 125,
+        "plmoab": 3
+    },
+    "okemagazyn.blob.core.windows.net": {
+        "count": 2774,
+        "llmzszl": 2774
     },
     "www.crackap.com": {
         "count": 2679,
@@ -881,153 +1405,38 @@
         "mmlu_high_school_chemistry": 231,
         "mmlu_high_school_physics": 268
     },
-    "arxiv.org": {
-        "count": 2631,
-        "arc_challenge": 8,
-        "arc_easy": 7,
-        "gsm8k": 498,
-        "mmlu_moral_scenarios": 32,
-        "mmlu_prehistory": 1,
-        "mmlu_professional_law": 6,
-        "mmlu_high_school_us_history": 4,
-        "mmlu_formal_logic": 3,
-        "mmlu_professional_psychology": 2,
-        "mmlu_human_aging": 1,
-        "mmlu_professional_accounting": 3,
-        "mmlu_professional_medicine": 1,
-        "mmlu_high_school_mathematics": 9,
-        "mmlu_high_school_chemistry": 2,
-        "mmlu_machine_learning": 1,
-        "mmlu_elementary_mathematics": 1,
-        "mmlu_high_school_physics": 2,
-        "mmlu_college_chemistry": 1,
-        "gpqa_diamond_cot_n_shot": 7,
-        "gpqa_main_cot_n_shot": 23,
-        "gpqa_extended_cot_n_shot": 25,
-        "gpqa_extended_n_shot": 25,
-        "gpqa_main_n_shot": 18,
-        "gpqa_diamond_n_shot": 7,
-        "gpqa_extended_generative_n_shot": 25,
-        "gpqa_diamond_generative_n_shot": 7,
-        "gpqa_main_generative_n_shot": 18,
-        "gpqa_extended_zeroshot": 25,
-        "gpqa_main_zeroshot": 15,
-        "gpqa_diamond_zeroshot": 5,
-        "gpqa_diamond_cot_zeroshot": 5,
-        "gpqa_extended_cot_zeroshot": 25,
-        "gpqa_main_cot_zeroshot": 18,
-        "agieval_math": 29,
-        "agieval_lsat_lr": 2,
-        "agieval_logiqa_en": 15,
-        "agieval_aqua_rat": 48,
-        "qasper_bool": 388,
-        "toxigen": 2,
-        "arithmetic_3da": 8,
-        "arithmetic_3ds": 3,
-        "arithmetic_4da": 2,
-        "arithmetic_5ds": 4,
-        "arithmetic_5da": 3,
-        "arithmetic_4ds": 96,
-        "triviaqa": 71,
-        "bbh_cot_fewshot_word_sorting": 16,
-        "bbh_cot_fewshot_web_of_lies": 87,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 469,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 184,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 271,
-        "bbh_cot_fewshot_temporal_sequences": 4,
-        "bbh_cot_fewshot_sports_understanding": 94,
-        "bbh_cot_fewshot_snarks": 5
-    },
-    "www.researchgate.net": {
-        "count": 2055,
-        "gsm8k": 77,
-        "arc_challenge_mt_pl": 9,
-        "mmlu_jurisprudence": 2,
-        "mmlu_moral_disputes": 6,
-        "mmlu_moral_scenarios": 22,
-        "mmlu_prehistory": 17,
-        "mmlu_professional_law": 3,
-        "mmlu_philosophy": 1,
-        "mmlu_formal_logic": 2,
-        "mmlu_high_school_european_history": 1,
-        "mmlu_high_school_geography": 3,
-        "mmlu_public_relations": 4,
-        "mmlu_high_school_psychology": 11,
-        "mmlu_professional_psychology": 35,
-        "mmlu_high_school_microeconomics": 2,
-        "mmlu_security_studies": 10,
-        "mmlu_human_sexuality": 2,
-        "mmlu_sociology": 7,
-        "mmlu_us_foreign_policy": 1,
-        "mmlu_econometrics": 8,
-        "mmlu_human_aging": 3,
-        "mmlu_miscellaneous": 2,
-        "mmlu_marketing": 24,
-        "mmlu_business_ethics": 7,
-        "mmlu_virology": 1,
-        "mmlu_professional_accounting": 1,
-        "mmlu_global_facts": 1,
-        "mmlu_college_medicine": 1,
-        "mmlu_management": 3,
-        "mmlu_nutrition": 2,
-        "mmlu_clinical_knowledge": 2,
-        "mmlu_professional_medicine": 8,
-        "mmlu_high_school_statistics": 8,
-        "mmlu_college_biology": 6,
-        "mmlu_high_school_mathematics": 5,
-        "mmlu_computer_security": 1,
-        "mmlu_high_school_biology": 3,
-        "mmlu_high_school_chemistry": 2,
-        "mmlu_machine_learning": 4,
-        "mmlu_elementary_mathematics": 1,
-        "mmlu_college_computer_science": 1,
-        "mmlu_conceptual_physics": 1,
-        "mmlu_college_chemistry": 3,
-        "mmlu_high_school_computer_science": 2,
-        "gpqa_diamond_cot_n_shot": 15,
-        "gpqa_main_cot_n_shot": 31,
-        "gpqa_extended_cot_n_shot": 40,
-        "gpqa_extended_n_shot": 40,
-        "gpqa_main_n_shot": 29,
-        "gpqa_diamond_n_shot": 15,
-        "gpqa_extended_generative_n_shot": 40,
-        "gpqa_diamond_generative_n_shot": 15,
-        "gpqa_main_generative_n_shot": 30,
-        "gpqa_extended_zeroshot": 41,
-        "gpqa_main_zeroshot": 27,
-        "gpqa_diamond_zeroshot": 15,
-        "gpqa_diamond_cot_zeroshot": 15,
-        "gpqa_extended_cot_zeroshot": 41,
-        "gpqa_main_cot_zeroshot": 31,
-        "sciq": 5,
-        "agieval_sat_math": 2,
-        "agieval_sat_en_without_passage": 4,
-        "agieval_math": 5,
-        "agieval_lsat_lr": 10,
-        "agieval_lsat_ar": 27,
-        "agieval_logiqa_en": 79,
-        "agieval_gaokao_english": 8,
-        "agieval_aqua_rat": 13,
-        "qasper_bool": 98,
-        "commonsense_qa": 1,
-        "toxigen": 6,
-        "arithmetic_5ds": 3,
-        "arithmetic_5da": 7,
-        "arithmetic_4ds": 1,
-        "nq_open": 2,
-        "triviaqa": 30,
-        "bbh_cot_fewshot_word_sorting": 6,
-        "bbh_cot_fewshot_web_of_lies": 34,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 324,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 319,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 290,
-        "bbh_cot_fewshot_temporal_sequences": 9,
-        "bbh_cot_fewshot_sports_understanding": 27,
-        "groundcocoa": 1,
-        "polemo2_in": 4
+    "proceedings.neurips.cc": {
+        "count": 2355,
+        "gsm8k": 26,
+        "agieval_math": 1,
+        "arithmetic_5ds": 1,
+        "arithmetic_5da": 1,
+        "bbh_cot_fewshot_word_sorting": 4,
+        "bbh_cot_fewshot_web_of_lies": 38,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 520,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 423,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 452,
+        "bbh_cot_fewshot_temporal_sequences": 6,
+        "bbh_cot_fewshot_sports_understanding": 24,
+        "bbh_zeroshot_word_sorting": 2,
+        "bbh_zeroshot_web_of_lies": 19,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 264,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 212,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 224,
+        "bbh_zeroshot_temporal_sequences": 2,
+        "bbh_zeroshot_sports_understanding": 12,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "bbh_zeroshot_logical_deduction_three_objects": 55,
+        "bbh_zeroshot_logical_deduction_seven_objects": 23,
+        "bbh_zeroshot_logical_deduction_five_objects": 35,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "cola": 1,
+        "mnli": 6,
+        "plmoab": 1
     },
     "www.toppr.com": {
-        "count": 1913,
+        "count": 1923,
         "arc_challenge": 58,
         "arc_easy": 110,
         "headqa_en": 76,
@@ -1102,373 +1511,17 @@
         "arithmetic_2dm": 25,
         "arithmetic_2da": 4,
         "nq_open": 33,
-        "triviaqa": 151
+        "triviaqa": 151,
+        "bbh_zeroshot_object_counting": 1,
+        "cola": 8,
+        "qnli": 1
     },
-    "homework.study.com": {
-        "count": 1526,
-        "arc_challenge": 43,
-        "arc_easy": 55,
-        "headqa_en": 20,
-        "webqs": 1,
-        "gsm8k": 9,
-        "mmlu_professional_law": 2,
-        "mmlu_high_school_geography": 3,
-        "mmlu_high_school_psychology": 17,
-        "mmlu_professional_psychology": 7,
-        "mmlu_high_school_microeconomics": 234,
-        "mmlu_high_school_macroeconomics": 281,
-        "mmlu_security_studies": 2,
-        "mmlu_sociology": 3,
-        "mmlu_us_foreign_policy": 1,
-        "mmlu_econometrics": 7,
-        "mmlu_human_aging": 2,
-        "mmlu_miscellaneous": 28,
-        "mmlu_marketing": 4,
-        "mmlu_virology": 3,
-        "mmlu_professional_accounting": 20,
-        "mmlu_medical_genetics": 2,
-        "mmlu_college_medicine": 5,
-        "mmlu_management": 6,
-        "mmlu_nutrition": 11,
-        "mmlu_clinical_knowledge": 15,
-        "mmlu_professional_medicine": 8,
-        "mmlu_high_school_statistics": 104,
-        "mmlu_abstract_algebra": 3,
-        "mmlu_college_biology": 17,
-        "mmlu_high_school_mathematics": 16,
-        "mmlu_high_school_biology": 71,
-        "mmlu_anatomy": 27,
-        "mmlu_high_school_chemistry": 32,
-        "mmlu_electrical_engineering": 3,
-        "mmlu_elementary_mathematics": 14,
-        "mmlu_college_mathematics": 1,
-        "mmlu_college_physics": 33,
-        "mmlu_college_computer_science": 1,
-        "mmlu_conceptual_physics": 190,
-        "mmlu_high_school_physics": 42,
-        "mmlu_college_chemistry": 12,
-        "mmlu_high_school_computer_science": 2,
-        "mmlu_astronomy": 7,
-        "gpqa_diamond_cot_n_shot": 5,
-        "gpqa_main_cot_n_shot": 5,
-        "gpqa_extended_cot_n_shot": 5,
-        "gpqa_extended_n_shot": 5,
-        "gpqa_main_n_shot": 5,
-        "gpqa_diamond_n_shot": 5,
-        "gpqa_extended_generative_n_shot": 5,
-        "gpqa_diamond_generative_n_shot": 5,
-        "gpqa_main_generative_n_shot": 5,
-        "gpqa_extended_zeroshot": 5,
-        "gpqa_main_zeroshot": 4,
-        "gpqa_diamond_zeroshot": 5,
-        "gpqa_diamond_cot_zeroshot": 5,
-        "gpqa_extended_cot_zeroshot": 5,
-        "gpqa_main_cot_zeroshot": 5,
-        "sciq": 24,
-        "agieval_sat_math": 2,
-        "agieval_math": 18,
-        "arithmetic_3da": 2,
-        "arithmetic_3ds": 2,
-        "arithmetic_2ds": 2,
-        "arithmetic_1dc": 15,
-        "arithmetic_2dm": 2,
-        "arithmetic_2da": 7,
-        "nq_open": 5,
-        "triviaqa": 9
-    },
-    "nlp.stanford.edu": {
-        "count": 1520,
-        "gsm8k": 110,
-        "mmlu_jurisprudence": 12,
-        "mmlu_moral_disputes": 6,
-        "mmlu_moral_scenarios": 118,
-        "mmlu_prehistory": 12,
-        "mmlu_high_school_world_history": 121,
-        "mmlu_professional_law": 24,
-        "mmlu_philosophy": 15,
-        "mmlu_high_school_us_history": 158,
-        "mmlu_logical_fallacies": 29,
-        "mmlu_formal_logic": 66,
-        "mmlu_high_school_european_history": 87,
-        "mmlu_international_law": 4,
-        "mmlu_world_religions": 6,
-        "mmlu_high_school_geography": 11,
-        "mmlu_public_relations": 17,
-        "mmlu_high_school_psychology": 9,
-        "mmlu_professional_psychology": 30,
-        "mmlu_high_school_microeconomics": 2,
-        "mmlu_high_school_government_and_politics": 4,
-        "mmlu_high_school_macroeconomics": 3,
-        "mmlu_security_studies": 4,
-        "mmlu_human_sexuality": 24,
-        "mmlu_sociology": 3,
-        "mmlu_us_foreign_policy": 1,
-        "mmlu_econometrics": 72,
-        "mmlu_human_aging": 14,
-        "mmlu_miscellaneous": 13,
-        "mmlu_marketing": 20,
-        "mmlu_business_ethics": 43,
-        "mmlu_virology": 1,
-        "mmlu_professional_accounting": 8,
-        "mmlu_medical_genetics": 12,
-        "mmlu_global_facts": 3,
-        "mmlu_college_medicine": 24,
-        "mmlu_nutrition": 4,
-        "mmlu_clinical_knowledge": 1,
-        "mmlu_professional_medicine": 30,
-        "mmlu_high_school_statistics": 6,
-        "mmlu_abstract_algebra": 16,
-        "mmlu_college_biology": 27,
-        "mmlu_high_school_mathematics": 6,
-        "mmlu_computer_security": 26,
-        "mmlu_high_school_biology": 1,
-        "mmlu_high_school_chemistry": 8,
-        "mmlu_machine_learning": 32,
-        "mmlu_electrical_engineering": 1,
-        "mmlu_elementary_mathematics": 32,
-        "mmlu_college_mathematics": 7,
-        "mmlu_college_physics": 8,
-        "mmlu_college_computer_science": 35,
-        "mmlu_conceptual_physics": 12,
-        "mmlu_high_school_physics": 16,
-        "mmlu_college_chemistry": 79,
-        "mmlu_high_school_computer_science": 4,
-        "mmlu_astronomy": 3,
-        "agieval_math": 80
-    },
-    "testbook.com": {
-        "count": 1519,
-        "arc_challenge": 25,
-        "arc_easy": 55,
-        "headqa_en": 33,
-        "gsm8k": 24,
-        "mmlu_jurisprudence": 1,
-        "mmlu_moral_disputes": 1,
-        "mmlu_prehistory": 7,
-        "mmlu_professional_law": 1,
-        "mmlu_philosophy": 1,
-        "mmlu_logical_fallacies": 2,
-        "mmlu_international_law": 10,
-        "mmlu_world_religions": 3,
-        "mmlu_high_school_geography": 24,
-        "mmlu_public_relations": 3,
-        "mmlu_high_school_psychology": 12,
-        "mmlu_professional_psychology": 11,
-        "mmlu_high_school_microeconomics": 32,
-        "mmlu_high_school_government_and_politics": 3,
-        "mmlu_high_school_macroeconomics": 14,
-        "mmlu_security_studies": 12,
-        "mmlu_human_sexuality": 1,
-        "mmlu_sociology": 8,
-        "mmlu_econometrics": 10,
-        "mmlu_human_aging": 1,
-        "mmlu_miscellaneous": 25,
-        "mmlu_marketing": 16,
-        "mmlu_business_ethics": 8,
-        "mmlu_professional_accounting": 4,
-        "mmlu_medical_genetics": 1,
-        "mmlu_global_facts": 2,
-        "mmlu_college_medicine": 8,
-        "mmlu_management": 5,
-        "mmlu_nutrition": 35,
-        "mmlu_clinical_knowledge": 12,
-        "mmlu_high_school_statistics": 12,
-        "mmlu_abstract_algebra": 4,
-        "mmlu_college_biology": 10,
-        "mmlu_high_school_mathematics": 12,
-        "mmlu_computer_security": 7,
-        "mmlu_high_school_biology": 17,
-        "mmlu_anatomy": 1,
-        "mmlu_high_school_chemistry": 26,
-        "mmlu_machine_learning": 5,
-        "mmlu_electrical_engineering": 121,
-        "mmlu_elementary_mathematics": 7,
-        "mmlu_college_mathematics": 9,
-        "mmlu_college_physics": 24,
-        "mmlu_college_computer_science": 41,
-        "mmlu_conceptual_physics": 26,
-        "mmlu_high_school_physics": 15,
-        "mmlu_college_chemistry": 13,
-        "mmlu_high_school_computer_science": 1,
-        "mmlu_astronomy": 7,
-        "gpqa_extended_cot_n_shot": 5,
-        "gpqa_extended_n_shot": 4,
-        "gpqa_extended_generative_n_shot": 4,
-        "gpqa_main_generative_n_shot": 1,
-        "gpqa_extended_zeroshot": 5,
-        "gpqa_extended_cot_zeroshot": 4,
-        "sciq": 15,
-        "agieval_sat_math": 20,
-        "agieval_math": 67,
-        "agieval_aqua_rat": 50,
-        "commonsense_qa": 2,
-        "arithmetic_3ds": 13,
-        "arithmetic_2ds": 5,
-        "arithmetic_5ds": 1,
-        "arithmetic_5da": 13,
-        "arithmetic_1dc": 27,
-        "arithmetic_4ds": 34,
-        "arithmetic_2dm": 369,
-        "nq_open": 46,
-        "triviaqa": 66
-    },
-    "www.brainscape.com": {
-        "count": 1509,
-        "mmlu_professional_law": 1217,
-        "mmlu_professional_psychology": 131,
-        "mmlu_professional_accounting": 156,
-        "arithmetic_3da": 1,
-        "triviaqa": 4
-    },
-    "openreview.net": {
-        "count": 1378,
-        "arc_challenge": 16,
-        "arc_easy": 2,
-        "gsm8k": 399,
-        "mmlu_moral_disputes": 1,
-        "mmlu_high_school_mathematics": 6,
-        "mmlu_machine_learning": 1,
-        "mmlu_elementary_mathematics": 2,
-        "mmlu_high_school_physics": 2,
-        "gpqa_diamond_cot_n_shot": 6,
-        "gpqa_main_cot_n_shot": 8,
-        "gpqa_extended_cot_n_shot": 11,
-        "gpqa_extended_n_shot": 11,
-        "gpqa_main_n_shot": 8,
-        "gpqa_diamond_n_shot": 6,
-        "gpqa_extended_generative_n_shot": 11,
-        "gpqa_diamond_generative_n_shot": 6,
-        "gpqa_main_generative_n_shot": 7,
-        "gpqa_extended_zeroshot": 10,
-        "gpqa_main_zeroshot": 7,
-        "gpqa_diamond_zeroshot": 5,
-        "gpqa_diamond_cot_zeroshot": 5,
-        "gpqa_extended_cot_zeroshot": 10,
-        "gpqa_main_cot_zeroshot": 7,
-        "agieval_math": 6,
-        "agieval_lsat_lr": 4,
-        "agieval_lsat_ar": 14,
-        "agieval_logiqa_en": 12,
-        "agieval_aqua_rat": 25,
-        "qasper_bool": 14,
-        "triviaqa": 27,
-        "bbh_cot_fewshot_word_sorting": 6,
-        "bbh_cot_fewshot_web_of_lies": 71,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 349,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 97,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 166,
-        "bbh_cot_fewshot_temporal_sequences": 8,
-        "bbh_cot_fewshot_sports_understanding": 28,
-        "bbh_cot_fewshot_snarks": 4
-    },
-    "www.numerade.com": {
-        "count": 1120,
-        "arc_challenge": 56,
-        "arc_easy": 67,
-        "mmlu_jurisprudence": 1,
-        "mmlu_prehistory": 1,
-        "mmlu_professional_law": 8,
-        "mmlu_philosophy": 4,
-        "mmlu_logical_fallacies": 1,
-        "mmlu_formal_logic": 6,
-        "mmlu_high_school_psychology": 142,
-        "mmlu_professional_psychology": 4,
-        "mmlu_high_school_microeconomics": 30,
-        "mmlu_high_school_government_and_politics": 8,
-        "mmlu_high_school_macroeconomics": 15,
-        "mmlu_security_studies": 2,
-        "mmlu_sociology": 3,
-        "mmlu_econometrics": 28,
-        "mmlu_miscellaneous": 4,
-        "mmlu_marketing": 2,
-        "mmlu_virology": 3,
-        "mmlu_professional_accounting": 21,
-        "mmlu_medical_genetics": 1,
-        "mmlu_college_medicine": 1,
-        "mmlu_management": 2,
-        "mmlu_nutrition": 2,
-        "mmlu_high_school_statistics": 168,
-        "mmlu_abstract_algebra": 11,
-        "mmlu_college_biology": 3,
-        "mmlu_high_school_mathematics": 21,
-        "mmlu_high_school_biology": 33,
-        "mmlu_anatomy": 1,
-        "mmlu_high_school_chemistry": 55,
-        "mmlu_machine_learning": 1,
-        "mmlu_electrical_engineering": 2,
-        "mmlu_elementary_mathematics": 125,
-        "mmlu_college_mathematics": 5,
-        "mmlu_college_physics": 46,
-        "mmlu_college_computer_science": 12,
-        "mmlu_conceptual_physics": 22,
-        "mmlu_high_school_physics": 25,
-        "mmlu_college_chemistry": 21,
-        "mmlu_high_school_computer_science": 6,
-        "gpqa_diamond_cot_n_shot": 2,
-        "gpqa_main_cot_n_shot": 5,
-        "gpqa_extended_cot_n_shot": 5,
-        "gpqa_extended_n_shot": 5,
-        "gpqa_main_n_shot": 5,
-        "gpqa_diamond_n_shot": 2,
-        "gpqa_extended_generative_n_shot": 5,
-        "gpqa_diamond_generative_n_shot": 2,
-        "gpqa_main_generative_n_shot": 5,
-        "gpqa_extended_zeroshot": 5,
-        "gpqa_main_zeroshot": 5,
-        "gpqa_diamond_zeroshot": 2,
-        "gpqa_diamond_cot_zeroshot": 2,
-        "gpqa_extended_cot_zeroshot": 5,
-        "gpqa_main_cot_zeroshot": 5,
-        "agieval_sat_math": 18,
-        "agieval_sat_en_without_passage": 2,
-        "agieval_math": 22,
-        "arithmetic_3da": 1,
-        "arithmetic_3ds": 3,
-        "arithmetic_2ds": 2,
-        "arithmetic_5ds": 1,
-        "arithmetic_2dm": 3,
-        "nq_open": 3,
-        "triviaqa": 36
-    },
-    "aclanthology.org": {
-        "count": 1079,
-        "gsm8k": 171,
-        "mmlu_moral_scenarios": 8,
-        "mmlu_formal_logic": 2,
-        "mmlu_professional_accounting": 1,
-        "mmlu_college_medicine": 1,
-        "mmlu_clinical_knowledge": 1,
-        "mmlu_professional_medicine": 2,
-        "mmlu_abstract_algebra": 1,
-        "mmlu_high_school_mathematics": 2,
-        "agieval_math": 2,
-        "agieval_logiqa_en": 2,
-        "agieval_aqua_rat": 14,
-        "qasper_bool": 272,
-        "toxigen": 1,
-        "triviaqa": 24,
-        "bbh_cot_fewshot_word_sorting": 4,
-        "bbh_cot_fewshot_web_of_lies": 65,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 387,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 78,
-        "bbh_cot_fewshot_temporal_sequences": 23,
-        "bbh_cot_fewshot_sports_understanding": 16,
-        "bbh_cot_fewshot_snarks": 2
-    },
-    "global.oup.com": {
-        "count": 952,
-        "mmlu_moral_disputes": 84,
-        "mmlu_prehistory": 160,
-        "mmlu_philosophy": 261,
-        "mmlu_virology": 62,
-        "mmlu_management": 77,
-        "mmlu_nutrition": 153,
-        "mmlu_clinical_knowledge": 72,
-        "mmlu_anatomy": 52,
-        "mmlu_college_chemistry": 31
+    "www.oke.waw.pl": {
+        "count": 1753,
+        "llmzszl": 1753
     },
     "www.scribd.com": {
-        "count": 945,
+        "count": 1697,
         "arc_challenge": 19,
         "arc_easy": 27,
         "headqa_en": 6,
@@ -1548,91 +1601,41 @@
         "arithmetic_5da": 1,
         "arithmetic_4ds": 7,
         "triviaqa": 29,
-        "bbh_cot_fewshot_word_sorting": 6,
-        "bbh_cot_fewshot_web_of_lies": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 10,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 5,
-        "bbh_cot_fewshot_temporal_sequences": 11,
-        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_cot_fewshot_word_sorting": 12,
+        "bbh_cot_fewshot_web_of_lies": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 4,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 19,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 9,
+        "bbh_cot_fewshot_temporal_sequences": 31,
+        "bbh_cot_fewshot_sports_understanding": 4,
         "groundcocoa": 1,
-        "polemo2_in": 8
-    },
-    "www.quizwise.com": {
-        "count": 927,
-        "triviaqa": 927
-    },
-    "www.doubtnut.com": {
-        "count": 923,
-        "arc_easy": 6,
-        "headqa_en": 42,
-        "gsm8k": 8,
-        "mmlu_moral_disputes": 1,
-        "mmlu_prehistory": 3,
-        "mmlu_international_law": 7,
-        "mmlu_high_school_psychology": 2,
-        "mmlu_professional_psychology": 1,
-        "mmlu_high_school_microeconomics": 15,
-        "mmlu_high_school_macroeconomics": 4,
-        "mmlu_security_studies": 6,
-        "mmlu_miscellaneous": 2,
-        "mmlu_marketing": 10,
-        "mmlu_business_ethics": 4,
-        "mmlu_professional_accounting": 8,
-        "mmlu_medical_genetics": 2,
-        "mmlu_college_medicine": 13,
-        "mmlu_management": 1,
-        "mmlu_nutrition": 34,
-        "mmlu_clinical_knowledge": 16,
-        "mmlu_high_school_statistics": 7,
-        "mmlu_abstract_algebra": 9,
-        "mmlu_college_biology": 22,
-        "mmlu_high_school_mathematics": 12,
-        "mmlu_high_school_biology": 34,
-        "mmlu_anatomy": 1,
-        "mmlu_high_school_chemistry": 44,
-        "mmlu_machine_learning": 4,
-        "mmlu_electrical_engineering": 12,
-        "mmlu_elementary_mathematics": 10,
-        "mmlu_college_mathematics": 5,
-        "mmlu_college_physics": 28,
-        "mmlu_conceptual_physics": 23,
-        "mmlu_high_school_physics": 50,
-        "mmlu_college_chemistry": 29,
-        "mmlu_astronomy": 5,
-        "gpqa_diamond_cot_n_shot": 4,
-        "gpqa_main_cot_n_shot": 11,
-        "gpqa_extended_cot_n_shot": 12,
-        "gpqa_extended_n_shot": 12,
-        "gpqa_main_n_shot": 10,
-        "gpqa_diamond_n_shot": 4,
-        "gpqa_extended_generative_n_shot": 12,
-        "gpqa_diamond_generative_n_shot": 4,
-        "gpqa_main_generative_n_shot": 11,
-        "gpqa_extended_zeroshot": 13,
-        "gpqa_main_zeroshot": 9,
-        "gpqa_diamond_zeroshot": 4,
-        "gpqa_diamond_cot_zeroshot": 4,
-        "gpqa_extended_cot_zeroshot": 13,
-        "gpqa_main_cot_zeroshot": 11,
-        "sciq": 18,
-        "agieval_sat_math": 80,
-        "agieval_sat_en": 16,
-        "agieval_sat_en_without_passage": 10,
-        "agieval_math": 67,
-        "agieval_aqua_rat": 18,
-        "arithmetic_3ds": 13,
-        "arithmetic_4da": 1,
-        "arithmetic_2ds": 5,
-        "arithmetic_5ds": 2,
-        "arithmetic_1dc": 8,
-        "arithmetic_4ds": 3,
-        "arithmetic_2dm": 21,
-        "nq_open": 22,
-        "triviaqa": 25
+        "polemo2_in": 8,
+        "bbh_zeroshot_word_sorting": 6,
+        "bbh_zeroshot_web_of_lies": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 8,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 5,
+        "bbh_zeroshot_temporal_sequences": 17,
+        "bbh_zeroshot_sports_understanding": 2,
+        "bbh_zeroshot_reasoning_about_colored_objects": 2,
+        "bbh_zeroshot_object_counting": 5,
+        "bbh_zeroshot_logical_deduction_three_objects": 67,
+        "bbh_zeroshot_logical_deduction_seven_objects": 59,
+        "bbh_zeroshot_logical_deduction_five_objects": 28,
+        "bbh_zeroshot_hyperbaton": 2,
+        "bbh_zeroshot_formal_fallacies": 7,
+        "bbh_zeroshot_disambiguation_qa": 13,
+        "bbh_zeroshot_date_understanding": 1,
+        "wnli": 1,
+        "sst2": 6,
+        "cola": 6,
+        "rte": 1,
+        "llmzszl": 344,
+        "mnli": 124,
+        "plmoab": 1
     },
     "www.facebook.com": {
-        "count": 919,
+        "count": 1620,
         "mmlu_professional_medicine": 22,
         "mmlu_anatomy": 11,
         "agieval_aqua_rat": 3,
@@ -1646,16 +1649,357 @@
         "arithmetic_4ds": 2,
         "nq_open": 10,
         "triviaqa": 154,
-        "bbh_cot_fewshot_web_of_lies": 23,
+        "bbh_cot_fewshot_web_of_lies": 46,
         "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 4,
-        "bbh_cot_fewshot_temporal_sequences": 38,
+        "bbh_cot_fewshot_temporal_sequences": 94,
         "bbh_cot_fewshot_sports_understanding": 1,
         "bbh_cot_fewshot_snarks": 5,
         "groundcocoa": 578,
-        "polemo2_in": 2
+        "polemo2_in": 2,
+        "bbh_zeroshot_web_of_lies": 23,
+        "bbh_zeroshot_temporal_sequences": 54,
+        "bbh_zeroshot_object_counting": 4,
+        "bbh_zeroshot_navigate": 1,
+        "bbh_zeroshot_movie_recommendation": 17,
+        "bbh_zeroshot_logical_deduction_five_objects": 7,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "wnli": 5,
+        "sst2": 16,
+        "polish_dyk_multiple_choice": 16,
+        "cola": 36,
+        "qnli": 8,
+        "mrpc": 2,
+        "llmzszl": 27,
+        "polish_polqa_closed_book": 104,
+        "mnli": 301
+    },
+    "nlp.stanford.edu": {
+        "count": 1559,
+        "gsm8k": 110,
+        "mmlu_jurisprudence": 12,
+        "mmlu_moral_disputes": 6,
+        "mmlu_moral_scenarios": 118,
+        "mmlu_prehistory": 12,
+        "mmlu_high_school_world_history": 121,
+        "mmlu_professional_law": 24,
+        "mmlu_philosophy": 15,
+        "mmlu_high_school_us_history": 158,
+        "mmlu_logical_fallacies": 29,
+        "mmlu_formal_logic": 66,
+        "mmlu_high_school_european_history": 87,
+        "mmlu_international_law": 4,
+        "mmlu_world_religions": 6,
+        "mmlu_high_school_geography": 11,
+        "mmlu_public_relations": 17,
+        "mmlu_high_school_psychology": 9,
+        "mmlu_professional_psychology": 30,
+        "mmlu_high_school_microeconomics": 2,
+        "mmlu_high_school_government_and_politics": 4,
+        "mmlu_high_school_macroeconomics": 3,
+        "mmlu_security_studies": 4,
+        "mmlu_human_sexuality": 24,
+        "mmlu_sociology": 3,
+        "mmlu_us_foreign_policy": 1,
+        "mmlu_econometrics": 72,
+        "mmlu_human_aging": 14,
+        "mmlu_miscellaneous": 13,
+        "mmlu_marketing": 20,
+        "mmlu_business_ethics": 43,
+        "mmlu_virology": 1,
+        "mmlu_professional_accounting": 8,
+        "mmlu_medical_genetics": 12,
+        "mmlu_global_facts": 3,
+        "mmlu_college_medicine": 24,
+        "mmlu_nutrition": 4,
+        "mmlu_clinical_knowledge": 1,
+        "mmlu_professional_medicine": 30,
+        "mmlu_high_school_statistics": 6,
+        "mmlu_abstract_algebra": 16,
+        "mmlu_college_biology": 27,
+        "mmlu_high_school_mathematics": 6,
+        "mmlu_computer_security": 26,
+        "mmlu_high_school_biology": 1,
+        "mmlu_high_school_chemistry": 8,
+        "mmlu_machine_learning": 32,
+        "mmlu_electrical_engineering": 1,
+        "mmlu_elementary_mathematics": 32,
+        "mmlu_college_mathematics": 7,
+        "mmlu_college_physics": 8,
+        "mmlu_college_computer_science": 35,
+        "mmlu_conceptual_physics": 12,
+        "mmlu_high_school_physics": 16,
+        "mmlu_college_chemistry": 79,
+        "mmlu_high_school_computer_science": 4,
+        "mmlu_astronomy": 3,
+        "agieval_math": 80,
+        "bbh_zeroshot_word_sorting": 1,
+        "bbh_zeroshot_formal_fallacies": 2,
+        "sst2": 1,
+        "rte": 35
+    },
+    "testbook.com": {
+        "count": 1554,
+        "arc_challenge": 25,
+        "arc_easy": 55,
+        "headqa_en": 33,
+        "gsm8k": 24,
+        "mmlu_jurisprudence": 1,
+        "mmlu_moral_disputes": 1,
+        "mmlu_prehistory": 7,
+        "mmlu_professional_law": 1,
+        "mmlu_philosophy": 1,
+        "mmlu_logical_fallacies": 2,
+        "mmlu_international_law": 10,
+        "mmlu_world_religions": 3,
+        "mmlu_high_school_geography": 24,
+        "mmlu_public_relations": 3,
+        "mmlu_high_school_psychology": 12,
+        "mmlu_professional_psychology": 11,
+        "mmlu_high_school_microeconomics": 32,
+        "mmlu_high_school_government_and_politics": 3,
+        "mmlu_high_school_macroeconomics": 14,
+        "mmlu_security_studies": 12,
+        "mmlu_human_sexuality": 1,
+        "mmlu_sociology": 8,
+        "mmlu_econometrics": 10,
+        "mmlu_human_aging": 1,
+        "mmlu_miscellaneous": 25,
+        "mmlu_marketing": 16,
+        "mmlu_business_ethics": 8,
+        "mmlu_professional_accounting": 4,
+        "mmlu_medical_genetics": 1,
+        "mmlu_global_facts": 2,
+        "mmlu_college_medicine": 8,
+        "mmlu_management": 5,
+        "mmlu_nutrition": 35,
+        "mmlu_clinical_knowledge": 12,
+        "mmlu_high_school_statistics": 12,
+        "mmlu_abstract_algebra": 4,
+        "mmlu_college_biology": 10,
+        "mmlu_high_school_mathematics": 12,
+        "mmlu_computer_security": 7,
+        "mmlu_high_school_biology": 17,
+        "mmlu_anatomy": 1,
+        "mmlu_high_school_chemistry": 26,
+        "mmlu_machine_learning": 5,
+        "mmlu_electrical_engineering": 121,
+        "mmlu_elementary_mathematics": 7,
+        "mmlu_college_mathematics": 9,
+        "mmlu_college_physics": 24,
+        "mmlu_college_computer_science": 41,
+        "mmlu_conceptual_physics": 26,
+        "mmlu_high_school_physics": 15,
+        "mmlu_college_chemistry": 13,
+        "mmlu_high_school_computer_science": 1,
+        "mmlu_astronomy": 7,
+        "gpqa_extended_cot_n_shot": 5,
+        "gpqa_extended_n_shot": 4,
+        "gpqa_extended_generative_n_shot": 4,
+        "gpqa_main_generative_n_shot": 1,
+        "gpqa_extended_zeroshot": 5,
+        "gpqa_extended_cot_zeroshot": 4,
+        "sciq": 15,
+        "agieval_sat_math": 20,
+        "agieval_math": 67,
+        "agieval_aqua_rat": 50,
+        "commonsense_qa": 2,
+        "arithmetic_3ds": 13,
+        "arithmetic_2ds": 5,
+        "arithmetic_5ds": 1,
+        "arithmetic_5da": 13,
+        "arithmetic_1dc": 27,
+        "arithmetic_4ds": 34,
+        "arithmetic_2dm": 369,
+        "nq_open": 46,
+        "triviaqa": 66,
+        "bbh_cot_fewshot_sports_understanding": 3,
+        "bbh_zeroshot_sports_understanding": 3,
+        "bbh_zeroshot_multistep_arithmetic_two": 2,
+        "bbh_zeroshot_date_understanding": 21,
+        "cola": 2,
+        "qnli": 3,
+        "mrpc": 1
+    },
+    "homework.study.com": {
+        "count": 1529,
+        "arc_challenge": 43,
+        "arc_easy": 55,
+        "headqa_en": 20,
+        "webqs": 1,
+        "gsm8k": 9,
+        "mmlu_professional_law": 2,
+        "mmlu_high_school_geography": 3,
+        "mmlu_high_school_psychology": 17,
+        "mmlu_professional_psychology": 7,
+        "mmlu_high_school_microeconomics": 234,
+        "mmlu_high_school_macroeconomics": 281,
+        "mmlu_security_studies": 2,
+        "mmlu_sociology": 3,
+        "mmlu_us_foreign_policy": 1,
+        "mmlu_econometrics": 7,
+        "mmlu_human_aging": 2,
+        "mmlu_miscellaneous": 28,
+        "mmlu_marketing": 4,
+        "mmlu_virology": 3,
+        "mmlu_professional_accounting": 20,
+        "mmlu_medical_genetics": 2,
+        "mmlu_college_medicine": 5,
+        "mmlu_management": 6,
+        "mmlu_nutrition": 11,
+        "mmlu_clinical_knowledge": 15,
+        "mmlu_professional_medicine": 8,
+        "mmlu_high_school_statistics": 104,
+        "mmlu_abstract_algebra": 3,
+        "mmlu_college_biology": 17,
+        "mmlu_high_school_mathematics": 16,
+        "mmlu_high_school_biology": 71,
+        "mmlu_anatomy": 27,
+        "mmlu_high_school_chemistry": 32,
+        "mmlu_electrical_engineering": 3,
+        "mmlu_elementary_mathematics": 14,
+        "mmlu_college_mathematics": 1,
+        "mmlu_college_physics": 33,
+        "mmlu_college_computer_science": 1,
+        "mmlu_conceptual_physics": 190,
+        "mmlu_high_school_physics": 42,
+        "mmlu_college_chemistry": 12,
+        "mmlu_high_school_computer_science": 2,
+        "mmlu_astronomy": 7,
+        "gpqa_diamond_cot_n_shot": 5,
+        "gpqa_main_cot_n_shot": 5,
+        "gpqa_extended_cot_n_shot": 5,
+        "gpqa_extended_n_shot": 5,
+        "gpqa_main_n_shot": 5,
+        "gpqa_diamond_n_shot": 5,
+        "gpqa_extended_generative_n_shot": 5,
+        "gpqa_diamond_generative_n_shot": 5,
+        "gpqa_main_generative_n_shot": 5,
+        "gpqa_extended_zeroshot": 5,
+        "gpqa_main_zeroshot": 4,
+        "gpqa_diamond_zeroshot": 5,
+        "gpqa_diamond_cot_zeroshot": 5,
+        "gpqa_extended_cot_zeroshot": 5,
+        "gpqa_main_cot_zeroshot": 5,
+        "sciq": 24,
+        "agieval_sat_math": 2,
+        "agieval_math": 18,
+        "arithmetic_3da": 2,
+        "arithmetic_3ds": 2,
+        "arithmetic_2ds": 2,
+        "arithmetic_1dc": 15,
+        "arithmetic_2dm": 2,
+        "arithmetic_2da": 7,
+        "nq_open": 5,
+        "triviaqa": 9,
+        "cola": 2,
+        "qnli": 1
+    },
+    "www.brainscape.com": {
+        "count": 1513,
+        "mmlu_professional_law": 1217,
+        "mmlu_professional_psychology": 131,
+        "mmlu_professional_accounting": 156,
+        "arithmetic_3da": 1,
+        "triviaqa": 4,
+        "qnli": 4
+    },
+    "www.zawodowe.edu.pl": {
+        "count": 1135,
+        "llmzszl": 1135
+    },
+    "www.numerade.com": {
+        "count": 1122,
+        "arc_challenge": 56,
+        "arc_easy": 67,
+        "mmlu_jurisprudence": 1,
+        "mmlu_prehistory": 1,
+        "mmlu_professional_law": 8,
+        "mmlu_philosophy": 4,
+        "mmlu_logical_fallacies": 1,
+        "mmlu_formal_logic": 6,
+        "mmlu_high_school_psychology": 142,
+        "mmlu_professional_psychology": 4,
+        "mmlu_high_school_microeconomics": 30,
+        "mmlu_high_school_government_and_politics": 8,
+        "mmlu_high_school_macroeconomics": 15,
+        "mmlu_security_studies": 2,
+        "mmlu_sociology": 3,
+        "mmlu_econometrics": 28,
+        "mmlu_miscellaneous": 4,
+        "mmlu_marketing": 2,
+        "mmlu_virology": 3,
+        "mmlu_professional_accounting": 21,
+        "mmlu_medical_genetics": 1,
+        "mmlu_college_medicine": 1,
+        "mmlu_management": 2,
+        "mmlu_nutrition": 2,
+        "mmlu_high_school_statistics": 168,
+        "mmlu_abstract_algebra": 11,
+        "mmlu_college_biology": 3,
+        "mmlu_high_school_mathematics": 21,
+        "mmlu_high_school_biology": 33,
+        "mmlu_anatomy": 1,
+        "mmlu_high_school_chemistry": 55,
+        "mmlu_machine_learning": 1,
+        "mmlu_electrical_engineering": 2,
+        "mmlu_elementary_mathematics": 125,
+        "mmlu_college_mathematics": 5,
+        "mmlu_college_physics": 46,
+        "mmlu_college_computer_science": 12,
+        "mmlu_conceptual_physics": 22,
+        "mmlu_high_school_physics": 25,
+        "mmlu_college_chemistry": 21,
+        "mmlu_high_school_computer_science": 6,
+        "gpqa_diamond_cot_n_shot": 2,
+        "gpqa_main_cot_n_shot": 5,
+        "gpqa_extended_cot_n_shot": 5,
+        "gpqa_extended_n_shot": 5,
+        "gpqa_main_n_shot": 5,
+        "gpqa_diamond_n_shot": 2,
+        "gpqa_extended_generative_n_shot": 5,
+        "gpqa_diamond_generative_n_shot": 2,
+        "gpqa_main_generative_n_shot": 5,
+        "gpqa_extended_zeroshot": 5,
+        "gpqa_main_zeroshot": 5,
+        "gpqa_diamond_zeroshot": 2,
+        "gpqa_diamond_cot_zeroshot": 2,
+        "gpqa_extended_cot_zeroshot": 5,
+        "gpqa_main_cot_zeroshot": 5,
+        "agieval_sat_math": 18,
+        "agieval_sat_en_without_passage": 2,
+        "agieval_math": 22,
+        "arithmetic_3da": 1,
+        "arithmetic_3ds": 3,
+        "arithmetic_2ds": 2,
+        "arithmetic_5ds": 1,
+        "arithmetic_2dm": 3,
+        "nq_open": 3,
+        "triviaqa": 36,
+        "cola": 2
+    },
+    "www.imdb.com": {
+        "count": 1013,
+        "nq_open": 29,
+        "triviaqa": 440,
+        "bbh_cot_fewshot_web_of_lies": 5,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 17,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 76,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 101,
+        "bbh_zeroshot_web_of_lies": 3,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 10,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 44,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 50,
+        "bbh_zeroshot_ruin_names": 1,
+        "bbh_zeroshot_movie_recommendation": 25,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "sst2": 86,
+        "cola": 3,
+        "qnli": 11,
+        "mrpc": 4,
+        "mnli": 107
     },
     "www.studocu.com": {
-        "count": 815,
+        "count": 955,
         "arc_challenge": 7,
         "arc_easy": 16,
         "headqa_en": 11,
@@ -1733,10 +2077,112 @@
         "arithmetic_2dm": 2,
         "nq_open": 5,
         "triviaqa": 4,
-        "polemo2_out": 2
+        "polemo2_out": 2,
+        "cola": 4,
+        "qnli": 3,
+        "llmzszl": 82,
+        "polish_polqa_closed_book": 43,
+        "mnli": 8
+    },
+    "global.oup.com": {
+        "count": 952,
+        "mmlu_moral_disputes": 84,
+        "mmlu_prehistory": 160,
+        "mmlu_philosophy": 261,
+        "mmlu_virology": 62,
+        "mmlu_management": 77,
+        "mmlu_nutrition": 153,
+        "mmlu_clinical_knowledge": 72,
+        "mmlu_anatomy": 52,
+        "mmlu_college_chemistry": 31
+    },
+    "www.quizwise.com": {
+        "count": 927,
+        "triviaqa": 927
+    },
+    "www.doubtnut.com": {
+        "count": 927,
+        "arc_easy": 6,
+        "headqa_en": 42,
+        "gsm8k": 8,
+        "mmlu_moral_disputes": 1,
+        "mmlu_prehistory": 3,
+        "mmlu_international_law": 7,
+        "mmlu_high_school_psychology": 2,
+        "mmlu_professional_psychology": 1,
+        "mmlu_high_school_microeconomics": 15,
+        "mmlu_high_school_macroeconomics": 4,
+        "mmlu_security_studies": 6,
+        "mmlu_miscellaneous": 2,
+        "mmlu_marketing": 10,
+        "mmlu_business_ethics": 4,
+        "mmlu_professional_accounting": 8,
+        "mmlu_medical_genetics": 2,
+        "mmlu_college_medicine": 13,
+        "mmlu_management": 1,
+        "mmlu_nutrition": 34,
+        "mmlu_clinical_knowledge": 16,
+        "mmlu_high_school_statistics": 7,
+        "mmlu_abstract_algebra": 9,
+        "mmlu_college_biology": 22,
+        "mmlu_high_school_mathematics": 12,
+        "mmlu_high_school_biology": 34,
+        "mmlu_anatomy": 1,
+        "mmlu_high_school_chemistry": 44,
+        "mmlu_machine_learning": 4,
+        "mmlu_electrical_engineering": 12,
+        "mmlu_elementary_mathematics": 10,
+        "mmlu_college_mathematics": 5,
+        "mmlu_college_physics": 28,
+        "mmlu_conceptual_physics": 23,
+        "mmlu_high_school_physics": 50,
+        "mmlu_college_chemistry": 29,
+        "mmlu_astronomy": 5,
+        "gpqa_diamond_cot_n_shot": 4,
+        "gpqa_main_cot_n_shot": 11,
+        "gpqa_extended_cot_n_shot": 12,
+        "gpqa_extended_n_shot": 12,
+        "gpqa_main_n_shot": 10,
+        "gpqa_diamond_n_shot": 4,
+        "gpqa_extended_generative_n_shot": 12,
+        "gpqa_diamond_generative_n_shot": 4,
+        "gpqa_main_generative_n_shot": 11,
+        "gpqa_extended_zeroshot": 13,
+        "gpqa_main_zeroshot": 9,
+        "gpqa_diamond_zeroshot": 4,
+        "gpqa_diamond_cot_zeroshot": 4,
+        "gpqa_extended_cot_zeroshot": 13,
+        "gpqa_main_cot_zeroshot": 11,
+        "sciq": 18,
+        "agieval_sat_math": 80,
+        "agieval_sat_en": 16,
+        "agieval_sat_en_without_passage": 10,
+        "agieval_math": 67,
+        "agieval_aqua_rat": 18,
+        "arithmetic_3ds": 13,
+        "arithmetic_4da": 1,
+        "arithmetic_2ds": 5,
+        "arithmetic_5ds": 2,
+        "arithmetic_1dc": 8,
+        "arithmetic_4ds": 3,
+        "arithmetic_2dm": 21,
+        "nq_open": 22,
+        "triviaqa": 25,
+        "cola": 3,
+        "qnli": 1
+    },
+    "brainly.pl": {
+        "count": 893,
+        "llmzszl": 374,
+        "polish_polqa_closed_book": 488,
+        "mnli": 31
+    },
+    "my.vocabularysize.com": {
+        "count": 859,
+        "mnli": 859
     },
     "askfilo.com": {
-        "count": 779,
+        "count": 792,
         "arc_challenge": 34,
         "arc_easy": 63,
         "headqa_en": 15,
@@ -1801,24 +2247,13 @@
         "arithmetic_4ds": 4,
         "arithmetic_2dm": 181,
         "nq_open": 2,
-        "triviaqa": 1
-    },
-    "proceedings.neurips.cc": {
-        "count": 759,
-        "gsm8k": 26,
-        "agieval_math": 1,
-        "arithmetic_5ds": 1,
-        "arithmetic_5da": 1,
-        "bbh_cot_fewshot_word_sorting": 2,
-        "bbh_cot_fewshot_web_of_lies": 19,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 258,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 211,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 226,
-        "bbh_cot_fewshot_temporal_sequences": 2,
-        "bbh_cot_fewshot_sports_understanding": 12
+        "triviaqa": 1,
+        "cola": 8,
+        "qnli": 4,
+        "mnli": 1
     },
     "brainly.ph": {
-        "count": 726,
+        "count": 737,
         "arc_challenge": 33,
         "arc_easy": 75,
         "headqa_en": 2,
@@ -1861,14 +2296,72 @@
         "arithmetic_2dm": 28,
         "arithmetic_2da": 52,
         "nq_open": 5,
-        "triviaqa": 6
+        "triviaqa": 6,
+        "bbh_cot_fewshot_sports_understanding": 1,
+        "bbh_zeroshot_sports_understanding": 1,
+        "bbh_zeroshot_navigate": 5,
+        "cola": 1,
+        "mnli": 3
+    },
+    "easyllm.site": {
+        "count": 721,
+        "bbh_cot_fewshot_temporal_sequences": 303,
+        "bbh_cot_fewshot_word_sorting": 3,
+        "bbh_cot_fewshot_web_of_lies": 4,
+        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_zeroshot_word_sorting": 2,
+        "bbh_zeroshot_web_of_lies": 4,
+        "bbh_zeroshot_temporal_sequences": 206,
+        "bbh_zeroshot_sports_understanding": 2,
+        "bbh_zeroshot_ruin_names": 12,
+        "bbh_zeroshot_object_counting": 4,
+        "bbh_zeroshot_hyperbaton": 18,
+        "bbh_zeroshot_geometric_shapes": 6,
+        "bbh_zeroshot_disambiguation_qa": 128,
+        "bbh_zeroshot_date_understanding": 21,
+        "bbh_zeroshot_causal_judgement": 6
     },
     "nlp.cs.washington.edu": {
         "count": 689,
         "triviaqa": 689
     },
+    "slate.com": {
+        "count": 669,
+        "mnli": 669
+    },
+    "platinum-bench.csail.mit.edu": {
+        "count": 653,
+        "gsm8k": 101,
+        "mmlu_high_school_mathematics": 95,
+        "agieval_math": 5,
+        "bbh_zeroshot_object_counting": 189,
+        "bbh_zeroshot_navigate": 6,
+        "bbh_zeroshot_logical_deduction_three_objects": 237,
+        "wnli": 18,
+        "qnli": 2
+    },
+    "raw.githubusercontent.com": {
+        "count": 632,
+        "mmlu_professional_law": 19,
+        "agieval_math": 1,
+        "agieval_logiqa_en": 33,
+        "triviaqa": 3,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 23,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 95,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 168,
+        "bbh_cot_fewshot_temporal_sequences": 2,
+        "bbh_zeroshot_word_sorting": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 15,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 48,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 87,
+        "bbh_zeroshot_temporal_sequences": 2,
+        "bbh_zeroshot_movie_recommendation": 1,
+        "sst2": 93,
+        "qnli": 7,
+        "mnli": 34
+    },
     "web2.0calc.com": {
-        "count": 599,
+        "count": 603,
         "mmlu_high_school_mathematics": 110,
         "agieval_sat_math": 2,
         "agieval_math": 423,
@@ -1878,19 +2371,28 @@
         "arithmetic_1dc": 12,
         "arithmetic_4ds": 7,
         "arithmetic_2dm": 14,
-        "arithmetic_2da": 5
+        "arithmetic_2da": 5,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "bbh_zeroshot_multistep_arithmetic_two": 3
     },
-    "www.imdb.com": {
-        "count": 563,
-        "nq_open": 29,
-        "triviaqa": 440,
-        "bbh_cot_fewshot_web_of_lies": 2,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 8,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 32,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 52
+    "www.instagram.com": {
+        "count": 588,
+        "triviaqa": 16,
+        "bbh_cot_fewshot_temporal_sequences": 11,
+        "bbh_cot_fewshot_snarks": 3,
+        "groundcocoa": 21,
+        "bbh_zeroshot_temporal_sequences": 6,
+        "wnli": 2,
+        "sst2": 18,
+        "cola": 39,
+        "qnli": 1,
+        "rte": 4,
+        "llmzszl": 1,
+        "polish_polqa_closed_book": 30,
+        "mnli": 436
     },
     "quizizz.com": {
-        "count": 511,
+        "count": 587,
         "arc_challenge": 169,
         "arc_easy": 229,
         "gsm8k": 2,
@@ -1908,10 +2410,33 @@
         "agieval_sat_math": 4,
         "agieval_sat_en_without_passage": 6,
         "arithmetic_3ds": 1,
-        "triviaqa": 2
+        "triviaqa": 2,
+        "llmzszl": 76
+    },
+    "zawodowe.edu.pl": {
+        "count": 556,
+        "llmzszl": 556
+    },
+    "gist.github.com": {
+        "count": 535,
+        "bbh_zeroshot_logical_deduction_three_objects": 183,
+        "bbh_zeroshot_logical_deduction_seven_objects": 178,
+        "bbh_zeroshot_logical_deduction_five_objects": 163,
+        "sst2": 6,
+        "mrpc": 2,
+        "mnli": 3
+    },
+    "en.wikisource.org": {
+        "count": 514,
+        "mnli": 514
+    },
+    "zpe.gov.pl": {
+        "count": 512,
+        "llmzszl": 122,
+        "polish_polqa_closed_book": 390
     },
     "www.cliffsnotes.com": {
-        "count": 470,
+        "count": 479,
         "arc_challenge": 6,
         "arc_easy": 4,
         "headqa_en": 1,
@@ -1972,15 +2497,39 @@
         "agieval_aqua_rat": 4,
         "arithmetic_3da": 2,
         "nq_open": 6,
-        "triviaqa": 10
+        "triviaqa": 10,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "cola": 1,
+        "mrpc": 1,
+        "mnli": 6
     },
-    "adding.info": {
-        "count": 423,
-        "arithmetic_3da": 42,
-        "arithmetic_2da": 381
+    "math.stackexchange.com": {
+        "count": 432,
+        "mmlu_high_school_mathematics": 10,
+        "mmlu_college_mathematics": 34,
+        "agieval_sat_math": 4,
+        "agieval_math": 265,
+        "agieval_logiqa_en": 2,
+        "agieval_aqua_rat": 1,
+        "commonsense_qa": 1,
+        "arithmetic_3ds": 2,
+        "arithmetic_2ds": 6,
+        "arithmetic_5ds": 1,
+        "arithmetic_5da": 3,
+        "arithmetic_1dc": 28,
+        "arithmetic_4ds": 10,
+        "arithmetic_2dm": 22,
+        "arithmetic_2da": 1,
+        "nq_open": 1,
+        "triviaqa": 8,
+        "bbh_zeroshot_object_counting": 1,
+        "bbh_zeroshot_navigate": 3,
+        "bbh_zeroshot_multistep_arithmetic_two": 3,
+        "cola": 5,
+        "qnli": 21
     },
     "learninglink.oup.com": {
-        "count": 419,
+        "count": 425,
         "mmlu_jurisprudence": 67,
         "mmlu_prehistory": 28,
         "mmlu_philosophy": 26,
@@ -1988,10 +2537,11 @@
         "mmlu_international_law": 35,
         "mmlu_world_religions": 33,
         "mmlu_security_studies": 36,
-        "mmlu_business_ethics": 76
+        "mmlu_business_ethics": 76,
+        "mnli": 6
     },
     "www.vaia.com": {
-        "count": 417,
+        "count": 424,
         "arc_easy": 5,
         "headqa_en": 19,
         "mmlu_public_relations": 1,
@@ -2042,27 +2592,70 @@
         "arithmetic_4ds": 3,
         "arithmetic_2dm": 14,
         "nq_open": 1,
-        "triviaqa": 6
+        "triviaqa": 6,
+        "cola": 1,
+        "qnli": 3,
+        "mnli": 3
     },
-    "math.stackexchange.com": {
-        "count": 399,
-        "mmlu_high_school_mathematics": 10,
-        "mmlu_college_mathematics": 34,
-        "agieval_sat_math": 4,
-        "agieval_math": 265,
-        "agieval_logiqa_en": 2,
-        "agieval_aqua_rat": 1,
-        "commonsense_qa": 1,
-        "arithmetic_3ds": 2,
-        "arithmetic_2ds": 6,
-        "arithmetic_5ds": 1,
-        "arithmetic_5da": 3,
-        "arithmetic_1dc": 28,
-        "arithmetic_4ds": 10,
-        "arithmetic_2dm": 22,
-        "arithmetic_2da": 1,
-        "nq_open": 1,
-        "triviaqa": 8
+    "adding.info": {
+        "count": 423,
+        "arithmetic_3da": 42,
+        "arithmetic_2da": 381
+    },
+    "proceedings.mlr.press": {
+        "count": 409,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 96,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 128,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 48,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 64,
+        "bbh_zeroshot_logical_deduction_three_objects": 53,
+        "bbh_zeroshot_logical_deduction_five_objects": 13,
+        "cola": 4,
+        "mnli": 3
+    },
+    "standardebooks.org": {
+        "count": 386,
+        "mnli": 386
+    },
+    "szaloneliczby.pl": {
+        "count": 383,
+        "llmzszl": 370,
+        "polish_polqa_closed_book": 13
+    },
+    "sip.lex.pl": {
+        "count": 381,
+        "llmzszl": 311,
+        "polish_polqa_closed_book": 70
+    },
+    "web.eecs.umich.edu": {
+        "count": 377,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 248,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 129
+    },
+    "www.pasteurscube.com": {
+        "count": 369,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 111,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 76,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 56,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 38,
+        "bbh_zeroshot_penguins_in_a_table": 88
+    },
+    "www.kaggle.com": {
+        "count": 360,
+        "gsm8k": 42,
+        "mmlu_elementary_mathematics": 1,
+        "sciq": 2,
+        "agieval_math": 19,
+        "agieval_aqua_rat": 2,
+        "toxigen": 1,
+        "triviaqa": 22,
+        "bbh_cot_fewshot_temporal_sequences": 3,
+        "groundcocoa": 2,
+        "bbh_zeroshot_temporal_sequences": 1,
+        "sst2": 63,
+        "cola": 3,
+        "mrpc": 28,
+        "mnli": 171
     },
     "content.randomhouse.com": {
         "count": 353,
@@ -2081,19 +2674,8 @@
         "count": 315,
         "triviaqa": 315
     },
-    "www.doorsteptutor.com": {
-        "count": 309,
-        "mmlu_high_school_world_history": 20,
-        "mmlu_high_school_european_history": 89,
-        "mmlu_high_school_microeconomics": 34,
-        "mmlu_high_school_macroeconomics": 40,
-        "mmlu_high_school_statistics": 97,
-        "mmlu_high_school_biology": 16,
-        "mmlu_high_school_physics": 12,
-        "arithmetic_3ds": 1
-    },
     "www.coursesidekick.com": {
-        "count": 308,
+        "count": 313,
         "arc_challenge": 6,
         "arc_easy": 2,
         "headqa_en": 1,
@@ -2127,14 +2709,40 @@
         "agieval_aqua_rat": 3,
         "arithmetic_4da": 1,
         "nq_open": 1,
-        "triviaqa": 4
+        "triviaqa": 4,
+        "bbh_zeroshot_causal_judgement": 3,
+        "mnli": 2
+    },
+    "www.doorsteptutor.com": {
+        "count": 309,
+        "mmlu_high_school_world_history": 20,
+        "mmlu_high_school_european_history": 89,
+        "mmlu_high_school_microeconomics": 34,
+        "mmlu_high_school_macroeconomics": 40,
+        "mmlu_high_school_statistics": 97,
+        "mmlu_high_school_biology": 16,
+        "mmlu_high_school_physics": 12,
+        "arithmetic_3ds": 1
+    },
+    "www.gao.gov": {
+        "count": 305,
+        "mnli": 305
     },
     "artofproblemsolving.com": {
-        "count": 293,
+        "count": 297,
         "mmlu_high_school_mathematics": 12,
         "agieval_sat_math": 9,
         "agieval_math": 271,
-        "agieval_aqua_rat": 1
+        "agieval_aqua_rat": 1,
+        "mnli": 4
+    },
+    "drchrislevy.github.io": {
+        "count": 292,
+        "bbh_zeroshot_penguins_in_a_table": 292
+    },
+    "www.aimspress.com": {
+        "count": 292,
+        "bbh_zeroshot_penguins_in_a_table": 292
     },
     "7sage.com": {
         "count": 290,
@@ -2144,8 +2752,75 @@
         "agieval_lsat_ar": 241,
         "agieval_logiqa_en": 1
     },
+    "zadania.info": {
+        "count": 284,
+        "llmzszl": 284
+    },
+    "cocalc.com": {
+        "count": 284,
+        "mnli": 284
+    },
+    "www.academia.edu": {
+        "count": 280,
+        "mmlu_econometrics": 12,
+        "gpqa_diamond_cot_n_shot": 3,
+        "gpqa_main_cot_n_shot": 4,
+        "gpqa_extended_cot_n_shot": 4,
+        "gpqa_extended_n_shot": 4,
+        "gpqa_main_n_shot": 4,
+        "gpqa_diamond_n_shot": 3,
+        "gpqa_extended_generative_n_shot": 4,
+        "gpqa_diamond_generative_n_shot": 3,
+        "gpqa_main_generative_n_shot": 4,
+        "gpqa_extended_zeroshot": 4,
+        "gpqa_main_zeroshot": 4,
+        "gpqa_diamond_zeroshot": 3,
+        "gpqa_diamond_cot_zeroshot": 3,
+        "gpqa_extended_cot_zeroshot": 4,
+        "gpqa_main_cot_zeroshot": 4,
+        "agieval_sat_math": 2,
+        "agieval_sat_en_without_passage": 15,
+        "agieval_lsat_rc": 8,
+        "agieval_lsat_lr": 1,
+        "agieval_lsat_ar": 10,
+        "agieval_logiqa_en": 4,
+        "agieval_aqua_rat": 3,
+        "qasper_bool": 6,
+        "triviaqa": 15,
+        "groundcocoa": 1,
+        "polemo2_out": 2,
+        "polemo2_in": 7,
+        "bbh_zeroshot_object_counting": 1,
+        "bbh_zeroshot_logical_deduction_three_objects": 5,
+        "bbh_zeroshot_logical_deduction_seven_objects": 5,
+        "bbh_zeroshot_hyperbaton": 1,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "bbh_zeroshot_disambiguation_qa": 5,
+        "bbh_zeroshot_date_understanding": 2,
+        "bbh_zeroshot_causal_judgement": 27,
+        "sst2": 7,
+        "cola": 4,
+        "rte": 3,
+        "mrpc": 2,
+        "llmzszl": 29,
+        "polish_polqa_closed_book": 12,
+        "mnli": 35
+    },
+    "typeset.io": {
+        "count": 271,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 146,
+        "bbh_cot_fewshot_web_of_lies": 1,
+        "bbh_cot_fewshot_sports_understanding": 8,
+        "bbh_zeroshot_web_of_lies": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 76,
+        "bbh_zeroshot_sports_understanding": 8,
+        "bbh_zeroshot_logical_deduction_three_objects": 15,
+        "bbh_zeroshot_logical_deduction_seven_objects": 8,
+        "bbh_zeroshot_logical_deduction_five_objects": 6,
+        "mrpc": 2
+    },
     "opentextbc.ca": {
-        "count": 256,
+        "count": 266,
         "sciq": 13,
         "agieval_sat_math": 1,
         "agieval_sat_en_without_passage": 1,
@@ -2155,80 +2830,28 @@
         "arithmetic_2ds": 2,
         "nq_open": 2,
         "triviaqa": 2,
-        "bbh_cot_fewshot_snarks": 1
+        "bbh_cot_fewshot_snarks": 1,
+        "bbh_zeroshot_snarks": 1,
+        "bbh_zeroshot_navigate": 1,
+        "sst2": 1,
+        "qnli": 1,
+        "mnli": 6
+    },
+    "americanliterature.com": {
+        "count": 255,
+        "mnli": 255
     },
     "www.ceneo.pl": {
-        "count": 243,
-        "polemo2_out": 243
+        "count": 246,
+        "polemo2_out": 243,
+        "mnli": 3
     },
-    "gmatclub.com": {
-        "count": 237,
-        "agieval_lsat_rc": 147,
-        "agieval_lsat_lr": 59,
-        "agieval_aqua_rat": 13,
-        "arithmetic_3da": 1,
-        "arithmetic_3ds": 4,
-        "arithmetic_1dc": 1,
-        "arithmetic_2dm": 5,
-        "arithmetic_2da": 1,
-        "groundcocoa": 6
-    },
-    "www.queryhome.com": {
-        "count": 230,
-        "triviaqa": 230
-    },
-    "www.vedantu.com": {
-        "count": 202,
-        "arc_easy": 5,
-        "headqa_en": 14,
-        "mmlu_prehistory": 1,
-        "mmlu_international_law": 1,
-        "mmlu_miscellaneous": 7,
-        "mmlu_professional_accounting": 1,
-        "mmlu_college_medicine": 8,
-        "mmlu_nutrition": 2,
-        "mmlu_clinical_knowledge": 7,
-        "mmlu_college_biology": 3,
-        "mmlu_high_school_mathematics": 1,
-        "mmlu_high_school_biology": 10,
-        "mmlu_high_school_chemistry": 7,
-        "mmlu_electrical_engineering": 3,
-        "mmlu_elementary_mathematics": 1,
-        "mmlu_college_mathematics": 3,
-        "mmlu_college_physics": 1,
-        "mmlu_conceptual_physics": 7,
-        "mmlu_high_school_physics": 7,
-        "mmlu_college_chemistry": 7,
-        "mmlu_astronomy": 3,
-        "sciq": 9,
-        "agieval_sat_math": 3,
-        "agieval_math": 10,
-        "agieval_aqua_rat": 2,
-        "arithmetic_4da": 1,
-        "arithmetic_2ds": 1,
-        "arithmetic_1dc": 2,
-        "arithmetic_2dm": 35,
-        "nq_open": 14,
-        "triviaqa": 26
-    },
-    "platinum-bench.csail.mit.edu": {
-        "count": 201,
-        "gsm8k": 101,
-        "mmlu_high_school_mathematics": 95,
-        "agieval_math": 5
-    },
-    "raw.githubusercontent.com": {
-        "count": 196,
-        "mmlu_professional_law": 19,
-        "agieval_math": 1,
-        "agieval_logiqa_en": 33,
-        "triviaqa": 3,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 10,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 47,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 83
+    "odrabiamy.pl": {
+        "count": 241,
+        "llmzszl": 241
     },
     "www.bartleby.com": {
-        "count": 172,
+        "count": 241,
         "arc_challenge": 11,
         "arc_easy": 9,
         "headqa_en": 1,
@@ -2265,18 +2888,228 @@
         "commonsense_qa": 1,
         "arithmetic_3da": 1,
         "arithmetic_3ds": 1,
-        "triviaqa": 4
+        "triviaqa": 4,
+        "cola": 2,
+        "qnli": 2,
+        "mnli": 65
+    },
+    "m.facebook.com": {
+        "count": 241,
+        "triviaqa": 16,
+        "bbh_cot_fewshot_web_of_lies": 6,
+        "bbh_cot_fewshot_temporal_sequences": 24,
+        "groundcocoa": 35,
+        "polemo2_in": 1,
+        "bbh_zeroshot_web_of_lies": 2,
+        "bbh_zeroshot_temporal_sequences": 12,
+        "bbh_zeroshot_object_counting": 3,
+        "bbh_zeroshot_movie_recommendation": 5,
+        "bbh_zeroshot_logical_deduction_three_objects": 18,
+        "bbh_zeroshot_logical_deduction_five_objects": 7,
+        "sst2": 5,
+        "cola": 13,
+        "llmzszl": 3,
+        "mnli": 91
+    },
+    "gmatclub.com": {
+        "count": 239,
+        "agieval_lsat_rc": 147,
+        "agieval_lsat_lr": 59,
+        "agieval_aqua_rat": 13,
+        "arithmetic_3da": 1,
+        "arithmetic_3ds": 4,
+        "arithmetic_1dc": 1,
+        "arithmetic_2dm": 5,
+        "arithmetic_2da": 1,
+        "groundcocoa": 6,
+        "cola": 2
+    },
+    "issuu.com": {
+        "count": 238,
+        "triviaqa": 15,
+        "bbh_cot_fewshot_web_of_lies": 1,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 14,
+        "bbh_cot_fewshot_temporal_sequences": 16,
+        "bbh_cot_fewshot_sports_understanding": 4,
+        "groundcocoa": 21,
+        "polemo2_out": 4,
+        "polemo2_in": 16,
+        "bbh_zeroshot_web_of_lies": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 7,
+        "bbh_zeroshot_temporal_sequences": 13,
+        "bbh_zeroshot_sports_understanding": 2,
+        "bbh_zeroshot_reasoning_about_colored_objects": 8,
+        "bbh_zeroshot_object_counting": 1,
+        "bbh_zeroshot_movie_recommendation": 1,
+        "bbh_zeroshot_logical_deduction_five_objects": 2,
+        "bbh_zeroshot_hyperbaton": 2,
+        "bbh_zeroshot_formal_fallacies": 4,
+        "cola": 1,
+        "mrpc": 2,
+        "llmzszl": 57,
+        "mnli": 42
+    },
+    "www.jstor.org": {
+        "count": 238,
+        "bbh_zeroshot_causal_judgement": 11,
+        "wnli": 2,
+        "sst2": 13,
+        "cola": 38,
+        "qnli": 15,
+        "rte": 4,
+        "mrpc": 3,
+        "mnli": 152
+    },
+    "www.queryhome.com": {
+        "count": 230,
+        "triviaqa": 230
+    },
+    "neurips.cc": {
+        "count": 230,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 34,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 52,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 64,
+        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 18,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 26,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 31,
+        "bbh_zeroshot_sports_understanding": 2,
+        "plmoab": 1
+    },
+    "e-zawodowe.pl": {
+        "count": 225,
+        "llmzszl": 225
+    },
+    "cod.pressbooks.pub": {
+        "count": 210,
+        "mnli": 210
+    },
+    "www.vedantu.com": {
+        "count": 202,
+        "arc_easy": 5,
+        "headqa_en": 14,
+        "mmlu_prehistory": 1,
+        "mmlu_international_law": 1,
+        "mmlu_miscellaneous": 7,
+        "mmlu_professional_accounting": 1,
+        "mmlu_college_medicine": 8,
+        "mmlu_nutrition": 2,
+        "mmlu_clinical_knowledge": 7,
+        "mmlu_college_biology": 3,
+        "mmlu_high_school_mathematics": 1,
+        "mmlu_high_school_biology": 10,
+        "mmlu_high_school_chemistry": 7,
+        "mmlu_electrical_engineering": 3,
+        "mmlu_elementary_mathematics": 1,
+        "mmlu_college_mathematics": 3,
+        "mmlu_college_physics": 1,
+        "mmlu_conceptual_physics": 7,
+        "mmlu_high_school_physics": 7,
+        "mmlu_college_chemistry": 7,
+        "mmlu_astronomy": 3,
+        "sciq": 9,
+        "agieval_sat_math": 3,
+        "agieval_math": 10,
+        "agieval_aqua_rat": 2,
+        "arithmetic_4da": 1,
+        "arithmetic_2ds": 1,
+        "arithmetic_1dc": 2,
+        "arithmetic_2dm": 35,
+        "nq_open": 14,
+        "triviaqa": 26
+    },
+    "rajpurkar.github.io": {
+        "count": 196,
+        "qnli": 196
+    },
+    "www.owleyes.org": {
+        "count": 193,
+        "mnli": 193
+    },
+    "www.pagebypagebooks.com": {
+        "count": 193,
+        "mnli": 193
+    },
+    "www.govinfo.gov": {
+        "count": 188,
+        "mnli": 188
+    },
+    "ssh.cocalc.com": {
+        "count": 186,
+        "mnli": 186
+    },
+    "www.diki.pl": {
+        "count": 181,
+        "polish_polqa_closed_book": 10,
+        "mnli": 171
+    },
+    "www.tripadvisor.com": {
+        "count": 178,
+        "polemo2_in": 34,
+        "sst2": 4,
+        "cola": 3,
+        "qnli": 2,
+        "mnli": 135
+    },
+    "www.britannica.com": {
+        "count": 172,
+        "triviaqa": 40,
+        "cola": 1,
+        "qnli": 91,
+        "rte": 11,
+        "mnli": 29
+    },
+    "www.geeksforgeeks.org": {
+        "count": 168,
+        "mmlu_college_computer_science": 15,
+        "sciq": 1,
+        "agieval_math": 5,
+        "agieval_logiqa_en": 1,
+        "agieval_aqua_rat": 2,
+        "commonsense_qa": 2,
+        "arithmetic_3ds": 3,
+        "arithmetic_1dc": 3,
+        "arithmetic_2dm": 2,
+        "nq_open": 3,
+        "triviaqa": 1,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 16,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 8,
+        "bbh_zeroshot_navigate": 1,
+        "bbh_zeroshot_dyck_languages": 87,
+        "cola": 2,
+        "qnli": 12,
+        "rte": 1,
+        "mnli": 3
+    },
+    "genius.com": {
+        "count": 167,
+        "triviaqa": 29,
+        "sst2": 4,
+        "cola": 6,
+        "mnli": 128
+    },
+    "www.nytimes.com": {
+        "count": 164,
+        "sst2": 11,
+        "cola": 4,
+        "qnli": 9,
+        "rte": 12,
+        "mrpc": 52,
+        "mnli": 76
+    },
+    "www.gutenberg.org": {
+        "count": 162,
+        "mnli": 162
     },
     "subtract.info": {
         "count": 160,
         "arithmetic_2ds": 160
     },
-    "cdn.quizwise.com": {
-        "count": 152,
-        "triviaqa": 152
-    },
     "www.studocu.vn": {
-        "count": 151,
+        "count": 158,
         "mmlu_public_relations": 46,
         "mmlu_econometrics": 59,
         "mmlu_business_ethics": 13,
@@ -2289,56 +3122,103 @@
         "agieval_sat_en_without_passage": 20,
         "arithmetic_3ds": 2,
         "triviaqa": 2,
-        "bbh_cot_fewshot_word_sorting": 2
+        "bbh_cot_fewshot_word_sorting": 4,
+        "bbh_zeroshot_word_sorting": 2,
+        "sst2": 2,
+        "rte": 1
+    },
+    "literature.org": {
+        "count": 158,
+        "mnli": 158
+    },
+    "dokumen.pub": {
+        "count": 156,
+        "agieval_lsat_ar": 68,
+        "triviaqa": 20,
+        "polemo2_in": 1,
+        "bbh_zeroshot_movie_recommendation": 2,
+        "bbh_zeroshot_logical_deduction_three_objects": 4,
+        "bbh_zeroshot_logical_deduction_seven_objects": 2,
+        "bbh_zeroshot_logical_deduction_five_objects": 4,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "bbh_zeroshot_disambiguation_qa": 1,
+        "wnli": 1,
+        "sst2": 2,
+        "rte": 4,
+        "mnli": 46
+    },
+    "cdn.quizwise.com": {
+        "count": 152,
+        "triviaqa": 152
     },
     "www.oxen.ai": {
-        "count": 146,
+        "count": 150,
         "arc_challenge": 77,
         "gsm8k": 53,
         "mmlu_professional_law": 2,
         "mmlu_high_school_us_history": 7,
-        "mmlu_high_school_european_history": 7
+        "mmlu_high_school_european_history": 7,
+        "wnli": 4
+    },
+    "www.rottentomatoes.com": {
+        "count": 147,
+        "sst2": 147
+    },
+    "docer.pl": {
+        "count": 145,
+        "llmzszl": 145
+    },
+    "www.amazon.com": {
+        "count": 145,
+        "triviaqa": 11,
+        "bbh_zeroshot_ruin_names": 4,
+        "bbh_zeroshot_reasoning_about_colored_objects": 4,
+        "sst2": 14,
+        "cola": 24,
+        "qnli": 4,
+        "rte": 1,
+        "mrpc": 3,
+        "mnli": 80
+    },
+    "www.online-literature.com": {
+        "count": 144,
+        "mnli": 144
     },
     "queryhome.com": {
         "count": 142,
         "triviaqa": 142
-    },
-    "www.academia.edu": {
-        "count": 141,
-        "mmlu_econometrics": 12,
-        "gpqa_diamond_cot_n_shot": 3,
-        "gpqa_main_cot_n_shot": 4,
-        "gpqa_extended_cot_n_shot": 4,
-        "gpqa_extended_n_shot": 4,
-        "gpqa_main_n_shot": 4,
-        "gpqa_diamond_n_shot": 3,
-        "gpqa_extended_generative_n_shot": 4,
-        "gpqa_diamond_generative_n_shot": 3,
-        "gpqa_main_generative_n_shot": 4,
-        "gpqa_extended_zeroshot": 4,
-        "gpqa_main_zeroshot": 4,
-        "gpqa_diamond_zeroshot": 3,
-        "gpqa_diamond_cot_zeroshot": 3,
-        "gpqa_extended_cot_zeroshot": 4,
-        "gpqa_main_cot_zeroshot": 4,
-        "agieval_sat_math": 2,
-        "agieval_sat_en_without_passage": 15,
-        "agieval_lsat_rc": 8,
-        "agieval_lsat_lr": 1,
-        "agieval_lsat_ar": 10,
-        "agieval_logiqa_en": 4,
-        "agieval_aqua_rat": 3,
-        "qasper_bool": 6,
-        "triviaqa": 15,
-        "groundcocoa": 1,
-        "polemo2_out": 2,
-        "polemo2_in": 7
     },
     "focusonlearningcenter.com": {
         "count": 139,
         "agieval_sat_math": 20,
         "agieval_sat_en": 12,
         "agieval_sat_en_without_passage": 107
+    },
+    "colab.research.google.com": {
+        "count": 138,
+        "bbh_cot_fewshot_sports_understanding": 20,
+        "bbh_cot_fewshot_temporal_sequences": 1,
+        "bbh_zeroshot_temporal_sequences": 1,
+        "bbh_zeroshot_sports_understanding": 10,
+        "bbh_zeroshot_object_counting": 2,
+        "bbh_zeroshot_movie_recommendation": 3,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "sst2": 88,
+        "cola": 6,
+        "mrpc": 2,
+        "mnli": 4
+    },
+    "www.goodreads.com": {
+        "count": 137,
+        "triviaqa": 34,
+        "bbh_zeroshot_object_counting": 1,
+        "sst2": 7,
+        "cola": 16,
+        "mnli": 79
+    },
+    "bookstacks.org": {
+        "count": 134,
+        "mnli": 134
     },
     "sidecu.culturameta.gov.co": {
         "count": 133,
@@ -2371,6 +3251,21 @@
         "arithmetic_4ds": 1,
         "nq_open": 1
     },
+    "ar5iv.labs.arxiv.org": {
+        "count": 133,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 62,
+        "bbh_cot_fewshot_sports_understanding": 4,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 32,
+        "bbh_zeroshot_sports_understanding": 4,
+        "bbh_zeroshot_logical_deduction_three_objects": 12,
+        "sst2": 4,
+        "mnli": 15
+    },
+    "www.jetpunk.com": {
+        "count": 127,
+        "triviaqa": 112,
+        "polish_polqa_closed_book": 15
+    },
     "www.studystack.com": {
         "count": 126,
         "arc_challenge": 18,
@@ -2387,6 +3282,34 @@
         "mmlu_astronomy": 4,
         "triviaqa": 8
     },
+    "www.slideshare.net": {
+        "count": 126,
+        "triviaqa": 10,
+        "bbh_cot_fewshot_word_sorting": 6,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 5,
+        "bbh_cot_fewshot_temporal_sequences": 2,
+        "polemo2_in": 1,
+        "bbh_zeroshot_word_sorting": 3,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_temporal_sequences": 1,
+        "bbh_zeroshot_object_counting": 2,
+        "bbh_zeroshot_logical_deduction_three_objects": 4,
+        "bbh_zeroshot_formal_fallacies": 1,
+        "sst2": 1,
+        "qnli": 2,
+        "rte": 1,
+        "llmzszl": 82,
+        "mnli": 3
+    },
+    "www.linkedin.com": {
+        "count": 124,
+        "sst2": 15,
+        "cola": 12,
+        "qnli": 5,
+        "mrpc": 3,
+        "mnli": 82,
+        "plmoab": 7
+    },
     "math.answers.com": {
         "count": 121,
         "arithmetic_2ds": 18,
@@ -2394,19 +3317,48 @@
         "arithmetic_2da": 62,
         "triviaqa": 16
     },
-    "web.eecs.umich.edu": {
-        "count": 120,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 120
-    },
     "polwro.com": {
         "count": 120,
         "polemo2_out": 120
+    },
+    "www.slate.com": {
+        "count": 120,
+        "mnli": 120
     },
     "forum.powerscore.com": {
         "count": 119,
         "agieval_lsat_lr": 89,
         "agieval_lsat_ar": 29,
         "arithmetic_4da": 1
+    },
+    "kursrolniczy.pl": {
+        "count": 118,
+        "llmzszl": 118
+    },
+    "courses.lumenlearning.com": {
+        "count": 118,
+        "sciq": 78,
+        "agieval_sat_math": 1,
+        "agieval_math": 5,
+        "commonsense_qa": 1,
+        "arithmetic_3ds": 3,
+        "nq_open": 6,
+        "triviaqa": 4,
+        "sst2": 1,
+        "qnli": 9,
+        "mnli": 10
+    },
+    "www.prawo.pl": {
+        "count": 117,
+        "llmzszl": 102,
+        "polish_polqa_closed_book": 15
+    },
+    "stackoverflow.com": {
+        "count": 117,
+        "bbh_zeroshot_boolean_expressions": 53,
+        "cola": 4,
+        "qnli": 19,
+        "mnli": 41
     },
     "edurev.in": {
         "count": 116,
@@ -2422,58 +3374,58 @@
         "arithmetic_2dm": 16,
         "nq_open": 5
     },
-    "www.jetpunk.com": {
-        "count": 112,
-        "triviaqa": 112
+    "www.mp.pl": {
+        "count": 116,
+        "polemo2_in": 12,
+        "llmzszl": 42,
+        "polish_polqa_closed_book": 59,
+        "mnli": 3
     },
-    "proceedings.mlr.press": {
+    "rewordify.com": {
+        "count": 115,
+        "mnli": 115
+    },
+    "www.literaturepage.com": {
+        "count": 114,
+        "mnli": 114
+    },
+    "www.cambridge.org": {
         "count": 112,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 48,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 64
+        "mmlu_econometrics": 55,
+        "agieval_sat_math": 2,
+        "agieval_math": 6,
+        "qasper_bool": 1,
+        "arithmetic_3da": 8,
+        "arithmetic_3ds": 1,
+        "arithmetic_5ds": 1,
+        "arithmetic_5da": 1,
+        "triviaqa": 5,
+        "bbh_cot_fewshot_web_of_lies": 1,
+        "bbh_zeroshot_disambiguation_qa": 1,
+        "sst2": 1,
+        "cola": 2,
+        "qnli": 4,
+        "mnli": 23
+    },
+    "www.preprints.org": {
+        "count": 111,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 44,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 22,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 6,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 22,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 11,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 6
     },
     "d240jkaxprjasr.cloudfront.net": {
         "count": 109,
         "triviaqa": 109
     },
-    "img.cracklsat.net": {
-        "count": 103,
-        "agieval_lsat_rc": 10,
-        "agieval_lsat_lr": 20,
-        "agieval_lsat_ar": 73
-    },
-    "easyllm.site": {
-        "count": 99,
-        "bbh_cot_fewshot_temporal_sequences": 99
-    },
-    "courses.lumenlearning.com": {
-        "count": 98,
-        "sciq": 78,
-        "agieval_sat_math": 1,
-        "agieval_math": 5,
-        "commonsense_qa": 1,
-        "arithmetic_3ds": 3,
-        "nq_open": 6,
-        "triviaqa": 4
-    },
-    "www.pasteurscube.com": {
-        "count": 93,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 55,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 38
-    },
-    "www.kaggle.com": {
-        "count": 93,
-        "gsm8k": 42,
-        "mmlu_elementary_mathematics": 1,
-        "sciq": 2,
-        "agieval_math": 19,
-        "agieval_aqua_rat": 2,
-        "toxigen": 1,
-        "triviaqa": 22,
-        "bbh_cot_fewshot_temporal_sequences": 2,
-        "groundcocoa": 2
+    "www.metacritic.com": {
+        "count": 108,
+        "sst2": 108
     },
     "resources.finalsite.net": {
-        "count": 92,
+        "count": 107,
         "arc_easy": 9,
         "gsm8k": 12,
         "mmlu_high_school_world_history": 16,
@@ -2486,19 +3438,77 @@
         "arithmetic_5ds": 1,
         "arithmetic_5da": 1,
         "arithmetic_4ds": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 3
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 4,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 5,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 1,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 3,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1,
+        "mnli": 3
+    },
+    "img.cracklsat.net": {
+        "count": 103,
+        "agieval_lsat_rc": 10,
+        "agieval_lsat_lr": 20,
+        "agieval_lsat_ar": 73
+    },
+    "studyx.ai": {
+        "count": 103,
+        "agieval_sat_math": 20,
+        "arithmetic_3da": 25,
+        "arithmetic_3ds": 30,
+        "arithmetic_4da": 1,
+        "arithmetic_2ds": 1,
+        "arithmetic_4ds": 6,
+        "arithmetic_2da": 1,
+        "bbh_zeroshot_snarks": 2,
+        "bbh_zeroshot_multistep_arithmetic_two": 4,
+        "bbh_zeroshot_hyperbaton": 5,
+        "wnli": 2,
+        "cola": 6
+    },
+    "hub.zenoml.com": {
+        "count": 101,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 67,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 34
+    },
+    "www.oke.krakow.pl": {
+        "count": 99,
+        "llmzszl": 84,
+        "polish_polqa_closed_book": 15
+    },
+    "matematykaszkolna.pl": {
+        "count": 98,
+        "llmzszl": 98
+    },
+    "www.oke.poznan.pl": {
+        "count": 96,
+        "llmzszl": 96
+    },
+    "isap.sejm.gov.pl": {
+        "count": 96,
+        "llmzszl": 96
+    },
+    "pubhtml5.com": {
+        "count": 96,
+        "mnli": 96
+    },
+    "open.spotify.com": {
+        "count": 95,
+        "nq_open": 16,
+        "triviaqa": 3,
+        "sst2": 2,
+        "cola": 7,
+        "mnli": 67
+    },
+    "en.m.wikisource.org": {
+        "count": 92,
+        "mnli": 92
     },
     "www.wrexhamquizleague.co.uk": {
         "count": 89,
         "triviaqa": 89
-    },
-    "dokumen.pub": {
-        "count": 89,
-        "agieval_lsat_ar": 68,
-        "triviaqa": 20,
-        "polemo2_in": 1
     },
     "schoolbag.info": {
         "count": 88,
@@ -2530,29 +3540,24 @@
         "arithmetic_3da": 14,
         "arithmetic_3ds": 1
     },
-    "valeur.com": {
-        "count": 85,
-        "arithmetic_2dm": 85
+    "www.infor.pl": {
+        "count": 88,
+        "llmzszl": 72,
+        "polish_polqa_closed_book": 15,
+        "plmoab": 1
     },
-    "www.bissoy.com": {
-        "count": 84,
-        "mmlu_high_school_psychology": 45,
-        "mmlu_high_school_microeconomics": 14,
-        "mmlu_high_school_chemistry": 21,
-        "agieval_aqua_rat": 4
+    "szkolnictwo.pl": {
+        "count": 87,
+        "llmzszl": 87
     },
-    "studyx.ai": {
-        "count": 84,
-        "agieval_sat_math": 20,
-        "arithmetic_3da": 25,
-        "arithmetic_3ds": 30,
-        "arithmetic_4da": 1,
-        "arithmetic_2ds": 1,
-        "arithmetic_4ds": 6,
-        "arithmetic_2da": 1
+    "www.gov.pl": {
+        "count": 87,
+        "llmzszl": 20,
+        "polish_polqa_closed_book": 61,
+        "mnli": 6
     },
     "studylib.net": {
-        "count": 84,
+        "count": 86,
         "arc_challenge": 7,
         "arc_easy": 15,
         "mmlu_professional_law": 2,
@@ -2568,7 +3573,40 @@
         "mmlu_high_school_physics": 1,
         "mmlu_high_school_computer_science": 12,
         "agieval_sat_en_without_passage": 25,
-        "triviaqa": 2
+        "triviaqa": 2,
+        "cola": 2
+    },
+    "valeur.com": {
+        "count": 85,
+        "arithmetic_2dm": 85
+    },
+    "www.bissoy.com": {
+        "count": 84,
+        "mmlu_high_school_psychology": 45,
+        "mmlu_high_school_microeconomics": 14,
+        "mmlu_high_school_chemistry": 21,
+        "agieval_aqua_rat": 4
+    },
+    "zapytaj.onet.pl": {
+        "count": 84,
+        "llmzszl": 25,
+        "polish_polqa_closed_book": 59
+    },
+    "watch.plex.tv": {
+        "count": 83,
+        "sst2": 83
+    },
+    "openstax.org": {
+        "count": 81,
+        "sciq": 21,
+        "agieval_math": 4,
+        "arithmetic_3da": 7,
+        "arithmetic_3ds": 4,
+        "arithmetic_4ds": 1,
+        "polemo2_out": 2,
+        "llmzszl": 24,
+        "polish_polqa_closed_book": 15,
+        "mnli": 3
     },
     "www.easynotecards.com": {
         "count": 80,
@@ -2578,17 +3616,9 @@
         "count": 80,
         "agieval_gaokao_english": 80
     },
-    "www.cambridge.org": {
+    "athome.fandango.com": {
         "count": 80,
-        "mmlu_econometrics": 55,
-        "agieval_sat_math": 2,
-        "agieval_math": 6,
-        "qasper_bool": 1,
-        "arithmetic_3da": 8,
-        "arithmetic_3ds": 1,
-        "arithmetic_5ds": 1,
-        "arithmetic_5da": 1,
-        "triviaqa": 5
+        "sst2": 80
     },
     "www.percentagecal.com": {
         "count": 79,
@@ -2633,70 +3663,75 @@
         "arithmetic_2dm": 1,
         "triviaqa": 2
     },
-    "neurips.cc": {
-        "count": 75,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 16,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 26,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 33
-    },
     "psychologic.science": {
         "count": 74,
         "mmlu_high_school_psychology": 74
     },
-    "issuu.com": {
+    "www.egzamin-gimnazjalny.pl": {
         "count": 74,
-        "triviaqa": 15,
-        "bbh_cot_fewshot_web_of_lies": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 8,
-        "bbh_cot_fewshot_temporal_sequences": 6,
-        "bbh_cot_fewshot_sports_understanding": 2,
-        "groundcocoa": 21,
-        "polemo2_out": 4,
-        "polemo2_in": 16
+        "llmzszl": 74
+    },
+    "oblicz.com.pl": {
+        "count": 74,
+        "llmzszl": 74
+    },
+    "www.filoma.org": {
+        "count": 73,
+        "llmzszl": 73
+    },
+    "cs.nyu.edu": {
+        "count": 72,
+        "wnli": 72
     },
     "lsathacks.com": {
-        "count": 71,
+        "count": 72,
         "agieval_lsat_lr": 17,
-        "agieval_lsat_ar": 54
+        "agieval_lsat_ar": 54,
+        "cola": 1
     },
-    "typeset.io": {
+    "krzyzowki123.pl": {
+        "count": 71,
+        "polish_polqa_closed_book": 71
+    },
+    "hackernoon.com": {
+        "count": 71,
+        "mnli": 71
+    },
+    "www.docsity.com": {
         "count": 70,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 70
+        "mmlu_professional_law": 31,
+        "mmlu_high_school_psychology": 16,
+        "mmlu_miscellaneous": 15,
+        "arithmetic_4da": 1,
+        "cola": 1,
+        "llmzszl": 6
     },
     "www.quizballs.com": {
         "count": 68,
         "triviaqa": 68
     },
-    "m.facebook.com": {
-        "count": 67,
-        "triviaqa": 16,
-        "bbh_cot_fewshot_web_of_lies": 3,
-        "bbh_cot_fewshot_temporal_sequences": 12,
-        "groundcocoa": 35,
-        "polemo2_in": 1
-    },
     "flexbooks.ck12.org": {
-        "count": 66,
+        "count": 67,
         "arc_easy": 6,
         "gsm8k": 4,
         "mmlu_high_school_psychology": 1,
         "mmlu_college_biology": 2,
         "mmlu_elementary_mathematics": 3,
         "sciq": 48,
-        "agieval_math": 2
+        "agieval_math": 2,
+        "qnli": 1
+    },
+    "www.literature.org": {
+        "count": 67,
+        "mnli": 67
     },
     "percent.info": {
         "count": 66,
         "arithmetic_3da": 43,
         "arithmetic_2da": 23
     },
-    "www.another71.com": {
-        "count": 64,
-        "mmlu_professional_accounting": 64
-    },
     "www.classace.io": {
-        "count": 64,
+        "count": 65,
         "arc_challenge": 8,
         "arc_easy": 23,
         "mmlu_professional_law": 2,
@@ -2707,14 +3742,67 @@
         "mmlu_elementary_mathematics": 6,
         "mmlu_high_school_computer_science": 2,
         "arithmetic_3ds": 15,
-        "nq_open": 1
+        "nq_open": 1,
+        "cola": 1
     },
-    "www.docsity.com": {
+    "www.another71.com": {
+        "count": 64,
+        "mmlu_professional_accounting": 64
+    },
+    "debatelab.github.io": {
+        "count": 64,
+        "bbh_zeroshot_formal_fallacies": 64
+    },
+    "www.prc.gov": {
+        "count": 64,
+        "mnli": 64
+    },
+    "www.riceethiopia.com": {
+        "count": 64,
+        "mnli": 64
+    },
+    "core-docs.s3.amazonaws.com": {
         "count": 63,
-        "mmlu_professional_law": 31,
-        "mmlu_high_school_psychology": 16,
-        "mmlu_miscellaneous": 15,
-        "arithmetic_4da": 1
+        "arc_easy": 5,
+        "gsm8k": 12,
+        "mmlu_elementary_mathematics": 6,
+        "agieval_aqua_rat": 1,
+        "commonsense_qa": 1,
+        "arithmetic_3da": 2,
+        "arithmetic_3ds": 2,
+        "arithmetic_5da": 5,
+        "arithmetic_4ds": 2,
+        "bbh_cot_fewshot_web_of_lies": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 6,
+        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 2,
+        "bbh_zeroshot_web_of_lies": 2,
+        "bbh_zeroshot_tracking_shuffled_objects_seven_objects": 2,
+        "bbh_zeroshot_tracking_shuffled_objects_five_objects": 3,
+        "bbh_zeroshot_reasoning_about_colored_objects": 2,
+        "bbh_zeroshot_logical_deduction_three_objects": 8
+    },
+    "git.doit.wisc.edu": {
+        "count": 63,
+        "sst2": 63
+    },
+    "bio.libretexts.org": {
+        "count": 63,
+        "sciq": 55,
+        "nq_open": 3,
+        "triviaqa": 2,
+        "qnli": 3
+    },
+    "www.wug.gov.pl": {
+        "count": 63,
+        "llmzszl": 63
+    },
+    "www.ime.usp.br": {
+        "count": 63,
+        "mnli": 63
+    },
+    "baencd.thefifthimperium.com": {
+        "count": 63,
+        "mnli": 63
     },
     "oldsite.nnu.edu": {
         "count": 62,
@@ -2752,54 +3840,29 @@
         "agieval_math": 5,
         "agieval_gaokao_english": 3
     },
-    "bio.libretexts.org": {
+    "archive.nyu.edu": {
+        "count": 61,
+        "cola": 61
+    },
+    "chem.libretexts.org": {
         "count": 60,
-        "sciq": 55,
-        "nq_open": 3,
-        "triviaqa": 2
+        "sciq": 48,
+        "nq_open": 2,
+        "triviaqa": 8,
+        "qnli": 2
     },
     "www.affordablecollegesolutions.com": {
         "count": 59,
         "agieval_sat_math": 18,
         "agieval_sat_en_without_passage": 41
     },
-    "chem.libretexts.org": {
-        "count": 58,
-        "sciq": 48,
-        "nq_open": 2,
-        "triviaqa": 8
-    },
-    "www.solpass.org": {
-        "count": 56,
-        "arc_challenge": 13,
-        "arc_easy": 43
-    },
-    "www.etutorworld.com": {
-        "count": 55,
-        "agieval_sat_en_without_passage": 55
-    },
-    "yamol.tw": {
-        "count": 55,
-        "agieval_gaokao_english": 55
-    },
-    "doe.louisiana.gov": {
-        "count": 55,
-        "mmlu_elementary_mathematics": 20,
-        "agieval_sat_math": 5,
-        "agieval_math": 13,
-        "agieval_logiqa_en": 2,
-        "agieval_gaokao_english": 4,
-        "agieval_aqua_rat": 4,
-        "arithmetic_3da": 3,
-        "arithmetic_3ds": 3,
-        "arithmetic_4ds": 1
-    },
-    "www.electrical4u.com": {
-        "count": 54,
-        "mmlu_electrical_engineering": 54
+    "zhidao.baidu.com": {
+        "count": 59,
+        "agieval_gaokao_english": 16,
+        "bbh_zeroshot_multistep_arithmetic_two": 43
     },
     "es.scribd.com": {
-        "count": 53,
+        "count": 58,
         "mmlu_elementary_mathematics": 10,
         "gpqa_diamond_cot_n_shot": 2,
         "gpqa_main_cot_n_shot": 1,
@@ -2818,10 +3881,60 @@
         "gpqa_main_cot_zeroshot": 2,
         "agieval_sat_en_without_passage": 4,
         "agieval_aqua_rat": 7,
-        "arithmetic_4ds": 3
+        "arithmetic_4ds": 3,
+        "sst2": 2,
+        "cola": 1,
+        "llmzszl": 2
+    },
+    "encyklopedia.pwn.pl": {
+        "count": 58,
+        "polish_polqa_closed_book": 58
+    },
+    "www.solpass.org": {
+        "count": 56,
+        "arc_challenge": 13,
+        "arc_easy": 43
+    },
+    "doe.louisiana.gov": {
+        "count": 56,
+        "mmlu_elementary_mathematics": 20,
+        "agieval_sat_math": 5,
+        "agieval_math": 13,
+        "agieval_logiqa_en": 2,
+        "agieval_gaokao_english": 4,
+        "agieval_aqua_rat": 4,
+        "arithmetic_3da": 3,
+        "arithmetic_3ds": 3,
+        "arithmetic_4ds": 1,
+        "bbh_zeroshot_reasoning_about_colored_objects": 1
+    },
+    "www.matemaks.pl": {
+        "count": 56,
+        "llmzszl": 56
+    },
+    "nces.ed.gov": {
+        "count": 56,
+        "arc_challenge": 10,
+        "arc_easy": 4,
+        "arithmetic_3da": 2,
+        "arithmetic_4da": 9,
+        "arithmetic_5ds": 3,
+        "arithmetic_5da": 5,
+        "arithmetic_4ds": 17,
+        "qnli": 1,
+        "mrpc": 1,
+        "mnli": 4
+    },
+    "www.etutorworld.com": {
+        "count": 55,
+        "agieval_sat_en_without_passage": 55
+    },
+    "yamol.tw": {
+        "count": 55,
+        "agieval_gaokao_english": 55
     },
     "www.pearson.com": {
-        "count": 53,
+        "count": 55,
         "mmlu_high_school_biology": 17,
         "gpqa_diamond_cot_n_shot": 1,
         "gpqa_main_cot_n_shot": 1,
@@ -2843,7 +3956,22 @@
         "arithmetic_3da": 3,
         "arithmetic_4ds": 1,
         "arithmetic_2dm": 1,
-        "groundcocoa": 13
+        "groundcocoa": 13,
+        "bbh_zeroshot_object_counting": 2
+    },
+    "booksbybit.com": {
+        "count": 55,
+        "mnli": 55
+    },
+    "www.electrical4u.com": {
+        "count": 54,
+        "mmlu_electrical_engineering": 54
+    },
+    "www.latimes.com": {
+        "count": 54,
+        "rte": 13,
+        "mrpc": 10,
+        "mnli": 31
     },
     "nate9389.tistory.com": {
         "count": 52,
@@ -2868,6 +3996,40 @@
         "count": 51,
         "agieval_gaokao_english": 51
     },
+    "www.baamboozle.com": {
+        "count": 51,
+        "arc_challenge": 6,
+        "arc_easy": 12,
+        "gsm8k": 6,
+        "mmlu_nutrition": 1,
+        "mmlu_elementary_mathematics": 21,
+        "sciq": 1,
+        "arithmetic_3da": 1,
+        "bbh_zeroshot_object_counting": 2,
+        "wnli": 1
+    },
+    "samequizy.pl": {
+        "count": 51,
+        "llmzszl": 25,
+        "polish_polqa_closed_book": 26
+    },
+    "s3-eu-west-1.amazonaws.com": {
+        "count": 51,
+        "mmlu_public_relations": 17,
+        "mmlu_human_aging": 27,
+        "agieval_math": 1,
+        "triviaqa": 2,
+        "llmzszl": 1,
+        "mnli": 3
+    },
+    "ebook-mecca.com": {
+        "count": 51,
+        "mnli": 51
+    },
+    "www.bookstacks.org": {
+        "count": 51,
+        "mnli": 51
+    },
     "www.cram.com": {
         "count": 50,
         "arc_easy": 9,
@@ -2883,16 +4045,6 @@
     "blog.sina.com.cn": {
         "count": 50,
         "agieval_gaokao_english": 50
-    },
-    "nces.ed.gov": {
-        "count": 50,
-        "arc_challenge": 10,
-        "arc_easy": 4,
-        "arithmetic_3da": 2,
-        "arithmetic_4da": 9,
-        "arithmetic_5ds": 3,
-        "arithmetic_5da": 5,
-        "arithmetic_4ds": 17
     },
     "pakmcqs.com": {
         "count": 50,
@@ -2917,6 +4069,21 @@
         "count": 50,
         "triviaqa": 50
     },
+    "zhuanlan.zhihu.com": {
+        "count": 50,
+        "agieval_gaokao_english": 47,
+        "bbh_zeroshot_date_understanding": 2,
+        "sst2": 1
+    },
+    "biologhelp.pl": {
+        "count": 50,
+        "llmzszl": 35,
+        "polish_polqa_closed_book": 15
+    },
+    "archive.org": {
+        "count": 50,
+        "mnli": 50
+    },
     "www.usmle.org": {
         "count": 49,
         "mmlu_professional_medicine": 49
@@ -2925,24 +4092,21 @@
         "count": 49,
         "agieval_gaokao_english": 49
     },
-    "www.baamboozle.com": {
-        "count": 48,
-        "arc_challenge": 6,
-        "arc_easy": 12,
-        "gsm8k": 6,
-        "mmlu_nutrition": 1,
-        "mmlu_elementary_mathematics": 21,
-        "sciq": 1,
-        "arithmetic_3da": 1
+    "www.slideserve.com": {
+        "count": 49,
+        "arc_challenge": 8,
+        "arc_easy": 5,
+        "mmlu_elementary_mathematics": 1,
+        "mmlu_conceptual_physics": 1,
+        "agieval_math": 2,
+        "arithmetic_3da": 1,
+        "llmzszl": 1,
+        "polish_polqa_closed_book": 30
     },
     "practicequiz.com": {
         "count": 47,
         "arc_challenge": 27,
         "arc_easy": 20
-    },
-    "zhuanlan.zhihu.com": {
-        "count": 47,
-        "agieval_gaokao_english": 47
     },
     "www.turito.com": {
         "count": 47,
@@ -2954,16 +4118,23 @@
         "agieval_aqua_rat": 1,
         "arithmetic_3da": 1
     },
-    "s3-eu-west-1.amazonaws.com": {
-        "count": 47,
-        "mmlu_public_relations": 17,
-        "mmlu_human_aging": 27,
-        "agieval_math": 1,
-        "triviaqa": 2
-    },
     "derbyshirepubquizleague.wordpress.com": {
         "count": 47,
         "triviaqa": 47
+    },
+    "naukawpolsce.pl": {
+        "count": 47,
+        "polemo2_in": 46,
+        "llmzszl": 1
+    },
+    "www.justanswer.com": {
+        "count": 47,
+        "mmlu_professional_law": 32,
+        "arithmetic_3da": 1,
+        "triviaqa": 1,
+        "cola": 3,
+        "mrpc": 1,
+        "mnli": 9
     },
     "praxis.ets.org": {
         "count": 46,
@@ -2973,49 +4144,54 @@
         "count": 46,
         "agieval_gaokao_english": 46
     },
-    "www.geeksforgeeks.org": {
-        "count": 46,
-        "mmlu_college_computer_science": 15,
-        "sciq": 1,
-        "agieval_math": 5,
-        "agieval_logiqa_en": 1,
-        "agieval_aqua_rat": 2,
-        "commonsense_qa": 2,
-        "arithmetic_3ds": 3,
-        "arithmetic_1dc": 3,
-        "arithmetic_2dm": 2,
-        "nq_open": 3,
-        "triviaqa": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 8
-    },
-    "naukawpolsce.pl": {
-        "count": 46,
-        "polemo2_in": 46
-    },
     "cdn2.hubspot.net": {
         "count": 45,
         "agieval_sat_en_without_passage": 45
-    },
-    "www.instagram.com": {
-        "count": 45,
-        "triviaqa": 16,
-        "bbh_cot_fewshot_temporal_sequences": 5,
-        "bbh_cot_fewshot_snarks": 3,
-        "groundcocoa": 21
     },
     "www.sporcle.com": {
         "count": 44,
         "triviaqa": 44
     },
+    "www.cs.cmu.edu": {
+        "count": 44,
+        "mmlu_machine_learning": 24,
+        "arithmetic_4da": 2,
+        "arithmetic_5ds": 3,
+        "arithmetic_5da": 2,
+        "arithmetic_4ds": 4,
+        "triviaqa": 5,
+        "bbh_zeroshot_object_counting": 2,
+        "sst2": 2
+    },
     "nos.netease.com": {
         "count": 43,
         "agieval_gaokao_english": 43
+    },
+    "www.lasy.gov.pl": {
+        "count": 43,
+        "llmzszl": 33,
+        "polish_polqa_closed_book": 10
+    },
+    "www.1z10.fora.pl": {
+        "count": 43,
+        "polish_polqa_closed_book": 43
+    },
+    "osf.io": {
+        "count": 43,
+        "bbh_zeroshot_causal_judgement": 34,
+        "qnli": 1,
+        "mnli": 8
     },
     "www.cracksat.net": {
         "count": 42,
         "mmlu_high_school_physics": 33,
         "arithmetic_3da": 1,
         "arithmetic_2dm": 8
+    },
+    "slideplayer.pl": {
+        "count": 42,
+        "llmzszl": 12,
+        "polish_polqa_closed_book": 30
     },
     "people.tamu.edu": {
         "count": 41,
@@ -3027,6 +4203,18 @@
         "agieval_math": 1,
         "arithmetic_2dm": 1,
         "nq_open": 1
+    },
+    "matura100procent.pl": {
+        "count": 41,
+        "llmzszl": 41
+    },
+    "www.kwalifikacje-w-zawodzie.pl": {
+        "count": 41,
+        "llmzszl": 41
+    },
+    "www.zsg-leczna.pl": {
+        "count": 41,
+        "llmzszl": 41
     },
     "nnhsrasetti.pbworks.com": {
         "count": 40,
@@ -3053,32 +4241,27 @@
         "arithmetic_2dm": 1,
         "nq_open": 4
     },
-    "www.cs.cmu.edu": {
+    "www.uwm.edu.pl": {
         "count": 40,
-        "mmlu_machine_learning": 24,
-        "arithmetic_4da": 2,
-        "arithmetic_5ds": 3,
-        "arithmetic_5da": 2,
-        "arithmetic_4ds": 4,
-        "triviaqa": 5
+        "llmzszl": 40
     },
-    "www.britannica.com": {
+    "web.stanford.edu": {
         "count": 40,
-        "triviaqa": 40
+        "sst2": 30,
+        "cola": 2,
+        "qnli": 4,
+        "rte": 1,
+        "mnli": 3
     },
-    "core-docs.s3.amazonaws.com": {
+    "m.zhangyue.com": {
         "count": 40,
-        "arc_easy": 5,
-        "gsm8k": 12,
-        "mmlu_elementary_mathematics": 6,
-        "agieval_aqua_rat": 1,
-        "commonsense_qa": 1,
-        "arithmetic_3da": 2,
-        "arithmetic_3ds": 2,
-        "arithmetic_5da": 5,
-        "arithmetic_4ds": 2,
-        "bbh_cot_fewshot_web_of_lies": 1,
-        "bbh_cot_fewshot_tracking_shuffled_objects_five_objects": 3
+        "agieval_gaokao_english": 34,
+        "mnli": 6
+    },
+    "pl.bab.la": {
+        "count": 40,
+        "polish_polqa_closed_book": 30,
+        "mnli": 10
     },
     "app.formative.com": {
         "count": 39,
@@ -3088,14 +4271,58 @@
         "count": 39,
         "agieval_gaokao_english": 39
     },
-    "openstax.org": {
+    "www.nysedregents.org": {
         "count": 39,
-        "sciq": 21,
-        "agieval_math": 4,
-        "arithmetic_3da": 7,
-        "arithmetic_3ds": 4,
-        "arithmetic_4ds": 1,
-        "polemo2_out": 2
+        "arc_challenge": 9,
+        "arc_easy": 11,
+        "mmlu_elementary_mathematics": 16,
+        "bbh_cot_fewshot_sports_understanding": 2,
+        "bbh_zeroshot_sports_understanding": 1
+    },
+    "cogcomp.seas.upenn.edu": {
+        "count": 39,
+        "mnli": 39
+    },
+    "www.planksip.org": {
+        "count": 39,
+        "mnli": 39
+    },
+    "bookwise.io": {
+        "count": 39,
+        "mnli": 39
+    },
+    "www.fandango.com": {
+        "count": 38,
+        "sst2": 38
+    },
+    "www.memorizer.pl": {
+        "count": 38,
+        "llmzszl": 38
+    },
+    "www.medianauka.pl": {
+        "count": 38,
+        "llmzszl": 13,
+        "polish_polqa_closed_book": 25
+    },
+    "www.wikiwand.com": {
+        "count": 38,
+        "polish_dyk_multiple_choice": 10,
+        "llmzszl": 1,
+        "polish_polqa_closed_book": 27
+    },
+    "www.deseret.com": {
+        "count": 38,
+        "sst2": 13,
+        "rte": 5,
+        "mrpc": 15,
+        "mnli": 5
+    },
+    "twitter.com": {
+        "count": 38,
+        "triviaqa": 13,
+        "polish_dyk_multiple_choice": 5,
+        "cola": 1,
+        "mnli": 19
     },
     "reviewgamezone.com": {
         "count": 37,
@@ -3122,16 +4349,60 @@
         "arithmetic_4ds": 3,
         "triviaqa": 4
     },
-    "www.nysedregents.org": {
+    "gitlab.mi.hdm-stuttgart.de": {
         "count": 37,
-        "arc_challenge": 9,
-        "arc_easy": 11,
-        "mmlu_elementary_mathematics": 16,
-        "bbh_cot_fewshot_sports_understanding": 1
+        "sst2": 37
+    },
+    "www.physicsforums.com": {
+        "count": 37,
+        "mmlu_high_school_physics": 11,
+        "gpqa_diamond_cot_n_shot": 1,
+        "gpqa_main_cot_n_shot": 1,
+        "gpqa_extended_cot_n_shot": 1,
+        "gpqa_extended_n_shot": 1,
+        "gpqa_main_n_shot": 1,
+        "gpqa_diamond_n_shot": 1,
+        "gpqa_extended_generative_n_shot": 1,
+        "gpqa_diamond_generative_n_shot": 1,
+        "gpqa_main_generative_n_shot": 1,
+        "gpqa_extended_zeroshot": 1,
+        "gpqa_main_zeroshot": 1,
+        "gpqa_diamond_zeroshot": 1,
+        "gpqa_diamond_cot_zeroshot": 1,
+        "gpqa_extended_cot_zeroshot": 1,
+        "gpqa_main_cot_zeroshot": 1,
+        "agieval_math": 2,
+        "toxigen": 1,
+        "triviaqa": 2,
+        "cola": 3,
+        "qnli": 2,
+        "rte": 1
+    },
+    "darsa.pl": {
+        "count": 37,
+        "llmzszl": 37
+    },
+    "archive.epa.gov": {
+        "count": 37,
+        "mnli": 37
     },
     "file.koolearn.com": {
         "count": 36,
         "agieval_gaokao_english": 36
+    },
+    "lmql.ai": {
+        "count": 36,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 24,
+        "bbh_zeroshot_tracking_shuffled_objects_three_objects": 12
+    },
+    "sjp.pwn.pl": {
+        "count": 36,
+        "polish_polqa_closed_book": 36
+    },
+    "www.poetryfoundation.org": {
+        "count": 36,
+        "triviaqa": 12,
+        "mnli": 24
     },
     "www.briarcliffschools.org": {
         "count": 35,
@@ -3153,27 +4424,30 @@
         "count": 35,
         "agieval_sat_en_without_passage": 35
     },
+    "s3.amazonaws.com": {
+        "count": 35,
+        "mmlu_high_school_psychology": 13,
+        "agieval_sat_math": 2,
+        "agieval_sat_en_without_passage": 7,
+        "agieval_math": 2,
+        "arithmetic_5da": 2,
+        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2,
+        "bbh_zeroshot_reasoning_about_colored_objects": 7
+    },
     "issuhub.com": {
         "count": 34,
         "mmlu_high_school_psychology": 34
     },
-    "m.zhangyue.com": {
+    "mos4lodz.wikom.pl": {
         "count": 34,
-        "agieval_gaokao_english": 34
+        "llmzszl": 34
     },
-    "www.justanswer.com": {
+    "m.imdb.com": {
         "count": 34,
-        "mmlu_professional_law": 32,
-        "arithmetic_3da": 1,
-        "triviaqa": 1
-    },
-    "www.goodreads.com": {
-        "count": 34,
-        "triviaqa": 34
-    },
-    "www.tripadvisor.com": {
-        "count": 34,
-        "polemo2_in": 34
+        "sst2": 21,
+        "cola": 1,
+        "mrpc": 2,
+        "mnli": 10
     },
     "practicetestgeeks.com": {
         "count": 33,
@@ -3186,15 +4460,6 @@
     "www.gkqgykt.com": {
         "count": 33,
         "agieval_gaokao_english": 33
-    },
-    "hub.zenoml.com": {
-        "count": 33,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 33
-    },
-    "www.preprints.org": {
-        "count": 33,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 22,
-        "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 11
     },
     "medizzy.com": {
         "count": 32,
@@ -3212,6 +4477,14 @@
         "count": 32,
         "triviaqa": 32
     },
+    "isach.info": {
+        "count": 32,
+        "mnli": 32
+    },
+    "demo.manifoldapp.org": {
+        "count": 32,
+        "mnli": 32
+    },
     "hackmd.io": {
         "count": 31,
         "gsm8k": 31
@@ -3224,27 +4497,30 @@
         "count": 31,
         "mmlu_machine_learning": 31
     },
-    "www.physicsforums.com": {
+    "nypost.com": {
         "count": 31,
-        "mmlu_high_school_physics": 11,
-        "gpqa_diamond_cot_n_shot": 1,
-        "gpqa_main_cot_n_shot": 1,
-        "gpqa_extended_cot_n_shot": 1,
-        "gpqa_extended_n_shot": 1,
-        "gpqa_main_n_shot": 1,
-        "gpqa_diamond_n_shot": 1,
-        "gpqa_extended_generative_n_shot": 1,
-        "gpqa_diamond_generative_n_shot": 1,
-        "gpqa_main_generative_n_shot": 1,
-        "gpqa_extended_zeroshot": 1,
-        "gpqa_main_zeroshot": 1,
-        "gpqa_diamond_zeroshot": 1,
-        "gpqa_diamond_cot_zeroshot": 1,
-        "gpqa_extended_cot_zeroshot": 1,
-        "gpqa_main_cot_zeroshot": 1,
-        "agieval_math": 2,
-        "toxigen": 1,
-        "triviaqa": 2
+        "sst2": 16,
+        "cola": 1,
+        "qnli": 2,
+        "rte": 5,
+        "mrpc": 7
+    },
+    "id.scribd.com": {
+        "count": 31,
+        "mmlu_professional_law": 26,
+        "agieval_lsat_lr": 1,
+        "arithmetic_4ds": 1,
+        "triviaqa": 2,
+        "llmzszl": 1
+    },
+    "laboratoria.net": {
+        "count": 31,
+        "polemo2_in": 29,
+        "llmzszl": 2
+    },
+    "downloads.regulations.gov": {
+        "count": 31,
+        "mnli": 31
     },
     "www.doe.mass.edu": {
         "count": 30,
@@ -3272,16 +4548,42 @@
         "mmlu_computer_security": 28,
         "nq_open": 2
     },
-    "id.scribd.com": {
+    "microsoft.github.io": {
         "count": 30,
-        "mmlu_professional_law": 26,
-        "agieval_lsat_lr": 1,
-        "arithmetic_4ds": 1,
-        "triviaqa": 2
+        "bbh_cot_fewshot_sports_understanding": 20,
+        "bbh_zeroshot_sports_understanding": 10
     },
-    "ar5iv.labs.arxiv.org": {
+    "facrea.urosario.edu.co": {
         "count": 30,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 30
+        "mmlu_professional_law": 13,
+        "agieval_math": 14,
+        "arithmetic_5da": 1,
+        "nq_open": 1,
+        "bbh_zeroshot_disambiguation_qa": 1
+    },
+    "www.kwalifikacjezawodowe.info": {
+        "count": 30,
+        "llmzszl": 30
+    },
+    "waszaedukacja.pl": {
+        "count": 30,
+        "llmzszl": 30
+    },
+    "szarada.net": {
+        "count": 30,
+        "polish_polqa_closed_book": 30
+    },
+    "nlp.ipipan.waw.pl": {
+        "count": 30,
+        "polish_polqa_closed_book": 30
+    },
+    "pl.wiktionary.org": {
+        "count": 30,
+        "polish_polqa_closed_book": 30
+    },
+    "prawo-podatkowe.pl": {
+        "count": 30,
+        "polish_polqa_closed_book": 30
     },
     "blog.blueprintprep.com": {
         "count": 29,
@@ -3295,17 +4597,6 @@
         "count": 29,
         "agieval_gaokao_english": 29
     },
-    "facrea.urosario.edu.co": {
-        "count": 29,
-        "mmlu_professional_law": 13,
-        "agieval_math": 14,
-        "arithmetic_5da": 1,
-        "nq_open": 1
-    },
-    "genius.com": {
-        "count": 29,
-        "triviaqa": 29
-    },
     "www.triviacountry.com": {
         "count": 29,
         "triviaqa": 29
@@ -3314,9 +4605,32 @@
         "count": 29,
         "polemo2_in": 29
     },
-    "laboratoria.net": {
+    "www.k5learning.com": {
         "count": 29,
-        "polemo2_in": 29
+        "mmlu_elementary_mathematics": 26,
+        "arithmetic_3ds": 1,
+        "bbh_zeroshot_hyperbaton": 1,
+        "cola": 1
+    },
+    "en.wikinews.org": {
+        "count": 29,
+        "rte": 29
+    },
+    "www.ourmidland.com": {
+        "count": 29,
+        "mrpc": 29
+    },
+    "cms-v1-files.superszkolna.pl": {
+        "count": 29,
+        "llmzszl": 29
+    },
+    "www.krzyzowki.edu.pl": {
+        "count": 29,
+        "polish_polqa_closed_book": 29
+    },
+    "nepis.epa.gov": {
+        "count": 29,
+        "mnli": 29
     },
     "jhcee.cn": {
         "count": 28,
@@ -3335,29 +4649,57 @@
         "mmlu_elementary_mathematics": 16,
         "triviaqa": 12
     },
-    "s3.amazonaws.com": {
+    "paperswithcode.com": {
         "count": 28,
-        "mmlu_high_school_psychology": 13,
-        "agieval_sat_math": 2,
-        "agieval_sat_en_without_passage": 7,
-        "agieval_math": 2,
-        "arithmetic_5da": 2,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 2
+        "qasper_bool": 25,
+        "arithmetic_5ds": 1,
+        "arithmetic_5da": 1,
+        "wnli": 1
+    },
+    "arkuszematuralne.pl": {
+        "count": 28,
+        "llmzszl": 28
+    },
+    "lexlege.pl": {
+        "count": 28,
+        "llmzszl": 28
+    },
+    "pdfcoffee.com": {
+        "count": 28,
+        "mnli": 28
     },
     "benyoungmosesbrown.weebly.com": {
         "count": 27,
         "mmlu_high_school_statistics": 27
     },
-    "www.k5learning.com": {
+    "josherich.github.io": {
         "count": 27,
-        "mmlu_elementary_mathematics": 26,
-        "arithmetic_3ds": 1
+        "wnli": 27
     },
-    "paperswithcode.com": {
+    "mtvk.pl": {
         "count": 27,
-        "qasper_bool": 25,
-        "arithmetic_5ds": 1,
-        "arithmetic_5da": 1
+        "llmzszl": 27
+    },
+    "gloswielkopolski.pl": {
+        "count": 27,
+        "llmzszl": 27
+    },
+    "eur-lex.europa.eu": {
+        "count": 27,
+        "llmzszl": 11,
+        "mnli": 16
+    },
+    "fliphtml5.com": {
+        "count": 27,
+        "mnli": 27
+    },
+    "girlebooks.com": {
+        "count": 27,
+        "mnli": 27
+    },
+    "www.hurunui.govt.nz": {
+        "count": 27,
+        "mnli": 27
     },
     "www.nmet168.com": {
         "count": 26,
@@ -3374,6 +4716,14 @@
         "count": 26,
         "triviaqa": 26
     },
+    "egzaminy.edu.pl": {
+        "count": 26,
+        "llmzszl": 26
+    },
+    "matzadanie.pl": {
+        "count": 26,
+        "llmzszl": 26
+    },
     "www.oakparkusd.org": {
         "count": 25,
         "mmlu_elementary_mathematics": 25
@@ -3381,6 +4731,46 @@
     "opened.cuny.edu": {
         "count": 25,
         "sciq": 25
+    },
+    "lium-git.univ-lemans.fr": {
+        "count": 25,
+        "sst2": 25
+    },
+    "www.wordplays.com": {
+        "count": 25,
+        "triviaqa": 21,
+        "rte": 4
+    },
+    "szymkrzysztof.wex.pl": {
+        "count": 25,
+        "llmzszl": 25
+    },
+    "sciaga.pl": {
+        "count": 25,
+        "polish_polqa_closed_book": 25
+    },
+    "artsandculture.google.com": {
+        "count": 25,
+        "mmlu_high_school_world_history": 12,
+        "toxigen": 2,
+        "triviaqa": 8,
+        "cola": 1,
+        "qnli": 1,
+        "mnli": 1
+    },
+    "www.classtools.net": {
+        "count": 25,
+        "arc_challenge": 9,
+        "arc_easy": 4,
+        "webqs": 1,
+        "gsm8k": 1,
+        "mmlu_elementary_mathematics": 3,
+        "triviaqa": 4,
+        "mnli": 3
+    },
+    "123pdf.org": {
+        "count": 25,
+        "mnli": 25
     },
     "www.floridabarexam.org": {
         "count": 24,
@@ -3410,6 +4800,34 @@
         "count": 24,
         "triviaqa": 24
     },
+    "www.zellamsee.hb.pl": {
+        "count": 24,
+        "polish_polqa_closed_book": 24
+    },
+    "www.cbsnews.com": {
+        "count": 24,
+        "mrpc": 20,
+        "mnli": 4
+    },
+    "escholarship.org": {
+        "count": 24,
+        "sst2": 15,
+        "cola": 1,
+        "mrpc": 2,
+        "mnli": 6
+    },
+    "www.litcharts.com": {
+        "count": 24,
+        "mnli": 24
+    },
+    "www.bsinfo.eu": {
+        "count": 24,
+        "mnli": 24
+    },
+    "www.insightguides.com": {
+        "count": 24,
+        "mnli": 24
+    },
     "erenow.org": {
         "count": 23,
         "mmlu_high_school_world_history": 23
@@ -3433,6 +4851,25 @@
         "nq_open": 1,
         "triviaqa": 2
     },
+    "babel.ucsc.edu": {
+        "count": 23,
+        "cola": 23
+    },
+    "www.battlefields.org": {
+        "count": 23,
+        "mmlu_high_school_us_history": 15,
+        "nq_open": 5,
+        "triviaqa": 2,
+        "qnli": 1
+    },
+    "www.optimed.com.pl": {
+        "count": 23,
+        "llmzszl": 23
+    },
+    "fictionlibrary.fandom.com": {
+        "count": 23,
+        "mnli": 23
+    },
     "forum.another71.com": {
         "count": 22,
         "mmlu_professional_accounting": 22
@@ -3441,26 +4878,25 @@
         "count": 22,
         "agieval_sat_en_without_passage": 22
     },
-    "www.battlefields.org": {
+    "www.inforlex.pl": {
         "count": 22,
-        "mmlu_high_school_us_history": 15,
-        "nq_open": 5,
-        "triviaqa": 2
+        "llmzszl": 22
     },
-    "www.classtools.net": {
+    "wymagania-prawne.pl": {
         "count": 22,
-        "arc_challenge": 9,
-        "arc_easy": 4,
-        "webqs": 1,
-        "gsm8k": 1,
-        "mmlu_elementary_mathematics": 3,
-        "triviaqa": 4
+        "llmzszl": 22
     },
-    "artsandculture.google.com": {
+    "akademiadwmed.pl": {
         "count": 22,
-        "mmlu_high_school_world_history": 12,
-        "toxigen": 2,
-        "triviaqa": 8
+        "llmzszl": 22
+    },
+    "wsjp.pl": {
+        "count": 22,
+        "polish_polqa_closed_book": 22
+    },
+    "aikan.qq.com": {
+        "count": 22,
+        "mnli": 22
     },
     "www.triand.com": {
         "count": 21,
@@ -3483,13 +4919,37 @@
         "count": 21,
         "agieval_gaokao_english": 21
     },
-    "www.wordplays.com": {
-        "count": 21,
-        "triviaqa": 21
-    },
     "www.znanylekarz.pl": {
         "count": 21,
         "polemo2_in": 21
+    },
+    "qz.com": {
+        "count": 21,
+        "wnli": 21
+    },
+    "gimnazjum.proszowice.pl": {
+        "count": 21,
+        "llmzszl": 21
+    },
+    "encyklopedialesna.com": {
+        "count": 21,
+        "llmzszl": 21
+    },
+    "www.pcez-bytow.pl": {
+        "count": 21,
+        "llmzszl": 21
+    },
+    "context.reverso.net": {
+        "count": 21,
+        "mnli": 21
+    },
+    "dictionary.cambridge.org": {
+        "count": 21,
+        "mnli": 21
+    },
+    "www.everand.com": {
+        "count": 21,
+        "mnli": 21
     },
     "apushpsychos.weebly.com": {
         "count": 20,
@@ -3519,13 +4979,49 @@
         "count": 20,
         "agieval_lsat_ar": 20
     },
-    "www.slideshare.net": {
+    "philarchive.org": {
         "count": 20,
-        "triviaqa": 10,
-        "bbh_cot_fewshot_word_sorting": 4,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 3,
-        "bbh_cot_fewshot_temporal_sequences": 2,
-        "polemo2_in": 1
+        "bbh_zeroshot_causal_judgement": 20
+    },
+    "maturabiolchem.pl": {
+        "count": 20,
+        "llmzszl": 20
+    },
+    "przedszkole-montessori.com.pl": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "ko.poznan.pl": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "sp-2.pl": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "agereaude.pl": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "a-przedszkolaka.pl": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "spturosl.edupage.org": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "znayshov.com": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "ellalanguage.com": {
+        "count": 20,
+        "polish_polqa_closed_book": 20
+    },
+    "trantor.is": {
+        "count": 20,
+        "mnli": 20
     },
     "dromersenturk.com": {
         "count": 19,
@@ -3546,14 +5042,17 @@
         "count": 19,
         "qasper_bool": 19
     },
-    "open.spotify.com": {
-        "count": 19,
-        "nq_open": 16,
-        "triviaqa": 3
-    },
     "quizglobal.com": {
         "count": 19,
         "triviaqa": 19
+    },
+    "fizyka.dk": {
+        "count": 19,
+        "llmzszl": 19
+    },
+    "policealna.akademiagornoslaska.pl": {
+        "count": 19,
+        "llmzszl": 19
     },
     "pa01916442.schoolwires.net": {
         "count": 18,
@@ -3579,15 +5078,6 @@
         "count": 18,
         "agieval_gaokao_english": 18
     },
-    "www.slideserve.com": {
-        "count": 18,
-        "arc_challenge": 8,
-        "arc_easy": 5,
-        "mmlu_elementary_mathematics": 1,
-        "mmlu_conceptual_physics": 1,
-        "agieval_math": 2,
-        "arithmetic_3da": 1
-    },
     "www.cymath.com": {
         "count": 18,
         "arithmetic_1dc": 18
@@ -3607,6 +5097,30 @@
         "arithmetic_5da": 4,
         "bbh_cot_fewshot_tracking_shuffled_objects_seven_objects": 3
     },
+    "gitlab.liu.se": {
+        "count": 18,
+        "sst2": 18
+    },
+    "glosbe.com": {
+        "count": 18,
+        "mrpc": 18
+    },
+    "testywp.pl": {
+        "count": 18,
+        "llmzszl": 18
+    },
+    "www.mirrorservice.org": {
+        "count": 18,
+        "mnli": 18
+    },
+    "m.iplay.qq.com": {
+        "count": 18,
+        "mnli": 18
+    },
+    "anyflip.com": {
+        "count": 18,
+        "mnli": 18
+    },
     "jcesom.marshall.edu": {
         "count": 17,
         "mmlu_professional_medicine": 17
@@ -3623,6 +5137,28 @@
         "count": 17,
         "mmlu_professional_accounting": 14,
         "triviaqa": 3
+    },
+    "www.wolframcloud.com": {
+        "count": 17,
+        "sst2": 17
+    },
+    "arslege.pl": {
+        "count": 17,
+        "llmzszl": 17
+    },
+    "www.thefreedictionary.com": {
+        "count": 17,
+        "triviaqa": 14,
+        "mnli": 3
+    },
+    "www.brainyquote.com": {
+        "count": 17,
+        "triviaqa": 10,
+        "mnli": 7
+    },
+    "www.lsc.gov": {
+        "count": 17,
+        "mnli": 17
     },
     "bpsscience.weebly.com": {
         "count": 16,
@@ -3666,10 +5202,6 @@
         "count": 16,
         "agieval_gaokao_english": 16
     },
-    "zhidao.baidu.com": {
-        "count": 16,
-        "agieval_gaokao_english": 16
-    },
     "ft.huijiaoyun.com": {
         "count": 16,
         "agieval_gaokao_english": 16
@@ -3710,6 +5242,47 @@
         "count": 16,
         "triviaqa": 16
     },
+    "dev.datascienceassn.org": {
+        "count": 16,
+        "bbh_zeroshot_logical_deduction_three_objects": 16
+    },
+    "geoportal.pgi.gov.pl": {
+        "count": 16,
+        "llmzszl": 16
+    },
+    "kurs-gorniczy.blogspot.com": {
+        "count": 16,
+        "llmzszl": 16
+    },
+    "www.ckzkluczbork.edu.pl": {
+        "count": 16,
+        "llmzszl": 16
+    },
+    "matfiz24.pl": {
+        "count": 16,
+        "llmzszl": 16
+    },
+    "en.wiktionary.org": {
+        "count": 16,
+        "polish_polqa_closed_book": 10,
+        "mnli": 6
+    },
+    "m.abook.qq.com": {
+        "count": 16,
+        "mnli": 16
+    },
+    "web.mit.edu": {
+        "count": 16,
+        "mnli": 16
+    },
+    "newt.to": {
+        "count": 16,
+        "mnli": 16
+    },
+    "texttospeech.io": {
+        "count": 16,
+        "mnli": 16
+    },
     "mcqtimes.com": {
         "count": 15,
         "mmlu_sociology": 15
@@ -3725,6 +5298,90 @@
     "www.actexam.net": {
         "count": 15,
         "mmlu_high_school_mathematics": 15
+    },
+    "www.voltwo.webd.pl": {
+        "count": 15,
+        "llmzszl": 15
+    },
+    "tlwarcino.pl": {
+        "count": 15,
+        "llmzszl": 15
+    },
+    "www.dziennikwschodni.pl": {
+        "count": 15,
+        "llmzszl": 15
+    },
+    "krzyzowka.net.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "www.edukator.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "www.medonet.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "echodnia.eu": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "opoka.org.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "globalquiz.org": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "www.tatry-przewodnik.com.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "krakow.tvp.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "businessinsider.com.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "wodnapolska.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "lubimyczytac.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "allegro.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "antykwariat-filar.pl": {
+        "count": 15,
+        "polish_polqa_closed_book": 15
+    },
+    "freeclassicebooks.com": {
+        "count": 15,
+        "mnli": 15
+    },
+    "www.law.cornell.edu": {
+        "count": 15,
+        "mnli": 15
+    },
+    "www.bookfrom.net": {
+        "count": 15,
+        "mnli": 15
+    },
+    "www.dreame.com": {
+        "count": 15,
+        "mnli": 15
+    },
+    "bookreadfree.com": {
+        "count": 15,
+        "mnli": 15
     },
     "www.rider.edu": {
         "count": 14,
@@ -3749,10 +5406,6 @@
         "nq_open": 1,
         "triviaqa": 5
     },
-    "www.thefreedictionary.com": {
-        "count": 14,
-        "triviaqa": 14
-    },
     "www.inyourarea.co.uk": {
         "count": 14,
         "triviaqa": 14
@@ -3760,6 +5413,38 @@
     "www.danword.com": {
         "count": 14,
         "triviaqa": 14
+    },
+    "pair-code.github.io": {
+        "count": 14,
+        "sst2": 14
+    },
+    "zawodowyegzamin.pl": {
+        "count": 14,
+        "llmzszl": 14
+    },
+    "bi.gazeta.pl": {
+        "count": 14,
+        "llmzszl": 14
+    },
+    "doc.rmf.pl": {
+        "count": 14,
+        "llmzszl": 14
+    },
+    "hasla-do-krzyzowek.pl": {
+        "count": 14,
+        "polish_polqa_closed_book": 14
+    },
+    "przydatne.org": {
+        "count": 14,
+        "polish_polqa_closed_book": 14
+    },
+    "www.ostrzeszow.pl": {
+        "count": 14,
+        "polish_polqa_closed_book": 14
+    },
+    "quotefancy.com": {
+        "count": 14,
+        "mnli": 14
     },
     "www.ncbex.org": {
         "count": 13,
@@ -3794,9 +5479,50 @@
         "count": 13,
         "triviaqa": 13
     },
-    "twitter.com": {
+    "www.cinematerial.com": {
         "count": 13,
-        "triviaqa": 13
+        "sst2": 13
+    },
+    "cea.hal.science": {
+        "count": 13,
+        "cola": 13
+    },
+    "www.pressreader.com": {
+        "count": 13,
+        "triviaqa": 10,
+        "mrpc": 3
+    },
+    "www.mrt.com": {
+        "count": 13,
+        "mrpc": 13
+    },
+    "prezi.com": {
+        "count": 13,
+        "llmzszl": 13
+    },
+    "flipbook.nowaera.pl": {
+        "count": 13,
+        "llmzszl": 13
+    },
+    "bip.cke.gov.pl": {
+        "count": 13,
+        "llmzszl": 13
+    },
+    "www.fizyka.osw.pl": {
+        "count": 13,
+        "llmzszl": 13
+    },
+    "www.telepolis.pl": {
+        "count": 13,
+        "polish_polqa_closed_book": 13
+    },
+    "www.andrew.cmu.edu": {
+        "count": 13,
+        "mnli": 13
+    },
+    "skedbooks.com": {
+        "count": 13,
+        "mnli": 13
     },
     "pfannenstielhistory.weebly.com": {
         "count": 12,
@@ -3842,10 +5568,6 @@
         "count": 12,
         "agieval_gaokao_english": 12
     },
-    "www.poetryfoundation.org": {
-        "count": 12,
-        "triviaqa": 12
-    },
     "d3pbdxdl8c65wb.cloudfront.net": {
         "count": 12,
         "triviaqa": 12
@@ -3858,13 +5580,138 @@
         "count": 12,
         "triviaqa": 12
     },
-    "lmql.ai": {
+    "philsci-archive.pitt.edu": {
         "count": 12,
-        "bbh_cot_fewshot_tracking_shuffled_objects_three_objects": 12
+        "bbh_zeroshot_causal_judgement": 12
     },
-    "www.mp.pl": {
+    "www.cinafilm.com": {
         "count": 12,
-        "polemo2_in": 12
+        "sst2": 12
+    },
+    "www.spiritualityandpractice.com": {
+        "count": 12,
+        "sst2": 12
+    },
+    "www.myplainview.com": {
+        "count": 12,
+        "mrpc": 12
+    },
+    "matematix.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "astrofiz.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "ckzkluczbork.edu.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "www.dlamaturzysty.info": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "kp.org.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "www.sp-sidra.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "docs18.chomikuj.pl": {
+        "count": 12,
+        "llmzszl": 12
+    },
+    "opracowania.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "pbc.rzeszow.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "ubiquiz.org": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "kwejk.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "www.strek.j.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "bc.umcs.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "slownik-wyrazowobcych.eu": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "www.austria-holiday.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "pisanezserca.pl": {
+        "count": 12,
+        "polish_polqa_closed_book": 12
+    },
+    "sde.uoc.ac.in": {
+        "count": 12,
+        "mmlu_philosophy": 10,
+        "mnli": 2
+    },
+    "biotech.law.lsu.edu": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.use-in-a-sentence.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "m.yunqi.qq.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "pdfroom.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.bookrags.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.epa.gov": {
+        "count": 12,
+        "mnli": 12
+    },
+    "direct.mit.edu": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.ebay.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.jonathanrauch.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "www.zoominfo.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "scifistories.com": {
+        "count": 12,
+        "mnli": 12
+    },
+    "readli.net": {
+        "count": 12,
+        "mnli": 12
     },
     "www.mgu.ac.in": {
         "count": 11,
@@ -3898,10 +5745,6 @@
         "count": 11,
         "triviaqa": 11
     },
-    "www.amazon.com": {
-        "count": 11,
-        "triviaqa": 11
-    },
     "www.steadyrun.com": {
         "count": 11,
         "triviaqa": 11
@@ -3910,15 +5753,91 @@
         "count": 11,
         "triviaqa": 11
     },
+    "pages.github.khoury.northeastern.edu": {
+        "count": 11,
+        "bbh_zeroshot_reasoning_about_colored_objects": 11
+    },
+    "www.cs.utexas.edu": {
+        "count": 11,
+        "bbh_zeroshot_causal_judgement": 11
+    },
+    "wandb.ai": {
+        "count": 11,
+        "wnli": 11
+    },
+    "git-lium.univ-lemans.fr": {
+        "count": 11,
+        "sst2": 11
+    },
+    "godxuxilie.github.io": {
+        "count": 11,
+        "sst2": 11
+    },
+    "ojs.aaai.org": {
+        "count": 11,
+        "sst2": 11
+    },
+    "verbs.colorado.edu": {
+        "count": 11,
+        "cola": 11
+    },
+    "zsae-karolewo.pl": {
+        "count": 11,
+        "llmzszl": 11
+    },
+    "zsckrjablon.pl": {
+        "count": 11,
+        "llmzszl": 11
+    },
+    "certus.edu.pl": {
+        "count": 11,
+        "llmzszl": 11
+    },
+    "www.yumpu.com": {
+        "count": 11,
+        "llmzszl": 11
+    },
+    "www.gokic.rakszawa.pl": {
+        "count": 11,
+        "polish_polqa_closed_book": 11
+    },
+    "krzyzowka.net": {
+        "count": 11,
+        "polish_polqa_closed_book": 11
+    },
+    "cloud2r.edupage.org": {
+        "count": 11,
+        "polish_polqa_closed_book": 11
+    },
+    "olimpijski.pl": {
+        "count": 11,
+        "polish_polqa_closed_book": 11
+    },
+    "redplanet.travel": {
+        "count": 11,
+        "mnli": 11
+    },
+    "vidyaprabodhinicollege.edu.in": {
+        "count": 11,
+        "mnli": 11
+    },
+    "www.fep.up.pt": {
+        "count": 11,
+        "mnli": 11
+    },
+    "www.legistorm.com": {
+        "count": 11,
+        "mnli": 11
+    },
+    "gitlab.cs.duke.edu": {
+        "count": 11,
+        "mnli": 11
+    },
     "www.questionai.com": {
         "count": 10,
         "arc_challenge": 8,
         "arc_easy": 1,
         "headqa_en": 1
-    },
-    "sde.uoc.ac.in": {
-        "count": 10,
-        "mmlu_philosophy": 10
     },
     "www.psy.vanderbilt.edu": {
         "count": 10,
@@ -3984,21 +5903,69 @@
         "count": 10,
         "agieval_aqua_rat": 10
     },
-    "www.pressreader.com": {
+    "campuspress.yale.edu": {
         "count": 10,
-        "triviaqa": 10
+        "bbh_zeroshot_causal_judgement": 10
     },
-    "www.brainyquote.com": {
+    "mubi.com": {
         "count": 10,
-        "triviaqa": 10
+        "sst2": 10
     },
-    "microsoft.github.io": {
+    "47.94.6.102": {
         "count": 10,
-        "bbh_cot_fewshot_sports_understanding": 10
+        "sst2": 10
     },
-    "colab.research.google.com": {
+    "www.villagevoice.com": {
         "count": 10,
-        "bbh_cot_fewshot_sports_understanding": 10
+        "sst2": 10
+    },
+    "pythonprogramming.net": {
+        "count": 10,
+        "sst2": 10
+    },
+    "phontron.com": {
+        "count": 10,
+        "sst2": 10
+    },
+    "www.englishvocabulary.ir": {
+        "count": 10,
+        "mrpc": 10
+    },
+    "www.gainesville.com": {
+        "count": 10,
+        "mrpc": 10
+    },
+    "gimdolsk.home.pl": {
+        "count": 10,
+        "llmzszl": 10
+    },
+    "biblioteka.wabrzezno.com": {
+        "count": 10,
+        "polish_polqa_closed_book": 10
+    },
+    "zss-dzietrzniki.szkolnastrona.pl": {
+        "count": 10,
+        "polish_polqa_closed_book": 10
+    },
+    "www.wabrzezno.pl": {
+        "count": 10,
+        "polish_polqa_closed_book": 10
+    },
+    "www.atominium.com": {
+        "count": 10,
+        "polish_polqa_closed_book": 10
+    },
+    "adversarialglue.github.io": {
+        "count": 10,
+        "mnli": 10
+    },
+    "xtf.lib.virginia.edu": {
+        "count": 10,
+        "mnli": 10
+    },
+    "www.pkarchive.org": {
+        "count": 10,
+        "mnli": 10
     },
     "mcdowellscienceexam.weebly.com": {
         "count": 8,
