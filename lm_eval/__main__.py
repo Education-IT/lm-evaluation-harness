@@ -69,10 +69,26 @@ def setup_parser() -> argparse.ArgumentParser:
     )
 
     parser.add_argument(
+        "--web_prompt",
+        "-webp",
+        type=str,
+        default="Info: ",
+        help="Prompt beafore WebContext"
+    )
+
+    parser.add_argument(
         "--web_access",
         "-web",action="store_true",
         default=False,
         help="Access of the model to external knowledge (internet)"
+    )
+
+    parser.add_argument(
+        "--web_separator",
+        "-webs",
+        type=str,
+        default="",
+        help="WebContext separator for ex: #"
     )
 
     parser.add_argument(
@@ -338,7 +354,7 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
     if args.include_path is not None:
         eval_logger.info(f"Including path: {args.include_path}")
         
-    task_manager = TaskManager(args.verbosity, include_path=args.include_path,web_access=args.web_access,web_data_action=args.web_data_action,file_sufix=args.file_sufix,question_key=args.question_key)
+    task_manager = TaskManager(args.verbosity, include_path=args.include_path,web_access=args.web_access,web_data_action=args.web_data_action,file_sufix=args.file_sufix,question_key=args.question_key,web_prompt=args.web_prompt,web_sep=args.web_separator)
 
     if "push_samples_to_hub" in evaluation_tracker_args and not args.log_samples:
         eval_logger.warning(
@@ -492,10 +508,10 @@ def cli_evaluate(args: Union[argparse.Namespace, None] = None) -> None:
         else:
             results["web_access"] = False
 
-        print(
-            f"{args.model} ({args.model_args}), gen_kwargs: ({args.gen_kwargs}), limit: {args.limit}, num_fewshot: {args.num_fewshot}, "
-            f"batch_size: {args.batch_size}{f' ({batch_sizes})' if batch_sizes else ''}"
-        )
+        #print(
+        #    f"{args.model} ({args.model_args}), gen_kwargs: ({args.gen_kwargs}), limit: {args.limit}, num_fewshot: {args.num_fewshot}, "
+        #    f"batch_size: {args.batch_size}{f' ({batch_sizes})' if batch_sizes else ''}"
+        #)
         print(make_table(results))
         if "groups" in results:
             print(make_table(results, "groups"))

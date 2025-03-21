@@ -31,6 +31,8 @@ class TaskManager:
         web_data_action: str = None,
         file_sufix: str = None,
         question_key:str = None,
+        web_prompt:str = None,
+        web_sep:str = "",
     ) -> None:
         self.file_sufix  = file_sufix
         self.web_data_action = web_data_action
@@ -38,6 +40,8 @@ class TaskManager:
         self.question_key = question_key
         self.verbosity = verbosity
         self.include_path = include_path
+        self.web_prompt = web_prompt
+        self.web_sep = web_sep
 
         self._task_index = self.initialize_tasks(
             include_path=include_path, include_defaults=include_defaults
@@ -285,7 +289,7 @@ class TaskManager:
                     # very scuffed: set task name here. TODO: fixme?
                     task_object.config.task = task
             else:
-                task_object = ConfigurableTask(config=config, web_access=self.web_access, web_data_action=self.web_data_action,file_sufix = self.file_sufix, question_key=self.question_key)
+                task_object = ConfigurableTask(config=config, web_access=self.web_access, web_data_action=self.web_data_action,file_sufix = self.file_sufix, question_key=self.question_key,web_prompt=self.web_prompt,web_sep=self.web_sep)
 
             return {task: task_object}
 

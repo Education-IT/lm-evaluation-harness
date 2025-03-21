@@ -715,6 +715,8 @@ class ConfigurableTask(Task):
         web_data_action:str = None,
         file_sufix: str = None,
         question_key: str = None,
+        web_prompt: str = None,
+        web_sep:str = None,
     ) -> None:  # TODO no super() call here
         # Get pre-configured attributes
         self._config = self.CONFIG
@@ -722,6 +724,8 @@ class ConfigurableTask(Task):
         self.web_data_action = web_data_action
         self.file_sufix = file_sufix
         self.question_key = question_key
+        self.web_prompt = web_prompt
+        self.web_sep = web_sep
         # Use new configurations if there was no preconfiguration
         if self.config is None:
             self._config = TaskConfig(**config)
@@ -963,7 +967,6 @@ class ConfigurableTask(Task):
         return text
 
     def download(self, dataset_kwargs: Optional[Dict[str, Any]] = None) -> None:
-        print(f"self.web_access = {self.web_access}")
         if self.web_access:
             mainPath = os.path.expanduser("~/.cache/huggingface/datasets/"+  self.process_text_path(self.DATASET_PATH.replace("/","___") +"/"))
             extDatasetName =  f"web_access_{self.TASK_NAME}_{self.file_sufix}"
@@ -987,21 +990,19 @@ class ConfigurableTask(Task):
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
                 
-                self.ds = "test"#
+                self.ds = "test"
                 if not self.has_test_docs():
-                    self.ds = 'validation' 
-                
-                # only for mnli (subtask for GLUE)
-                if self.TASK_NAME == 'mnli':
-                    self.ds = 'validation_matched' 
-                # only for PLMoAB
-                if self.TASK_NAME == 'plmoab':
-                    self.ds = 'train'     
+                    print("--------------NO TEST DOCS-------------------")
+                    if self.TASK_NAME == 'mnli':
+                        self.ds = 'validation_matched' 
+                    elif self.TASK_NAME == 'plmoab':
+                        self.ds = 'train'    
+                    else:
+                        self.ds = 'validation' 
 
                 self.dataset[self.ds] = loop.run_until_complete(web.process_all(self, self.ds))
                 loop.close()
                 
-                # # ONLY FOR GRUNDCOCOA
                 # self.dataset = DatasetDict({
                 #     k: Dataset.from_list([x for x in v])
                 #     for k, v in self.dataset.items()
@@ -1050,16 +1051,6 @@ class ConfigurableTask(Task):
         with open(exDomainsFilePath, "w", encoding="utf-8") as file:
             json.dump(sorted_data, file, indent=4, ensure_ascii=False)
 
-
-        # DO REFACTORINGU #===============================================
-        lenGoodUrls = len(web.GoodUrls)
-        validSnippetIndexSum = web.validSnippetIndexSum
-        if lenGoodUrls == 0:
-            lenGoodUrls = 1
-        if validSnippetIndexSum == 0:
-            validSnippetIndexSum = 1
-        # DO REFACTORINGU #===============================================
-
         metrics = {
             "task": self.TASK_NAME,
             "dataset": f"web_access_{self.DATASET_NAME}_{self.file_sufix}",
@@ -1068,15 +1059,15 @@ class ConfigurableTask(Task):
             "contaminated_queries": web.contaminatedQueries,
             "contaminated_urls": web.contaminatedWebContext,
             "valid_urls": len(web.GoodUrls),
-            "avg_contaminated_before_valid": web.validSnippetIndexSum / lenGoodUrls,
-            "contaminated_data_ratio": web.contaminatedWebContext / validSnippetIndexSum,
+            "avg_contaminated_before_valid": web.validSnippetIndexSum / (len(web.GoodUrls)+1),
+            "contaminated_data_ratio": web.contaminatedWebContext / (web.validSnippetIndexSum+1),
             "most_contaminated_urls": sortedUrlCounter,
             "noWebContext": web.questionWithoutContext,
             "contaminated_WebContext": web.contaminatedUrls,
             "valid_WebContext": web.GoodUrls
         }      
 
-        with open(mainPath + f"XAI_WEB_{self.DATASET_NAME}_" + self.file_sufix + ".json", "w", encoding="utf-8") as f:
+        with open(mainPath + f"XAI_WEB_{self.DATASET_NAME}_"+ self.TASK_NAME+"_"+ self.file_sufix + ".json", "w", encoding="utf-8") as f:
             json.dump(metrics, f, ensure_ascii=False, indent=4)
     
 
@@ -1377,9 +1368,9 @@ class ConfigurableTask(Task):
     
     def doc_to_web(self,doc):
         try:
-            return utils.apply_template("Info: {{WebContext}}",doc)
+            return utils.apply_template(f"{self.web_prompt} " + self.web_sep + "{{WebContext}}" + self.web_sep ,doc)
         except Exception as e:
-            return "Context: None"
+            return "Error"
 
     def doc_to_text(self, doc, doc_to_text=None):
         if self.prompt is not None:
@@ -1530,8 +1521,9 @@ class ConfigurableTask(Task):
 
         if self.web_access:
             web_output = self.doc_to_web(doc)
-            if web_output != "Context: None":
-                ctx = web_output + " " + ctx
+            if web_output != f"{self.web_prompt} {self.web_sep}None{self.web_sep}" and web_output != "Error":
+                ctx = f"{web_output }{ctx}"
+
         if self.OUTPUT_TYPE == "loglikelihood":
             arguments = (ctx, self.doc_to_target(doc))
         elif self.OUTPUT_TYPE == "loglikelihood_rolling":

@@ -930,9 +930,9 @@ class HFLM(TemplateLM):
         adaptive_batch_size = None
         if self.batch_size == "auto":
             # using rolling window with maximum context
-            print("Passed argument batch_size = auto. Detecting largest batch size")
+            #print("Passed argument batch_size = auto. Detecting largest batch size")
             batch_size = self._detect_batch_size()
-            print(f"Determined Largest batch size: {batch_size}")
+            #print(f"Determined Largest batch size: {batch_size}")
             adaptive_batch_size = batch_size
 
         # First, collect all windows from all requests
@@ -1020,11 +1020,11 @@ class HFLM(TemplateLM):
             # if previous batch size is already maximal, skip recomputation
             self.batch_sizes[sched] = self.max_batch_size
             return self.batch_sizes[sched]
-        print(
-            f"Passed argument batch_size = auto:{self.batch_schedule}. Detecting largest batch size"
-        )
+        #print(
+        #    f"Passed argument batch_size = auto:{self.batch_schedule}. Detecting largest batch size"
+        #)
         self.batch_sizes[sched] = self._detect_batch_size(n_reordered_requests, pos)
-        print(f"Determined largest batch size: {self.batch_sizes[sched]}")
+        #print(f"Determined largest batch size: {self.batch_sizes[sched]}")
         return self.batch_sizes[sched]
 
     def _loglikelihood_tokens(
@@ -1279,9 +1279,9 @@ class HFLM(TemplateLM):
         adaptive_batch_size = None
         if self.batch_size == "auto":
             # using rolling window with maximum context
-            print("Passed argument batch_size = auto. Detecting largest batch size")
+            #print("Passed argument batch_size = auto. Detecting largest batch size")
             batch_size = self._detect_batch_size()
-            print(f"Determined Largest batch size: {batch_size}")
+            #print(f"Determined Largest batch size: {batch_size}")
             adaptive_batch_size = batch_size
         # for each different set of kwargs, we execute all requests, by batch.
         batch_size = (

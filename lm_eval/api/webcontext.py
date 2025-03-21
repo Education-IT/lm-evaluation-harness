@@ -196,7 +196,7 @@ class webcontext():
                 
                 firstIteration = True
                 processedSnippets = 0
-                for engine in ["google", "brave", "ddg", "braveAPI", None]:
+                for engine in ["google", "brave", "google", "braveAPI", None]:
                     if engine is None:
                         self.noContext += 1
                         self.contaminatedWebContext -= processedSnippets
@@ -283,12 +283,10 @@ class webcontext():
         tasks = None
         return datasets.Dataset.from_dict({key: [d[key] for d in results] for key in results[0]})
     
-
-
-
     def GetMatchingQuestionKey(self,doc,task):
         try:
             keys_to_check = [
+                "question_stem",
                 'question',
                 "premise",
                 'hypothesis',
